@@ -84,14 +84,22 @@
     }
 
     .cta a {
-      text-decoration: none;
-      background: var(--primary);
-      color: white;
-      padding: 12px 22px;
-      border-radius: 30px;
-      font-weight: 600;
-      display: inline-block;
-    }
+  text-decoration: none;
+  background: transparent;   /* ✅ remove purple bg */
+  padding: 0;                /* ✅ remove extra space */
+  border-radius: 0;
+  display: inline-block;
+}
+
+    .cta a img {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta a:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
 
     .links {
       text-align: center;
