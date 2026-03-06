@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PaathBook निर्वाचन नतिजा</title>
+  <link rel="stylesheet" href="/assets/election.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <h1 id="election-title">निर्वाचन नतिजा</h1>
+      <div class="meta">
+        <span class="pill" id="election-status">मतगणना जारी</span>
+        <span class="pill">अद्यावधिक: <span id="updated-at">उपलब्ध छैन</span></span>
+      </div>
+    </header>
+
+    <section class="party-section">
+      <div class="party-head">
+        <h2>दलगत नतिजा</h2>
+        <p><span id="party-total-seats">165</span> सीट मध्ये प्रगति</p>
+      </div>
+      <div id="party-empty" class="empty hidden">
+        दलगत विवरण हेर्नका लागि पहिले क्षेत्रगत नतिजा चाहिन्छ।
+      </div>
+      <div id="party-list" class="party-board"></div>
+    </section>
+
+    <section class="app-promo">
+      <div class="promo-head">
+        <h2>निर्वाचन अपडेट हेरिरहनु भएको छ? PaathBook पनि प्रयोग गर्नुहोस्</h2>
+        <p>विद्यालय स्तरका विद्यार्थी र self-learner का लागि Nepal-focused learning app</p>
+      </div>
+
+      <div class="promo-grid">
+        <article class="promo-card">
+          <h3>MCQ र Practice</h3>
+          <ul>
+            <li>सामान्य ज्ञान (GK) र GK MCQ Practice</li>
+            <li>हिज्जे MCQ Practice</li>
+            <li>Learn English MCQ</li>
+            <li>School Level Grammar</li>
+          </ul>
+        </article>
+
+        <article class="promo-card">
+          <h3>Study Tools</h3>
+          <ul>
+            <li>Built-in Dictionary</li>
+            <li>Daily GK, हिज्जे र Dictionary Notification</li>
+            <li>Quiz History (पहिले दिएको Quiz हेर्न मिल्ने)</li>
+            <li>Essay, Application र SEE-level Writing Tools</li>
+          </ul>
+        </article>
+
+        <article class="promo-card">
+          <h3>Notes Hub</h3>
+          <ul>
+            <li>विद्यार्थीहरूले लेखेका Handwritten Notes</li>
+            <li>Subject अनुसार Notes पढ्न मिल्ने</li>
+            <li>Simple र student-friendly interface</li>
+            <li>Privacy-focused learning experience</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="promo-cta">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.paathbook.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          PaathBook App Install गर्नुहोस्
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>क्षेत्रगत विवरण</h2>
+      <div id="config-warning" class="empty hidden">
+        Firebase कन्फिग छैन। <code>/assets/firebase-init.js</code> खोलेर
+        <code>REPLACE_ME</code> मानहरू बदल्नुहोस्।
+      </div>
+      <div id="empty-state" class="empty">
+        अहिले नतिजा डेटा भेटिएन। पहिलो अपडेट राख्न admin पेज प्रयोग गर्नुहोस्।
+      </div>
+      <div id="seat-list" class="list"></div>
+    </section>
+  </main>
+
+  <script type="module" src="/assets/election-public.js"></script>
+</body>
+</html>

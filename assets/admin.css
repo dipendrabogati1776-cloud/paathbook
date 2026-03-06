@@ -1,0 +1,297 @@
+:root {
+  --bg: #f4f8ff;
+  --surface: #ffffff;
+  --ink: #18233a;
+  --muted: #5f6b84;
+  --brand: #0f5cc6;
+  --border: #d7e2f4;
+  --danger: #b42318;
+  --ok: #157347;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background:
+    radial-gradient(circle at 85% 0%, #dbe7ff 0%, transparent 40%),
+    linear-gradient(180deg, #f1f6ff 0%, #f8fbff 100%);
+  color: var(--ink);
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 10px 24px rgba(22, 45, 96, 0.08);
+}
+
+.login-panel {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 1.65rem;
+}
+
+p.sub {
+  margin: 0;
+  color: var(--muted);
+}
+
+.space {
+  margin-top: 14px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 11px;
+  background: #fff;
+  color: var(--ink);
+}
+
+textarea {
+  min-height: 250px;
+  resize: vertical;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+button {
+  border: 1px solid var(--brand);
+  color: #fff;
+  background: var(--brand);
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button.ghost {
+  color: var(--brand);
+  background: #f1f7ff;
+}
+
+button.warn {
+  color: #fff;
+  background: var(--danger);
+  border-color: var(--danger);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.status {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: #f7faff;
+}
+
+.status.ok {
+  color: #0d5f38;
+  background: #eaf8f0;
+  border-color: #b8e2ca;
+}
+
+.status.info {
+  color: #184f9e;
+  background: #eaf2ff;
+  border-color: #bdd2ff;
+}
+
+.status.error {
+  color: #9b2215;
+  background: #fff2f1;
+  border-color: #f2c2bf;
+}
+
+.input-error {
+  border-color: #d63a2c !important;
+  background: #fff7f7;
+}
+
+.hidden {
+  display: none;
+}
+
+.help {
+  background: #f9fbff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.editor-tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.mini-summary {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.seats-form {
+  display: grid;
+  gap: 12px;
+}
+
+.seat-switcher {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.seat-chip {
+  border: 1px solid #c5d7fb;
+  background: #f4f8ff;
+  color: #214b8b;
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: 0.83rem;
+  font-weight: 600;
+}
+
+.seat-chip.active {
+  border-color: #1b66d1;
+  background: #1b66d1;
+  color: #fff;
+}
+
+.seat-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  background: #fcfdff;
+}
+
+.party-admin {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  background: #fbfdff;
+}
+
+.subhead {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.party-form {
+  display: grid;
+  gap: 10px;
+}
+
+.party-row {
+  border: 1px solid #e5ecfa;
+  border-radius: 10px;
+  padding: 10px;
+  background: #fff;
+}
+
+.seat-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.seat-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+
+.candidate-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.candidate-row {
+  border: 1px solid #e5ecfa;
+  border-radius: 10px;
+  padding: 10px;
+  background: #fff;
+}
+
+.small-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+button.tiny {
+  font-size: 0.82rem;
+  padding: 7px 10px;
+}
+
+button.danger-ghost {
+  color: var(--danger);
+  background: #fff4f4;
+  border-color: #f2c2c2;
+}
+
+@media (max-width: 800px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}

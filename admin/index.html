@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PaathBook Admin Login</title>
+  <link rel="stylesheet" href="/assets/admin.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="panel login-panel">
+      <h1>निर्वाचन Admin लगइन</h1>
+      <p class="sub">पहिले लगइन गर्नुहोस्, त्यसपछि मात्र admin panel खुल्छ।</p>
+
+      <div id="config-warning" class="status error hidden">
+        Firebase कन्फिग छैन। पहिले <code>/assets/firebase-init.js</code> मा project settings राख्नुहोस्।
+      </div>
+
+      <section class="space">
+        <div class="row">
+          <div>
+            <label for="login-email">Admin इमेल</label>
+            <input id="login-email" type="email" placeholder="admin@example.com" />
+          </div>
+          <div>
+            <label for="login-password">पासवर्ड</label>
+            <input id="login-password" type="password" placeholder="पासवर्ड लेख्नुहोस्" />
+          </div>
+        </div>
+        <div class="actions">
+          <button id="login-btn">लगइन गरेर Panel खोल्नुहोस्</button>
+        </div>
+        <div id="auth-status" class="status"></div>
+      </section>
+    </section>
+  </main>
+
+  <script type="module" src="/assets/admin-login.js"></script>
+</body>
+</html>
