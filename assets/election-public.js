@@ -64,9 +64,7 @@ const e = {
   partyList: document.getElementById("party-list"),
   partyEmpty: document.getElementById("party-empty"),
   list: document.getElementById("seat-list"),
-  empty: document.getElementById("empty-state"),
-  tabButtons: Array.from(document.querySelectorAll("[data-tab-target]")),
-  tabPanels: Array.from(document.querySelectorAll("[data-tab-panel]"))
+  empty: document.getElementById("empty-state")
 };
 
 function fmtNumber(value) {
@@ -81,32 +79,6 @@ function fmtTime(timestamp) {
   return date.toLocaleString("ne-NP", {
     dateStyle: "medium",
     timeStyle: "short"
-  });
-}
-
-function setActiveTab(targetId) {
-  e.tabButtons.forEach((btn) => {
-    const isActive = btn.dataset.tabTarget === targetId;
-    btn.classList.toggle("active", isActive);
-    btn.setAttribute("aria-selected", isActive ? "true" : "false");
-  });
-
-  e.tabPanels.forEach((panel) => {
-    const isActive = panel.id === targetId;
-    panel.classList.toggle("hidden", !isActive);
-    panel.classList.toggle("active", isActive);
-  });
-}
-
-function initTabs() {
-  if (!e.tabButtons.length || !e.tabPanels.length) return;
-  setActiveTab("seat-panel");
-  e.tabButtons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const targetId = btn.dataset.tabTarget;
-      if (!targetId) return;
-      setActiveTab(targetId);
-    });
   });
 }
 
@@ -333,8 +305,6 @@ function renderDoc(data) {
 }
 
 async function boot() {
-  initTabs();
-
   if (!isConfigValid) {
     e.configWarning.classList.remove("hidden");
     e.configWarning.innerHTML =

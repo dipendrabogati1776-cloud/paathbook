@@ -45,6 +45,14 @@ body {
   line-height: 1.2;
 }
 
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 .meta {
   display: flex;
   gap: 12px;
@@ -105,11 +113,11 @@ body {
 }
 
 .result-tabs {
-  margin-top: 14px;
+  margin-top: 0;
   display: inline-flex;
   gap: 8px;
-  background: rgba(86, 47, 197, 0.16);
-  border: 1px solid rgba(113, 76, 221, 0.28);
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.24);
   border-radius: 12px;
   padding: 6px;
 }
@@ -118,7 +126,7 @@ body {
   border: 0;
   border-radius: 9px;
   background: transparent;
-  color: #4a347a;
+  color: #e8dcff;
   padding: 8px 12px;
   font-size: 0.9rem;
   font-weight: 700;
@@ -126,9 +134,9 @@ body {
 }
 
 .tab-btn.active {
-  color: #fff;
-  background: linear-gradient(135deg, #5a2fd5 0%, var(--primary) 84%);
-  box-shadow: 0 6px 14px rgba(71, 36, 163, 0.28);
+  color: #40208e;
+  background: linear-gradient(145deg, #f4eeff 0%, #d9cbff 100%);
+  box-shadow: 0 6px 14px rgba(27, 9, 76, 0.24);
 }
 
 .tab-panel {
@@ -394,6 +402,20 @@ tr.leading td {
 
   .hero h1 {
     font-size: 1.4rem;
+  }
+
+  .hero-top {
+    align-items: stretch;
+  }
+
+  .result-tabs {
+    width: 100%;
+    justify-content: stretch;
+  }
+
+  .tab-btn {
+    flex: 1;
+    text-align: center;
   }
 
   .promo-grid {
