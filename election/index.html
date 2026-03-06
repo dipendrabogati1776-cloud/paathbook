@@ -16,15 +16,13 @@
       </div>
     </header>
 
-    <section class="party-section">
-      <div class="party-head">
-        <h2>दलगत नतिजा</h2>
-        <p><span id="party-total-seats">165</span> सीट मध्ये प्रगति</p>
-      </div>
-      <div id="party-empty" class="empty hidden">
-        दलगत विवरण हेर्नका लागि पहिले क्षेत्रगत नतिजा चाहिन्छ।
-      </div>
-      <div id="party-list" class="party-board"></div>
+    <section class="result-tabs" aria-label="नतिजा प्रकार">
+      <button type="button" class="tab-btn active" data-tab-target="seat-panel" aria-selected="true">
+        क्षेत्र विवरण
+      </button>
+      <button type="button" class="tab-btn" data-tab-target="party-panel" aria-selected="false">
+        दलगत नतिजा
+      </button>
     </section>
 
     <section class="app-promo">
@@ -76,16 +74,31 @@
       </div>
     </section>
 
-    <section class="section">
-      <h2>क्षेत्रगत विवरण</h2>
-      <div id="config-warning" class="empty hidden">
-        Firebase कन्फिग छैन। <code>/assets/firebase-init.js</code> खोलेर
-        <code>REPLACE_ME</code> मानहरू बदल्नुहोस्।
-      </div>
-      <div id="empty-state" class="empty">
-        अहिले नतिजा डेटा भेटिएन। पहिलो अपडेट राख्न admin पेज प्रयोग गर्नुहोस्।
-      </div>
-      <div id="seat-list" class="list"></div>
+    <section id="seat-panel" class="tab-panel active" data-tab-panel>
+      <section class="section">
+        <h2>क्षेत्रगत विवरण</h2>
+        <div id="config-warning" class="empty hidden">
+          Firebase कन्फिग छैन। <code>/assets/firebase-init.js</code> खोलेर
+          <code>REPLACE_ME</code> मानहरू बदल्नुहोस्।
+        </div>
+        <div id="empty-state" class="empty">
+          अहिले नतिजा डेटा भेटिएन। पहिलो अपडेट राख्न admin पेज प्रयोग गर्नुहोस्।
+        </div>
+        <div id="seat-list" class="list"></div>
+      </section>
+    </section>
+
+    <section id="party-panel" class="tab-panel hidden" data-tab-panel>
+      <section class="party-section">
+        <div class="party-head">
+          <h2>दलगत नतिजा</h2>
+          <p><span id="party-total-seats">165</span> सीट मध्ये प्रगति</p>
+        </div>
+        <div id="party-empty" class="empty hidden">
+          दलगत विवरण हेर्नका लागि पहिले क्षेत्रगत नतिजा चाहिन्छ।
+        </div>
+        <div id="party-list" class="party-board"></div>
+      </section>
     </section>
   </main>
 

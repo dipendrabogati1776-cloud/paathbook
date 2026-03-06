@@ -104,6 +104,42 @@ body {
   font-size: 1.15rem;
 }
 
+.result-tabs {
+  margin-top: 14px;
+  display: inline-flex;
+  gap: 8px;
+  background: rgba(86, 47, 197, 0.16);
+  border: 1px solid rgba(113, 76, 221, 0.28);
+  border-radius: 12px;
+  padding: 6px;
+}
+
+.tab-btn {
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: #4a347a;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  color: #fff;
+  background: linear-gradient(135deg, #5a2fd5 0%, var(--primary) 84%);
+  box-shadow: 0 6px 14px rgba(71, 36, 163, 0.28);
+}
+
+.tab-panel {
+  margin-top: 14px;
+}
+
+.tab-panel .section,
+.tab-panel .party-section {
+  margin-top: 0;
+}
+
 .party-section {
   margin-top: 18px;
   background:
