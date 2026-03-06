@@ -32,6 +32,7 @@ body {
 }
 
 .hero {
+  position: relative;
   background: linear-gradient(135deg, #5a2fd5 0%, var(--primary) 78%);
   color: #fff;
   border-radius: 16px;
@@ -46,11 +47,7 @@ body {
 }
 
 .hero-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 12px;
-  flex-wrap: wrap;
+  display: block;
 }
 
 .meta {
@@ -114,6 +111,9 @@ body {
 
 .result-tabs {
   margin-top: 0;
+  position: absolute;
+  top: 22px;
+  right: 20px;
   display: inline-flex;
   gap: 8px;
   background: rgba(255, 255, 255, 0.14);
@@ -123,20 +123,34 @@ body {
 }
 
 .tab-btn {
-  border: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 9px;
-  background: transparent;
-  color: #e8dcff;
+  background: rgba(255, 255, 255, 0.08);
+  color: #f6f1ff;
   padding: 8px 12px;
   font-size: 0.9rem;
   font-weight: 700;
   cursor: pointer;
 }
 
+.tab-btn:not(.active) {
+  opacity: 0.88;
+}
+
+.tab-btn:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 1px;
+}
+
 .tab-btn.active {
   color: #40208e;
-  background: linear-gradient(145deg, #f4eeff 0%, #d9cbff 100%);
-  box-shadow: 0 6px 14px rgba(27, 9, 76, 0.24);
+  background: linear-gradient(145deg, #ffffff 0%, #dfd2ff 100%);
+  border-color: #ffffff;
+  box-shadow:
+    0 6px 14px rgba(27, 9, 76, 0.24),
+    inset 0 -2px 0 rgba(79, 45, 168, 0.3);
 }
 
 .tab-panel {
@@ -404,13 +418,11 @@ tr.leading td {
     font-size: 1.4rem;
   }
 
-  .hero-top {
-    align-items: stretch;
-  }
-
   .result-tabs {
+    position: static;
     width: 100%;
     justify-content: stretch;
+    margin-top: 12px;
   }
 
   .tab-btn {
