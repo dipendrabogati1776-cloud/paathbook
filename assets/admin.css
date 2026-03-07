@@ -322,6 +322,39 @@ body.no-scroll {
   font-size: 1rem;
 }
 
+.analytics-box {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  background: #fbfdff;
+}
+
+.analytics-grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.analytics-card {
+  border: 1px solid #dfe9fb;
+  border-radius: 10px;
+  padding: 10px;
+  background: #ffffff;
+}
+
+.analytics-label {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.analytics-value {
+  margin-top: 6px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #214b8b;
+}
+
 .party-form {
   display: grid;
   gap: 10px;
@@ -412,6 +445,10 @@ button.danger-ghost {
 
 @media (max-width: 800px) {
   .row {
+    grid-template-columns: 1fr;
+  }
+
+  .analytics-grid {
     grid-template-columns: 1fr;
   }
 }

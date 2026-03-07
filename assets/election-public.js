@@ -1,13 +1,17 @@
 import {
   collection,
   db,
+  doc,
   getDoc,
   getDocs,
+  increment,
   isConfigValid,
   limit,
   onSnapshot,
   query,
-  resultsDocRef
+  resultsDocRef,
+  serverTimestamp,
+  setDoc
 } from "/assets/firebase-init.js";
 
 const state = {
@@ -19,6 +23,12 @@ const state = {
 const DEFAULT_TOTAL_SEATS = 165;
 
 const DEMO_STORAGE_KEY = "paathbook_election_demo_data_v1";
+const ENGAGEMENT_METRICS_LOCAL_KEY = "paathbook_election_engagement_metrics_v1";
+const ENGAGEMENT_METRICS_DOC_PATH = ["election_metrics", "public_engagement"];
+const METRIC_KEYS = {
+  pageViews: "electionPageViews",
+  installTaps: "installPaathbookTaps"
+};
 const DEMO_DATA = {
   electionName: "सामान्य निर्वाचन २०८३ (डेमो)",
   isFinal: false,
@@ -68,8 +78,58 @@ const e = {
   list: document.getElementById("seat-list"),
   empty: document.getElementById("empty-state"),
   seatSearch: document.getElementById("seat-search"),
-  searchEmpty: document.getElementById("search-empty")
+  searchEmpty: document.getElementById("search-empty"),
+  installBtn: document.getElementById("install-paathbook-btn")
 };
+
+function getMetricsDocRef() {
+  if (!db) return null;
+  return doc(db, ENGAGEMENT_METRICS_DOC_PATH[0], ENGAGEMENT_METRICS_DOC_PATH[1]);
+}
+
+function loadMetricsFromLocal() {
+  try {
+    const raw = localStorage.getItem(ENGAGEMENT_METRICS_LOCAL_KEY);
+    if (!raw) return {};
+    const parsed = JSON.parse(raw);
+    return parsed && typeof parsed === "object" ? parsed : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveMetricsToLocal(metrics) {
+  localStorage.setItem(ENGAGEMENT_METRICS_LOCAL_KEY, JSON.stringify(metrics));
+}
+
+async function incrementMetric(metricKey) {
+  if (!metricKey) return;
+
+  if (!isConfigValid) {
+    const local = loadMetricsFromLocal();
+    const current = Number(local[metricKey]) || 0;
+    local[metricKey] = current + 1;
+    local.lastUpdated = new Date().toISOString();
+    saveMetricsToLocal(local);
+    return;
+  }
+
+  const ref = getMetricsDocRef();
+  if (!ref) return;
+
+  try {
+    await setDoc(
+      ref,
+      {
+        [metricKey]: increment(1),
+        lastUpdated: serverTimestamp()
+      },
+      { merge: true }
+    );
+  } catch (error) {
+    console.warn("Failed to update engagement metric:", metricKey, error);
+  }
+}
 
 function fmtNumber(value) {
   return new Intl.NumberFormat("ne-NP").format(value || 0);
@@ -337,6 +397,14 @@ function renderDoc(data) {
 }
 
 async function boot() {
+  incrementMetric(METRIC_KEYS.pageViews);
+
+  if (e.installBtn) {
+    e.installBtn.addEventListener("click", () => {
+      incrementMetric(METRIC_KEYS.installTaps);
+    });
+  }
+
   if (e.seatSearch) {
     e.seatSearch.addEventListener("input", () => {
       state.searchQuery = e.seatSearch.value || "";

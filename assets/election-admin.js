@@ -1,6 +1,7 @@
 import {
   auth,
   collection,
+  doc,
   getDoc,
   getDocs,
   isConfigValid,
@@ -51,6 +52,12 @@ const DEFAULT_SEATS = [
 ];
 
 const DEMO_STORAGE_KEY = "paathbook_election_demo_data_v1";
+const ENGAGEMENT_METRICS_LOCAL_KEY = "paathbook_election_engagement_metrics_v1";
+const ENGAGEMENT_METRICS_DOC_PATH = ["election_metrics", "public_engagement"];
+const METRIC_KEYS = {
+  pageViews: "electionPageViews",
+  installTaps: "installPaathbookTaps"
+};
 const PARTY_OPTIONS = [
   "Rastriya Swatantra Party",
   "Nepali Congress",
@@ -88,6 +95,8 @@ const e = {
   addSeatBtn: document.getElementById("add-seat-btn"),
   addPartyBtn: document.getElementById("add-party-btn"),
   togglePartyCardsBtn: document.getElementById("toggle-party-cards-btn"),
+  metricPageViews: document.getElementById("metric-page-views"),
+  metricInstallTaps: document.getElementById("metric-install-taps"),
   formSummary: document.getElementById("form-summary"),
   saveBtn: document.getElementById("save-btn"),
   saveTopBtn: document.getElementById("save-top-btn")
@@ -117,6 +126,48 @@ function setSavingState(isSaving) {
     btn.classList.toggle("is-loading", isSaving);
     btn.textContent = isSaving ? "सेभ हुँदैछ..." : "सेभ गर्नुहोस्";
   }
+}
+
+function fmtMetric(value) {
+  return new Intl.NumberFormat("en-US").format(Number(value) || 0);
+}
+
+function renderMetrics(data = {}) {
+  if (e.metricPageViews) {
+    e.metricPageViews.textContent = fmtMetric(data[METRIC_KEYS.pageViews]);
+  }
+  if (e.metricInstallTaps) {
+    e.metricInstallTaps.textContent = fmtMetric(data[METRIC_KEYS.installTaps]);
+  }
+}
+
+function loadMetricsFromLocal() {
+  try {
+    const raw = localStorage.getItem(ENGAGEMENT_METRICS_LOCAL_KEY);
+    if (!raw) return {};
+    const parsed = JSON.parse(raw);
+    return parsed && typeof parsed === "object" ? parsed : {};
+  } catch {
+    return {};
+  }
+}
+
+function getMetricsDocRef() {
+  if (!db) return null;
+  return doc(db, ENGAGEMENT_METRICS_DOC_PATH[0], ENGAGEMENT_METRICS_DOC_PATH[1]);
+}
+
+async function loadMetrics() {
+  if (!isConfigValid) {
+    renderMetrics(loadMetricsFromLocal());
+    return;
+  }
+
+  const ref = getMetricsDocRef();
+  if (!ref) return;
+
+  const snap = await getDoc(ref);
+  renderMetrics(snap.exists() ? snap.data() : {});
 }
 
 function initJsonEditor() {
@@ -976,6 +1027,7 @@ function attachHandlers() {
 function boot() {
   initJsonEditor();
   setBlankForm();
+  renderMetrics({});
   attachHandlers();
   setEditorMode("form");
 
@@ -985,6 +1037,7 @@ function boot() {
       "Firebase कन्फिग छैन। लोकल डेमो मोड चलिरहेको छ (लगइन/क्लाउड सेभ छैन)।";
     e.logoutBtn.classList.add("hidden");
     loadFromLocalDemo();
+    loadMetrics();
     return;
   }
 
@@ -992,7 +1045,7 @@ function boot() {
     if (user) {
       e.logoutBtn.classList.remove("hidden");
       try {
-        await loadCurrent();
+        await Promise.all([loadCurrent(), loadMetrics()]);
       } catch (error) {
         setStatus(e.saveStatus, error.message, "error");
       }
