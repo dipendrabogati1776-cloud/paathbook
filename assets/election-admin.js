@@ -235,6 +235,7 @@ function snapshotDraftDataFromState() {
       kshetraNo: seat.kshetraNo,
       name: seat.name,
       khasekoMat: seat.khasekoMat,
+      countComplete: !!seat.countComplete,
       candidates: (seat.candidates || []).map((candidate) => ({
         id: candidate.id,
         name: candidate.name,
@@ -335,6 +336,7 @@ function createSeat(seat = {}) {
     kshetraNo: seat.kshetraNo ?? seat.number ?? "",
     name: seat.name || "",
     khasekoMat: seat.khasekoMat ?? "",
+    countComplete: !!seat.countComplete,
     candidates
   };
 }
@@ -488,6 +490,12 @@ function renderSeatsForm() {
           <input type="text" data-seat-index="${seatIndex}" data-field="name" value="${escAttr(seat.name)}" placeholder="जस्तै Kathmandu - 1" />
         </div>
       </div>
+      <div class="small-actions">
+        <label>
+          <input type="checkbox" data-seat-index="${seatIndex}" data-field="countComplete" ${seat.countComplete ? "checked" : ""} />
+          गणना सम्पन्न (public page मा "हाल अग्रता" बाट "जित" देखाउने)
+        </label>
+      </div>
 
       <div class="candidate-list">
         ${candidateRows}
@@ -629,6 +637,7 @@ function normalizeSeatsForStorage(seats) {
       kshetraNo: kshetraNoRaw,
       name: seatName,
       khasekoMat: seatKhasekoMat,
+      countComplete: !!seat.countComplete,
       candidates: normalizedCandidates.map((candidate) => ({
         ...candidate,
         khasekoMat: candidate.khasekoMat ?? seatKhasekoMat
@@ -825,7 +834,7 @@ function handleFormInput(target) {
     if (!candidate || !field) return;
     candidate[field] = target.value;
   } else if (field) {
-    seat[field] = target.value;
+    seat[field] = field === "countComplete" ? !!target.checked : target.value;
   }
 
   renderSeatSwitcher();

@@ -172,8 +172,9 @@ function renderSeatCard(seat, isFinal) {
 
   const name = seat.name || "नाम नभएको क्षेत्र";
   const kshetraNo = seat.kshetraNo || seat.number || "-";
-  const winnerBadge = isFinal ? "badge-final" : "badge-leading";
-  const winnerText = isFinal ? "अन्तिम विजेता" : "हाल अग्रता";
+  const isSeatComplete = !!seat.countComplete;
+  const winnerBadge = (isFinal || isSeatComplete) ? "badge-final" : "badge-leading";
+  const winnerText = isFinal ? "अन्तिम विजेता" : (isSeatComplete ? "जित" : "हाल अग्रता");
 
   const tableRows = candidates
     .map((candidate, index) => {
@@ -247,6 +248,7 @@ function buildPartyStats(seats = [], isFinal = false) {
       seat.winnerParty ||
       seat.winningParty ||
       (candidates.find((c) => c.isWinner)?.party || null) ||
+      (seat.countComplete && leader && leader.party ? leader.party : null) ||
       (isFinal && leader && leader.party ? leader.party : null);
 
     if (declaredWinner) {

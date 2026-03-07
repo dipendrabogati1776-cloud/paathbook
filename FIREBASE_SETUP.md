@@ -18,7 +18,8 @@
    - Document: `current`
 
 ## 4) Security Rules (recommended)
-Use these Firestore rules to allow public reads and only selected admin emails to write:
+Use these Firestore rules to allow public reads, admin writes for election results,
+and public metric writes for election engagement counters:
 
 ```txt
 rules_version = '2';
@@ -31,6 +32,11 @@ service cloud.firestore {
           "admin1@example.com",
           "admin2@example.com"
         ];
+    }
+
+    match /election_metrics/public_engagement {
+      allow read: if true;
+      allow write: if true;
     }
   }
 }
