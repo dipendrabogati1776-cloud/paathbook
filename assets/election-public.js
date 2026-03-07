@@ -119,7 +119,6 @@ function renderSeatCard(seat, isFinal) {
         <td>${candidate.name || "-"}</td>
         <td>${candidate.party || "-"}</td>
         <td>${fmtNumber(candidate.votes || 0)}</td>
-        <td>${fmtNumber(candidate.khasekoMat || 0)}</td>
       </tr>`;
     })
     .join("");
@@ -135,7 +134,6 @@ function renderSeatCard(seat, isFinal) {
           <th>उम्मेदवार</th>
           <th>दल</th>
           <th>मत</th>
-          <th>जम्मा खसेको मत</th>
         </tr>
       </thead>
       <tbody>${tableRows}</tbody>
