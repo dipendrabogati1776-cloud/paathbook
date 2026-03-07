@@ -248,13 +248,6 @@ function renderSeatsForm() {
         </div>
       </div>
 
-      <div class="row">
-        <div>
-          <label>क्षेत्रको जम्मा खसेको मत (वैकल्पिक)</label>
-          <input type="number" min="0" data-seat-index="${seatIndex}" data-field="khasekoMat" value="${escAttr(seat.khasekoMat)}" placeholder="खाली छोड्दा स्वतः" />
-        </div>
-      </div>
-
       <div class="candidate-list">
         ${candidateRows}
       </div>
