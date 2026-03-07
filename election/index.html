@@ -82,12 +82,23 @@
     <section id="seat-panel" class="tab-panel active" data-tab-panel>
       <section class="section">
         <h2>क्षेत्रगत विवरण</h2>
+        <div class="search-wrap">
+          <input
+            id="seat-search"
+            type="search"
+            placeholder="क्षेत्र वा उम्मेदवार खोज्नुहोस्..."
+            autocomplete="off"
+          />
+        </div>
         <div id="config-warning" class="empty hidden">
           Firebase कन्फिग छैन। <code>/assets/firebase-init.js</code> खोलेर
           <code>REPLACE_ME</code> मानहरू बदल्नुहोस्।
         </div>
         <div id="empty-state" class="empty">
           अहिले नतिजा डेटा भेटिएन। पहिलो अपडेट राख्न admin पेज प्रयोग गर्नुहोस्।
+        </div>
+        <div id="search-empty" class="empty hidden">
+          खोजिएको शब्दअनुसार कुनै क्षेत्र वा उम्मेदवार भेटिएन।
         </div>
         <div id="seat-list" class="list"></div>
       </section>

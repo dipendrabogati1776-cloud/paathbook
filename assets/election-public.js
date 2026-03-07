@@ -11,7 +11,9 @@ import {
 } from "/assets/firebase-init.js";
 
 const state = {
-  unsub: null
+  unsub: null,
+  data: null,
+  searchQuery: ""
 };
 
 const DEFAULT_TOTAL_SEATS = 165;
@@ -64,7 +66,9 @@ const e = {
   partyList: document.getElementById("party-list"),
   partyEmpty: document.getElementById("party-empty"),
   list: document.getElementById("seat-list"),
-  empty: document.getElementById("empty-state")
+  empty: document.getElementById("empty-state"),
+  seatSearch: document.getElementById("seat-search"),
+  searchEmpty: document.getElementById("search-empty")
 };
 
 function fmtNumber(value) {
@@ -274,7 +278,47 @@ function getLocalDemoData() {
   }
 }
 
+function filterSeats(seats = [], queryText = "") {
+  const q = `${queryText || ""}`.trim().toLowerCase();
+  if (!q) return seats;
+
+  return seats.filter((seat) => {
+    const seatName = `${seat.name || ""}`.toLowerCase();
+    const seatNo = `${seat.kshetraNo || seat.number || ""}`.toLowerCase();
+    const matchesSeat = seatName.includes(q) || seatNo.includes(q);
+    if (matchesSeat) return true;
+
+    return (seat.candidates || []).some((candidate) =>
+      `${candidate.name || ""}`.toLowerCase().includes(q)
+    );
+  });
+}
+
+function renderSeats(seats = [], isFinal = false) {
+  const filteredSeats = filterSeats(seats, state.searchQuery);
+  const hasSearch = !!state.searchQuery.trim();
+
+  e.list.innerHTML = "";
+  if (!seats.length) {
+    e.empty.classList.remove("hidden");
+    if (e.searchEmpty) e.searchEmpty.classList.add("hidden");
+    return;
+  }
+
+  e.empty.classList.add("hidden");
+  if (!filteredSeats.length && hasSearch) {
+    if (e.searchEmpty) e.searchEmpty.classList.remove("hidden");
+    return;
+  }
+
+  if (e.searchEmpty) e.searchEmpty.classList.add("hidden");
+  for (const seat of filteredSeats) {
+    e.list.appendChild(renderSeatCard(seat, isFinal));
+  }
+}
+
 function renderDoc(data) {
+  state.data = data;
   const seats = Array.isArray(data.seats) ? data.seats : [];
   const totalVotes = seats.reduce((acc, seat) => {
     const perSeat = (seat.candidates || []).reduce((sum, c) => sum + (c.votes || 0), 0);
@@ -289,20 +333,18 @@ function renderDoc(data) {
     e.partyTotalSeats.textContent = fmtNumber(totalSeats);
   }
   renderPartyStats(seats, !!data.isFinal, totalVotes, data.partyResults || [], totalSeats);
-
-  e.list.innerHTML = "";
-  if (!seats.length) {
-    e.empty.classList.remove("hidden");
-    return;
-  }
-
-  e.empty.classList.add("hidden");
-  for (const seat of seats) {
-    e.list.appendChild(renderSeatCard(seat, !!data.isFinal));
-  }
+  renderSeats(seats, !!data.isFinal);
 }
 
 async function boot() {
+  if (e.seatSearch) {
+    e.seatSearch.addEventListener("input", () => {
+      state.searchQuery = e.seatSearch.value || "";
+      const seats = Array.isArray(state.data?.seats) ? state.data.seats : [];
+      renderSeats(seats, !!state.data?.isFinal);
+    });
+  }
+
   if (!isConfigValid) {
     e.configWarning.classList.remove("hidden");
     e.configWarning.innerHTML =
@@ -329,6 +371,7 @@ async function boot() {
   state.unsub = onSnapshot(activeRef, (snap) => {
     if (!snap.exists()) {
       e.empty.classList.remove("hidden");
+      if (e.searchEmpty) e.searchEmpty.classList.add("hidden");
       e.list.innerHTML = "";
       return;
     }

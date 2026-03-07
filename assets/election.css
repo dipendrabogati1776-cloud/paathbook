@@ -109,6 +109,21 @@ body {
   font-size: 1.15rem;
 }
 
+.search-wrap {
+  margin: 0 0 10px;
+}
+
+.search-wrap input {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  padding: 10px 12px;
+  font: inherit;
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: #fbfdff;
+}
+
 .result-tabs {
   margin-top: 0;
   position: absolute;
