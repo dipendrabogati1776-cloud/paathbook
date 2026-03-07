@@ -240,16 +240,16 @@ function renderSeatsForm() {
 
   const candidateRows = seat.candidates
     .map(
-      (candidate, cIndex) => `
+      (candidate) => `
           <div class="candidate-row">
             <div class="row">
               <div>
                 <label>उम्मेदवार नाम</label>
-                <input type="text" data-seat-index="${seatIndex}" data-cand-index="${cIndex}" data-field="name" value="${escAttr(candidate.name)}" placeholder="नाम" />
+                <input type="text" data-seat-index="${seatIndex}" data-cand-id="${escAttr(candidate.id)}" data-field="name" value="${escAttr(candidate.name)}" placeholder="नाम" />
               </div>
               <div>
                 <label>दल</label>
-                <select data-seat-index="${seatIndex}" data-cand-index="${cIndex}" data-field="party">
+                <select data-seat-index="${seatIndex}" data-cand-id="${escAttr(candidate.id)}" data-field="party">
                   ${renderPartySelectOptions(candidate.party)}
                 </select>
               </div>
@@ -257,11 +257,11 @@ function renderSeatsForm() {
             <div class="row">
               <div class="full">
                 <label>मत</label>
-                <input type="number" min="0" data-seat-index="${seatIndex}" data-cand-index="${cIndex}" data-field="votes" value="${escAttr(candidate.votes)}" placeholder="०" />
+                <input type="number" min="0" data-seat-index="${seatIndex}" data-cand-id="${escAttr(candidate.id)}" data-field="votes" value="${escAttr(candidate.votes)}" placeholder="०" />
               </div>
             </div>
             <div class="small-actions">
-              <button type="button" class="tiny danger-ghost" data-action="remove-candidate" data-seat-index="${seatIndex}" data-cand-index="${cIndex}">उम्मेदवार हटाउनुहोस्</button>
+              <button type="button" class="tiny danger-ghost" data-action="remove-candidate" data-seat-index="${seatIndex}" data-cand-id="${escAttr(candidate.id)}">उम्मेदवार हटाउनुहोस्</button>
             </div>
           </div>
         `
@@ -605,12 +605,12 @@ function handleFormInput(target) {
 
   const seat = state.seats[seatIndex];
   const field = target.dataset.field;
-  const candIndexRaw = target.dataset.candIndex;
+  const candId = `${target.dataset.candId || ""}`.trim();
 
-  if (candIndexRaw !== undefined) {
-    const candIndex = Number(candIndexRaw);
-    if (!Number.isInteger(candIndex) || !seat.candidates[candIndex]) return;
-    seat.candidates[candIndex][field] = target.value;
+  if (candId) {
+    const candidate = seat.candidates.find((item) => item.id === candId);
+    if (!candidate || !field) return;
+    candidate[field] = target.value;
   } else if (field) {
     seat[field] = target.value;
   }
@@ -648,9 +648,10 @@ function handleFormClick(target) {
   }
 
   if (action === "remove-candidate") {
-    const candIndex = Number(target.dataset.candIndex);
+    const candId = `${target.dataset.candId || ""}`.trim();
     if (!Number.isInteger(seatIndex) || !state.seats[seatIndex]) return;
-    if (!Number.isInteger(candIndex) || !state.seats[seatIndex].candidates[candIndex]) return;
+    const candIndex = state.seats[seatIndex].candidates.findIndex((item) => item.id === candId);
+    if (!candId || candIndex < 0) return;
 
     state.seats[seatIndex].candidates.splice(candIndex, 1);
     if (!state.seats[seatIndex].candidates.length) {
