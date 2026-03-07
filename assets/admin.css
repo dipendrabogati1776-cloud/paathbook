@@ -238,11 +238,42 @@ button.warn {
   gap: 10px;
 }
 
+.party-tools {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
 .party-row {
   border: 1px solid #e5ecfa;
   border-radius: 10px;
   padding: 10px;
   background: #fff;
+}
+
+.party-row-head {
+  display: flex;
+  align-items: center;
+}
+
+.party-toggle {
+  width: 100%;
+  text-align: left;
+  border: 1px solid #d8e4fa;
+  background: #f6f9ff;
+  color: #214b8b;
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.party-row-body {
+  margin-top: 10px;
+}
+
+.party-row.collapsed .party-row-body {
+  display: none;
 }
 
 .seat-head {

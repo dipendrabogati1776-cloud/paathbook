@@ -63,14 +63,17 @@ const e = {
   partyForm: document.getElementById("party-form"),
   addSeatBtn: document.getElementById("add-seat-btn"),
   addPartyBtn: document.getElementById("add-party-btn"),
+  togglePartyCardsBtn: document.getElementById("toggle-party-cards-btn"),
   formSummary: document.getElementById("form-summary"),
-  saveBtn: document.getElementById("save-btn")
+  saveBtn: document.getElementById("save-btn"),
+  saveTopBtn: document.getElementById("save-top-btn")
 };
 
 const state = {
   seats: [],
   activeSeatId: null,
-  partyResults: []
+  partyResults: [],
+  collapsedPartyIds: new Set()
 };
 
 function setStatus(node, message, level = "ok") {
@@ -273,13 +276,33 @@ function renderPartyForm() {
   if (!state.partyResults.length) {
     e.partyForm.innerHTML =
       '<div class="help">दलगत manual data खाली छ। चाहिने भए माथिबाट दल थप्नुहोस्।</div>';
+    if (e.togglePartyCardsBtn) {
+      e.togglePartyCardsBtn.textContent = "सबै collapse";
+    }
     return;
   }
 
+  let hasExpanded = false;
   state.partyResults.forEach((row, index) => {
+    const partyLabel = `${row.party || ""}`.trim() || `दल ${index + 1}`;
+    const isCollapsed = state.collapsedPartyIds.has(row.id);
+    if (!isCollapsed) hasExpanded = true;
     const card = document.createElement("div");
-    card.className = "party-row";
+    card.className = `party-row${isCollapsed ? " collapsed" : ""}`;
+    card.dataset.partyId = row.id;
     card.innerHTML = `
+      <div class="party-row-head">
+        <button
+          type="button"
+          class="party-toggle"
+          data-action="toggle-party"
+          data-party-index="${index}"
+          aria-expanded="${isCollapsed ? "false" : "true"}"
+        >
+          ${partyLabel}
+        </button>
+      </div>
+      <div class="party-row-body">
       <div class="row">
         <div>
           <label>दलको नाम</label>
@@ -303,9 +326,14 @@ function renderPartyForm() {
       <div class="small-actions">
         <button type="button" class="tiny danger-ghost" data-action="remove-party" data-party-index="${index}">दल हटाउनुहोस्</button>
       </div>
+      </div>
     `;
     e.partyForm.appendChild(card);
   });
+
+  if (e.togglePartyCardsBtn) {
+    e.togglePartyCardsBtn.textContent = hasExpanded ? "सबै collapse" : "सबै expand";
+  }
 }
 
 function parseNumericInput(value) {
@@ -435,6 +463,7 @@ function applyDataToForm(data) {
   e.isFinal.checked = !!data.isFinal;
   state.seats = (data.seats || []).map((seat) => createSeat(seat));
   state.partyResults = (data.partyResults || []).map((row) => createPartyRow(row));
+  state.collapsedPartyIds.clear();
   if (!state.seats.length) {
     state.seats = [createSeat()];
   }
@@ -603,8 +632,27 @@ function handleFormClick(target) {
   if (action === "remove-party") {
     const partyIndex = Number(target.dataset.partyIndex);
     if (!Number.isInteger(partyIndex) || !state.partyResults[partyIndex]) return;
+    const removingParty = state.partyResults[partyIndex];
+    if (removingParty?.id) {
+      state.collapsedPartyIds.delete(removingParty.id);
+    }
     state.partyResults.splice(partyIndex, 1);
     renderPartyForm();
+    return;
+  }
+
+  if (action === "toggle-party") {
+    const partyIndex = Number(target.dataset.partyIndex);
+    if (!Number.isInteger(partyIndex) || !state.partyResults[partyIndex]) return;
+    const partyId = state.partyResults[partyIndex].id;
+    if (!partyId) return;
+    if (state.collapsedPartyIds.has(partyId)) {
+      state.collapsedPartyIds.delete(partyId);
+    } else {
+      state.collapsedPartyIds.add(partyId);
+    }
+    renderPartyForm();
+    return;
   }
 }
 
@@ -632,9 +680,25 @@ function attachHandlers() {
   });
 
   e.addPartyBtn.addEventListener("click", () => {
-    state.partyResults.push(createPartyRow());
+    const row = createPartyRow();
+    state.partyResults.push(row);
+    state.collapsedPartyIds.delete(row.id);
     renderPartyForm();
   });
+
+  if (e.togglePartyCardsBtn) {
+    e.togglePartyCardsBtn.addEventListener("click", () => {
+      const allCollapsed = state.partyResults.length > 0 &&
+        state.partyResults.every((row) => state.collapsedPartyIds.has(row.id));
+
+      if (allCollapsed) {
+        state.collapsedPartyIds.clear();
+      } else {
+        state.collapsedPartyIds = new Set(state.partyResults.map((row) => row.id));
+      }
+      renderPartyForm();
+    });
+  }
 
   e.seatSwitcher.addEventListener("click", (event) => {
     const target = event.target.closest("button[data-action]");
@@ -657,13 +721,18 @@ function attachHandlers() {
     if (target) handleFormClick(target);
   });
 
-  e.saveBtn.addEventListener("click", async () => {
+  const onSave = async () => {
     try {
       await saveCurrent();
     } catch (error) {
       setStatus(e.saveStatus, error.message, "error");
     }
-  });
+  };
+
+  e.saveBtn.addEventListener("click", onSave);
+  if (e.saveTopBtn) {
+    e.saveTopBtn.addEventListener("click", onSave);
+  }
 }
 
 function boot() {
