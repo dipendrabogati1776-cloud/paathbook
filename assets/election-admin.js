@@ -51,6 +51,21 @@ const DEFAULT_SEATS = [
 ];
 
 const DEMO_STORAGE_KEY = "paathbook_election_demo_data_v1";
+const PARTY_OPTIONS = [
+  "Rastriya Swatantra Party",
+  "Nepali Congress",
+  "Nepali Communist Party",
+  "CPN-UML",
+  "Shram Sanskriti Party",
+  "Rastriya Prajatantra Party",
+  "Janata Samjbadi Party-Nepal",
+  "Nepal Communist Party (Maoist)",
+  "Ujaylo Nepal Party",
+  "Rastriya Mukti Party Nepal (Ekal Chunab Chinha)",
+  "Janamat Party",
+  "Nagarik Unmukti Party",
+  "Independent"
+];
 
 const e = {
   configWarning: document.getElementById("config-warning"),
@@ -73,12 +88,23 @@ const state = {
   seats: [],
   activeSeatId: null,
   partyResults: [],
-  collapsedPartyIds: new Set()
+  collapsedPartyIds: new Set(),
+  isSaving: false
 };
 
 function setStatus(node, message, level = "ok") {
   node.textContent = message;
   node.className = `status ${level}`;
+}
+
+function setSavingState(isSaving) {
+  state.isSaving = isSaving;
+  const buttons = [e.saveBtn, e.saveTopBtn].filter(Boolean);
+  for (const btn of buttons) {
+    btn.disabled = isSaving;
+    btn.classList.toggle("is-loading", isSaving);
+    btn.textContent = isSaving ? "सेभ हुँदैछ..." : "सेभ गर्नुहोस्";
+  }
 }
 
 function uid() {
@@ -163,6 +189,19 @@ function escAttr(value) {
     .replaceAll(">", "&gt;");
 }
 
+function renderPartySelectOptions(selectedParty) {
+  const selected = `${selectedParty || ""}`.trim();
+  const hasPreset = PARTY_OPTIONS.includes(selected);
+  const customOption = selected && !hasPreset
+    ? `<option value="${escAttr(selected)}" selected>${escAttr(selected)} (existing)</option>`
+    : "";
+  const placeholder = `<option value="" ${selected ? "" : "selected"}>दलको नाम छान्नुहोस्</option>`;
+  const presetOptions = PARTY_OPTIONS.map(
+    (party) => `<option value="${escAttr(party)}" ${party === selected ? "selected" : ""}>${escAttr(party)}</option>`
+  ).join("");
+  return `${customOption}${placeholder}${presetOptions}`;
+}
+
 function renderSeatSwitcher() {
   e.seatSwitcher.innerHTML = "";
   if (!state.seats.length) return;
@@ -210,17 +249,15 @@ function renderSeatsForm() {
               </div>
               <div>
                 <label>दल</label>
-                <input type="text" data-seat-index="${seatIndex}" data-cand-index="${cIndex}" data-field="party" value="${escAttr(candidate.party)}" placeholder="दलको नाम" />
+                <select data-seat-index="${seatIndex}" data-cand-index="${cIndex}" data-field="party">
+                  ${renderPartySelectOptions(candidate.party)}
+                </select>
               </div>
             </div>
             <div class="row">
-              <div>
+              <div class="full">
                 <label>मत</label>
                 <input type="number" min="0" data-seat-index="${seatIndex}" data-cand-index="${cIndex}" data-field="votes" value="${escAttr(candidate.votes)}" placeholder="०" />
-              </div>
-              <div>
-                <label>जम्मा खसेको मत (वैकल्पिक)</label>
-                <input type="number" min="0" data-seat-index="${seatIndex}" data-cand-index="${cIndex}" data-field="khasekoMat" value="${escAttr(candidate.khasekoMat)}" placeholder="खाली छोड्दा स्वतः" />
               </div>
             </div>
             <div class="small-actions">
@@ -715,10 +752,14 @@ function attachHandlers() {
   });
 
   const onSave = async () => {
+    if (state.isSaving) return;
+    setSavingState(true);
     try {
       await saveCurrent();
     } catch (error) {
       setStatus(e.saveStatus, error.message, "error");
+    } finally {
+      setSavingState(false);
     }
   };
 
