@@ -146,6 +146,16 @@ function fmtTime(timestamp) {
   });
 }
 
+function isSeatCountComplete(seat) {
+  const raw = seat?.countComplete;
+  if (raw === true || raw === 1) return true;
+  if (typeof raw === "string") {
+    const normalized = raw.trim().toLowerCase();
+    return normalized === "true" || normalized === "1" || normalized === "yes";
+  }
+  return false;
+}
+
 function pickLeadingParty(seats = []) {
   const count = {};
   for (const seat of seats) {
@@ -172,7 +182,7 @@ function renderSeatCard(seat, isFinal) {
 
   const name = seat.name || "नाम नभएको क्षेत्र";
   const kshetraNo = seat.kshetraNo || seat.number || "-";
-  const isSeatComplete = !!seat.countComplete;
+  const isSeatComplete = isSeatCountComplete(seat);
   const winnerBadge = (isFinal || isSeatComplete) ? "badge-final" : "badge-leading";
   const winnerText = isFinal ? "अन्तिम विजेता" : (isSeatComplete ? "जित" : "हाल अग्रता");
 
@@ -248,7 +258,7 @@ function buildPartyStats(seats = [], isFinal = false) {
       seat.winnerParty ||
       seat.winningParty ||
       (candidates.find((c) => c.isWinner)?.party || null) ||
-      (seat.countComplete && leader && leader.party ? leader.party : null) ||
+      (isSeatCountComplete(seat) && leader && leader.party ? leader.party : null) ||
       (isFinal && leader && leader.party ? leader.party : null);
 
     if (declaredWinner) {
