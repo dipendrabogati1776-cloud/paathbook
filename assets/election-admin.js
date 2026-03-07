@@ -71,6 +71,13 @@ const e = {
   configWarning: document.getElementById("config-warning"),
   logoutBtn: document.getElementById("logout-btn"),
   saveStatus: document.getElementById("save-status"),
+  formEditor: document.getElementById("form-editor"),
+  jsonEditor: document.getElementById("json-editor"),
+  modeFormBtn: document.getElementById("mode-form-btn"),
+  modeJsonBtn: document.getElementById("mode-json-btn"),
+  jsonInput: document.getElementById("json-editor-input"),
+  syncJsonBtn: document.getElementById("sync-json-btn"),
+  applyJsonBtn: document.getElementById("apply-json-btn"),
   electionName: document.getElementById("election-name"),
   isFinal: document.getElementById("is-final"),
   seatSwitcher: document.getElementById("seat-switcher"),
@@ -89,7 +96,8 @@ const state = {
   activeSeatId: null,
   partyResults: [],
   collapsedPartyIds: new Set(),
-  isSaving: false
+  isSaving: false,
+  editorMode: "form"
 };
 
 function setStatus(node, message, level = "ok") {
@@ -104,6 +112,86 @@ function setSavingState(isSaving) {
     btn.disabled = isSaving;
     btn.classList.toggle("is-loading", isSaving);
     btn.textContent = isSaving ? "सेभ हुँदैछ..." : "सेभ गर्नुहोस्";
+  }
+}
+
+function snapshotDraftDataFromState() {
+  return {
+    electionName: e.electionName.value.trim() || "निर्वाचन नतिजा",
+    isFinal: !!e.isFinal.checked,
+    seats: state.seats.map((seat) => ({
+      id: seat.id,
+      kshetraNo: seat.kshetraNo,
+      name: seat.name,
+      khasekoMat: seat.khasekoMat,
+      candidates: (seat.candidates || []).map((candidate) => ({
+        id: candidate.id,
+        name: candidate.name,
+        party: candidate.party,
+        votes: candidate.votes,
+        khasekoMat: candidate.khasekoMat
+      }))
+    })),
+    partyResults: state.partyResults.map((row) => ({
+      id: row.id,
+      party: row.party,
+      win: row.win,
+      lead: row.lead,
+      votes: row.votes
+    }))
+  };
+}
+
+function updateJsonEditorFromState() {
+  if (!e.jsonInput) return;
+  const draft = snapshotDraftDataFromState();
+  e.jsonInput.value = JSON.stringify(draft, null, 2);
+}
+
+function parseJsonInputObject() {
+  if (!e.jsonInput) {
+    throw new Error("JSON editor भेटिएन।");
+  }
+  const raw = e.jsonInput.value.trim();
+  if (!raw) {
+    throw new Error("JSON खाली छ।");
+  }
+
+  let parsed;
+  try {
+    parsed = JSON.parse(raw);
+  } catch {
+    throw new Error("JSON format मिलेन।");
+  }
+
+  if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
+    throw new Error("JSON object चाहिन्छ।");
+  }
+  return parsed;
+}
+
+function setEditorMode(mode) {
+  const isJson = mode === "json";
+  if (state.editorMode === (isJson ? "json" : "form")) return;
+  state.editorMode = isJson ? "json" : "form";
+
+  if (e.modeFormBtn) {
+    e.modeFormBtn.classList.toggle("active", !isJson);
+    e.modeFormBtn.classList.toggle("ghost", isJson);
+  }
+  if (e.modeJsonBtn) {
+    e.modeJsonBtn.classList.toggle("active", isJson);
+    e.modeJsonBtn.classList.toggle("ghost", !isJson);
+  }
+  if (e.formEditor) {
+    e.formEditor.classList.toggle("hidden", isJson);
+  }
+  if (e.jsonEditor) {
+    e.jsonEditor.classList.toggle("hidden", !isJson);
+  }
+
+  if (isJson) {
+    updateJsonEditorFromState();
   }
 }
 
@@ -476,16 +564,24 @@ function normalizePartyResultsForStorage(rows, seats) {
   });
 }
 
-function collectPayload() {
-  const seats = normalizeSeatsForStorage(state.seats);
-  const partyResults = normalizePartyResultsForStorage(state.partyResults, seats);
+function normalizePayloadForSave(data) {
+  const seats = normalizeSeatsForStorage((data.seats || []).map((seat) => createSeat(seat)));
+  const partyResults = normalizePartyResultsForStorage(
+    (data.partyResults || []).map((row) => createPartyRow(row)),
+    seats
+  );
+
   return {
-    electionName: e.electionName.value.trim() || "निर्वाचन नतिजा",
-    isFinal: e.isFinal.checked,
+    electionName: `${data.electionName || ""}`.trim() || "निर्वाचन नतिजा",
+    isFinal: !!data.isFinal,
     seats,
     partyResults,
     lastUpdated: new Date().toISOString()
   };
+}
+
+function collectPayload() {
+  return normalizePayloadForSave(snapshotDraftDataFromState());
 }
 
 function applyDataToForm(data) {
@@ -500,6 +596,9 @@ function applyDataToForm(data) {
   state.activeSeatId = state.seats[0].id;
   renderSeatsForm();
   renderPartyForm();
+  if (state.editorMode === "json") {
+    updateJsonEditorFromState();
+  }
 }
 
 function setInitialForm() {
@@ -532,8 +631,7 @@ function loadFromLocalDemo() {
   setStatus(e.saveStatus, "लोकल डेमो डेटा लोड भयो।", "ok");
 }
 
-function saveToLocalDemo() {
-  const payload = collectPayload();
+function saveToLocalDemo(payload = collectPayload()) {
   localStorage.setItem(DEMO_STORAGE_KEY, JSON.stringify(payload));
   setStatus(e.saveStatus, "UI preview का लागि लोकलमा सेभ भयो।", "ok");
 }
@@ -565,13 +663,12 @@ async function loadCurrent() {
   setStatus(e.saveStatus, "Firestore मा डेटा छैन। कृपया नयाँ क्षेत्र थपेर सेभ गर्नुहोस्।", "error");
 }
 
-async function saveCurrent() {
+async function saveCurrent(payload = collectPayload()) {
   if (!isConfigValid) {
-    saveToLocalDemo();
+    saveToLocalDemo(payload);
     return;
   }
 
-  const payload = collectPayload();
   const ref = resultsDocRef();
   if (!ref) return;
 
@@ -752,11 +849,47 @@ function attachHandlers() {
     if (target) handleFormClick(target);
   });
 
+  if (e.modeFormBtn) {
+    e.modeFormBtn.addEventListener("click", () => {
+      setEditorMode("form");
+    });
+  }
+  if (e.modeJsonBtn) {
+    e.modeJsonBtn.addEventListener("click", () => {
+      setEditorMode("json");
+    });
+  }
+  if (e.syncJsonBtn) {
+    e.syncJsonBtn.addEventListener("click", () => {
+      updateJsonEditorFromState();
+      setStatus(e.saveStatus, "Form data JSON editor मा राखियो।", "info");
+    });
+  }
+  if (e.applyJsonBtn) {
+    e.applyJsonBtn.addEventListener("click", () => {
+      try {
+        const parsed = parseJsonInputObject();
+        applyDataToForm(parsed);
+        setStatus(e.saveStatus, "JSON बाट form data लोड भयो।", "ok");
+      } catch (error) {
+        setStatus(e.saveStatus, error.message, "error");
+      }
+    });
+  }
+
   const onSave = async () => {
     if (state.isSaving) return;
     setSavingState(true);
     try {
-      await saveCurrent();
+      let payload;
+      if (state.editorMode === "json") {
+        const parsed = parseJsonInputObject();
+        payload = normalizePayloadForSave(parsed);
+        applyDataToForm(parsed);
+      } else {
+        payload = collectPayload();
+      }
+      await saveCurrent(payload);
     } catch (error) {
       setStatus(e.saveStatus, error.message, "error");
     } finally {
@@ -773,6 +906,7 @@ function attachHandlers() {
 function boot() {
   setBlankForm();
   attachHandlers();
+  setEditorMode("form");
 
   if (!isConfigValid) {
     e.configWarning.classList.remove("hidden");

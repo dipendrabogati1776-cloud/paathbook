@@ -215,6 +215,30 @@ button.warn {
   flex-wrap: wrap;
 }
 
+.mode-tabs {
+  display: inline-flex;
+  gap: 8px;
+  padding: 5px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #f4f8ff;
+}
+
+.mode-btn {
+  padding: 7px 12px;
+  font-size: 0.86rem;
+}
+
+.mode-btn.active {
+  color: #fff;
+  background: var(--brand);
+  border-color: var(--brand);
+}
+
+.json-input {
+  min-height: 360px;
+}
+
 .mini-summary {
   color: var(--muted);
   font-size: 0.86rem;

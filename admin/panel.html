@@ -22,6 +22,32 @@
       </div>
 
       <section id="editor-section" class="space">
+        <div class="mode-tabs">
+          <button id="mode-form-btn" class="mode-btn active" type="button">Form Mode</button>
+          <button id="mode-json-btn" class="mode-btn ghost" type="button">JSON Mode</button>
+        </div>
+
+        <section id="json-editor" class="space hidden">
+          <div class="editor-tools">
+            <h2 class="subhead">Direct JSON Editor</h2>
+            <div class="party-tools">
+              <button id="sync-json-btn" class="ghost tiny" type="button">Form बाट JSON</button>
+              <button id="apply-json-btn" class="ghost tiny" type="button">JSON बाट Form</button>
+            </div>
+          </div>
+          <textarea
+            id="json-editor-input"
+            class="json-input"
+            spellcheck="false"
+            placeholder='{"electionName":"निर्वाचन नतिजा","isFinal":false,"seats":[],"partyResults":[]}'
+          ></textarea>
+          <div class="help">
+            JSON Mode मा <code>electionName</code>, <code>isFinal</code>, <code>seats</code>, <code>partyResults</code>
+            सिधै paste/edit गर्न सकिन्छ। Save गर्दा यही JSON validate भएर upload हुन्छ।
+          </div>
+        </section>
+
+        <div id="form-editor">
         <div class="row">
           <div>
             <label for="election-name">निर्वाचन शीर्षक</label>
@@ -68,6 +94,7 @@
           <br />
           <strong>दलगत नतिजा:</strong> यहाँ पार्टीगत manual data राखेपछि election page ले यही
           <code>partyResults</code> प्रयोग गर्छ। खाली छोडेमा क्षेत्रगत candidate data बाट auto-calc हुन्छ।
+        </div>
         </div>
       </section>
     </section>
