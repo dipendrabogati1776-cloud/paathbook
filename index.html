@@ -29,27 +29,40 @@
       position: sticky;
       top: 0;
       z-index: 10;
-      background: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid rgba(124, 77, 255, 0.18);
+      padding: 12px 10px 10px;
     }
 
     .top-nav-inner {
       max-width: 900px;
       margin: 0 auto;
-      padding: 10px 18px;
+      padding: 14px 18px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 12px;
+      border-radius: 16px;
+      border: 1px solid rgba(214, 198, 255, 0.52);
+      background: linear-gradient(145deg, #ffffff 0%, #f3ecff 100%);
+      box-shadow: 0 10px 24px rgba(71, 36, 163, 0.14);
     }
 
     .nav-brand {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 3px;
       color: var(--primary);
-      font-size: 30px;
+      font-size: 44px;
       font-weight: 800;
       line-height: 1.1;
       text-decoration: none;
+    }
+
+    .nav-subtitle {
+      color: var(--text-light);
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.2;
     }
 
     .top-nav-menu {
@@ -80,7 +93,7 @@
       }
 
       .nav-brand {
-        font-size: 24px;
+        font-size: 34px;
       }
     }
 
@@ -185,7 +198,10 @@
 <body>
   <nav class="top-nav" aria-label="Main">
     <div class="top-nav-inner">
-      <a class="nav-brand" href="/">PaathBook</a>
+      <a class="nav-brand" href="/">
+        <span>PaathBook</span>
+        <span class="nav-subtitle">Learn Smarter, Read Better</span>
+      </a>
       <div class="top-nav-menu">
         <a href="/election">Election Update</a>
         <a href="/admin">Admin</a>
