@@ -33,11 +33,13 @@
             <div class="party-tools">
               <button id="sync-json-btn" class="ghost tiny" type="button">Form बाट JSON</button>
               <button id="apply-json-btn" class="ghost tiny" type="button">JSON बाट Form</button>
+              <button id="expand-json-btn" class="ghost tiny" type="button">Expand</button>
             </div>
           </div>
+          <div id="json-editor-input" class="json-input hidden" aria-label="JSON editor"></div>
           <textarea
-            id="json-editor-input"
-            class="json-input"
+            id="json-editor-fallback"
+            class="json-input hidden"
             spellcheck="false"
             placeholder='{"electionName":"निर्वाचन नतिजा","isFinal":false,"seats":[],"partyResults":[]}'
           ></textarea>
@@ -100,6 +102,7 @@
     </section>
   </main>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.6/ace.js"></script>
   <script type="module" src="/assets/election-admin.js"></script>
 </body>
 </html>

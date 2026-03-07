@@ -76,8 +76,10 @@ const e = {
   modeFormBtn: document.getElementById("mode-form-btn"),
   modeJsonBtn: document.getElementById("mode-json-btn"),
   jsonInput: document.getElementById("json-editor-input"),
+  jsonFallback: document.getElementById("json-editor-fallback"),
   syncJsonBtn: document.getElementById("sync-json-btn"),
   applyJsonBtn: document.getElementById("apply-json-btn"),
+  expandJsonBtn: document.getElementById("expand-json-btn"),
   electionName: document.getElementById("election-name"),
   isFinal: document.getElementById("is-final"),
   seatSwitcher: document.getElementById("seat-switcher"),
@@ -97,7 +99,9 @@ const state = {
   partyResults: [],
   collapsedPartyIds: new Set(),
   isSaving: false,
-  editorMode: "form"
+  editorMode: "form",
+  jsonEditor: null,
+  jsonExpanded: false
 };
 
 function setStatus(node, message, level = "ok") {
@@ -112,6 +116,62 @@ function setSavingState(isSaving) {
     btn.disabled = isSaving;
     btn.classList.toggle("is-loading", isSaving);
     btn.textContent = isSaving ? "सेभ हुँदैछ..." : "सेभ गर्नुहोस्";
+  }
+}
+
+function initJsonEditor() {
+  if (!e.jsonInput || !e.jsonFallback) return;
+
+  if (window.ace) {
+    e.jsonInput.classList.remove("hidden");
+    e.jsonFallback.classList.add("hidden");
+    state.jsonEditor = window.ace.edit(e.jsonInput);
+    state.jsonEditor.session.setMode("ace/mode/json");
+    state.jsonEditor.setTheme("ace/theme/textmate");
+    state.jsonEditor.setOptions({
+      fontSize: "16px",
+      showPrintMargin: false,
+      useSoftTabs: true,
+      tabSize: 2,
+      wrap: false,
+      behavioursEnabled: true
+    });
+    state.jsonEditor.setShowFoldWidgets(true);
+    state.jsonEditor.session.setFoldStyle("markbegin");
+  } else {
+    e.jsonFallback.classList.remove("hidden");
+    e.jsonInput.classList.add("hidden");
+  }
+}
+
+function getJsonText() {
+  if (state.jsonEditor) {
+    return state.jsonEditor.getValue();
+  }
+  return e.jsonFallback ? e.jsonFallback.value : "";
+}
+
+function setJsonText(text) {
+  if (state.jsonEditor) {
+    state.jsonEditor.setValue(text, -1);
+    state.jsonEditor.clearSelection();
+    return;
+  }
+  if (e.jsonFallback) {
+    e.jsonFallback.value = text;
+  }
+}
+
+function toggleJsonExpand() {
+  if (!e.jsonEditor) return;
+  state.jsonExpanded = !state.jsonExpanded;
+  e.jsonEditor.classList.toggle("fullscreen", state.jsonExpanded);
+  document.body.classList.toggle("no-scroll", state.jsonExpanded);
+  if (e.expandJsonBtn) {
+    e.expandJsonBtn.textContent = state.jsonExpanded ? "Collapse" : "Expand";
+  }
+  if (state.jsonEditor) {
+    setTimeout(() => state.jsonEditor.resize(), 0);
   }
 }
 
@@ -143,16 +203,16 @@ function snapshotDraftDataFromState() {
 }
 
 function updateJsonEditorFromState() {
-  if (!e.jsonInput) return;
+  if (!e.jsonInput && !e.jsonFallback) return;
   const draft = snapshotDraftDataFromState();
-  e.jsonInput.value = JSON.stringify(draft, null, 2);
+  setJsonText(JSON.stringify(draft, null, 2));
 }
 
 function parseJsonInputObject() {
-  if (!e.jsonInput) {
+  if (!e.jsonInput && !e.jsonFallback) {
     throw new Error("JSON editor भेटिएन।");
   }
-  const raw = e.jsonInput.value.trim();
+  const raw = getJsonText().trim();
   if (!raw) {
     throw new Error("JSON खाली छ।");
   }
@@ -192,6 +252,11 @@ function setEditorMode(mode) {
 
   if (isJson) {
     updateJsonEditorFromState();
+    if (state.jsonEditor) {
+      setTimeout(() => state.jsonEditor.resize(), 0);
+    }
+  } else if (state.jsonExpanded) {
+    toggleJsonExpand();
   }
 }
 
@@ -876,6 +941,11 @@ function attachHandlers() {
       }
     });
   }
+  if (e.expandJsonBtn) {
+    e.expandJsonBtn.addEventListener("click", () => {
+      toggleJsonExpand();
+    });
+  }
 
   const onSave = async () => {
     if (state.isSaving) return;
@@ -904,6 +974,7 @@ function attachHandlers() {
 }
 
 function boot() {
+  initJsonEditor();
   setBlankForm();
   attachHandlers();
   setEditorMode("form");
