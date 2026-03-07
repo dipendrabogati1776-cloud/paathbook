@@ -39,7 +39,17 @@
       margin: 0 auto;
       padding: 10px 18px;
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-brand {
+      color: var(--primary);
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 1.1;
+      text-decoration: none;
     }
 
     .top-nav-menu {
@@ -62,6 +72,16 @@
 
     .top-nav a + a {
       border-left: 1px solid rgba(124, 77, 255, 0.28);
+    }
+
+    @media (max-width: 700px) {
+      .top-nav-inner {
+        flex-wrap: wrap;
+      }
+
+      .nav-brand {
+        font-size: 24px;
+      }
     }
 
     .container {
@@ -165,6 +185,7 @@
 <body>
   <nav class="top-nav" aria-label="Main">
     <div class="top-nav-inner">
+      <a class="nav-brand" href="/">PaathBook</a>
       <div class="top-nav-menu">
         <a href="/election">Election Update</a>
         <a href="/admin">Admin</a>
@@ -173,12 +194,6 @@
   </nav>
 
   <div class="container">
-
-    <!-- Header -->
-    <div class="header">
-      <div class="app-name">PaathBook</div>
-      <div class="tagline">Learn Smarter, Read Better</div>
-    </div>
 
     <!-- About -->
     <div class="card">
