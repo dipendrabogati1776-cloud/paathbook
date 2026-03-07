@@ -41,3 +41,4 @@ Replace admin emails with your real admin addresses.
 ## 5) URLs
 - Public results: `/election`
 - Admin update panel: `/admin`
+<!-- make this card expandable currently I need to go all the way down to save all the time  -->

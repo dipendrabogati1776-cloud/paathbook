@@ -447,6 +447,11 @@ tr.leading td {
     margin-bottom: 8px;
   }
 
+  .promo-head h2 {
+    font-size: 1.08rem;
+    white-space: nowrap;
+  }
+
   .result-tabs {
     position: static;
     width: 100%;
