@@ -1,0 +1,6782 @@
+{
+  "electionName": "निर्वाचन नतिजा",
+  "isFinal": false,
+  "seats": [
+    {
+      "id": "doti-1",
+      "kshetraNo": "1",
+      "name": "Doti",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "doti-1-1",
+          "name": "Bharat Bahadur Khadka",
+          "party": "Nepali Congress",
+          "votes": 14897,
+          "khasekoMat": 0
+        },
+        {
+          "id": "doti-1-2",
+          "name": "Deepak Bahadur Dhami",
+          "party": "CPN-UML",
+          "votes": 14110,
+          "khasekoMat": 0
+        },
+        {
+          "id": "doti-1-3",
+          "name": "Narendra Bahadur Khadka",
+          "party": "Rastriya Swatantra Party",
+          "votes": 13270,
+          "khasekoMat": 0
+        },
+        {
+          "id": "doti-1-4",
+          "name": "Trilochan Bhatta",
+          "party": "Nepali Communist Party",
+          "votes": 5413,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "1772852485247-cdae9e",
+      "kshetraNo": "1",
+      "name": "Bajura",
+      "khasekoMat": 10298,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325453-f83a7b",
+          "name": "Janak Raj Giri",
+          "party": "Nepali Congress",
+          "votes": 7852,
+          "khasekoMat": 10298
+        },
+        {
+          "id": "1772945325453-4d9f73",
+          "name": "Lal Bahadur Thapa",
+          "party": "CPN-UML",
+          "votes": 6692,
+          "khasekoMat": 10298
+        },
+        {
+          "id": "1772945325453-e5f8bb",
+          "name": "Hemraj Thapa",
+          "party": "Rastriya Swatantra Party",
+          "votes": 3344,
+          "khasekoMat": 10298
+        },
+        {
+          "id": "1772945325453-2312b4",
+          "name": "Prakash Bahadur Shah",
+          "party": "Nepali Communist Party",
+          "votes": 1404,
+          "khasekoMat": 10298
+        },
+        {
+          "id": "1772945325453-888ea0",
+          "name": "Keshar Bahadur Shahi",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 179,
+          "khasekoMat": 10298
+        }
+      ]
+    },
+    {
+      "id": "1772852875463-403331",
+      "kshetraNo": "1",
+      "name": "Bajhang",
+      "khasekoMat": 46452,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-aa480c",
+          "name": "Ain Bahadur Mahar",
+          "party": "CPN-UML",
+          "votes": 18543,
+          "khasekoMat": 46452
+        },
+        {
+          "id": "1772945325453-81bef1",
+          "name": "Prakash Rasaili Snehi",
+          "party": "Nepali Congress",
+          "votes": 16304,
+          "khasekoMat": 46452
+        },
+        {
+          "id": "1772945325453-feaccb",
+          "name": "Min Bahadur Kunwar",
+          "party": "Nepali Communist Party",
+          "votes": 9757,
+          "khasekoMat": 46452
+        },
+        {
+          "id": "1772945325453-4c82a8",
+          "name": "Shailesh Kumar Singh",
+          "party": "Rastriya Swatantra Party",
+          "votes": 9263,
+          "khasekoMat": 46452
+        },
+        {
+          "id": "1772945325453-31b041",
+          "name": "Bishwa Prakash Jethara",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 372,
+          "khasekoMat": 46452
+        }
+      ]
+    },
+    {
+      "id": "1772853196486-005bc3",
+      "kshetraNo": "1",
+      "name": "Achham",
+      "khasekoMat": 19060,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-f08989",
+          "name": "Deepak Bahadur Saud",
+          "party": "CPN-UML",
+          "votes": 7389,
+          "khasekoMat": 19060
+        },
+        {
+          "id": "1772945325453-ff8b09",
+          "name": "Bhim Bahadur Rawal",
+          "party": "Nepali Communist Party",
+          "votes": 10233,
+          "khasekoMat": 19060
+        },
+        {
+          "id": "1772945325453-6ff7eb",
+          "name": "Bharat Kumar Swar",
+          "party": "Nepali Congress",
+          "votes": 10759,
+          "khasekoMat": 19060
+        },
+        {
+          "id": "1772945325453-e3d052",
+          "name": "Om Prakash Rawal",
+          "party": "Rastriya Swatantra Party",
+          "votes": 1739,
+          "khasekoMat": 19060
+        },
+        {
+          "id": "1772945325453-033368",
+          "name": "Lokendra Bahadur Shahi",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 102,
+          "khasekoMat": 19060
+        }
+      ]
+    },
+    {
+      "id": "1772853393604-40c137",
+      "kshetraNo": "2",
+      "name": "Achham",
+      "khasekoMat": 7641,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325453-7f053b",
+          "name": "Yagya Bahadur Bogati",
+          "party": "CPN-UML",
+          "votes": 4272,
+          "khasekoMat": 7641
+        },
+        {
+          "id": "1772945325453-550728",
+          "name": "Pushpa Bahadur Shah",
+          "party": "Nepali Congress",
+          "votes": 3140,
+          "khasekoMat": 7641
+        },
+        {
+          "id": "1772945325453-9462e8",
+          "name": "Bhup Dev Shah",
+          "party": "Rastriya Swatantra Party",
+          "votes": 2138,
+          "khasekoMat": 7641
+        },
+        {
+          "id": "1772945325453-5beeb6",
+          "name": "Bal Bahadur Kunwar",
+          "party": "Nepali Communist Party",
+          "votes": 925,
+          "khasekoMat": 7641
+        },
+        {
+          "id": "1772945325453-4929c4",
+          "name": "Sher Bahadur B.K.",
+          "party": "Nepal Communist Party (Maoist)",
+          "votes": 232,
+          "khasekoMat": 7641
+        }
+      ]
+    },
+    {
+      "id": "1772854102058-ca2d64",
+      "kshetraNo": "1",
+      "name": "Kailali",
+      "khasekoMat": 42882,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-9d55dd",
+          "name": "Komal Gyawali",
+          "party": "Rastriya Swatantra Party",
+          "votes": 17826,
+          "khasekoMat": 42882
+        },
+        {
+          "id": "1772945325453-987935",
+          "name": "Jankaraj Chaudhary",
+          "party": "Nepali Congress",
+          "votes": 12867,
+          "khasekoMat": 42882
+        },
+        {
+          "id": "1772945325453-7293bc",
+          "name": "Ramlal Dagaura Tharu",
+          "party": "Nepali Communist Party",
+          "votes": 8392,
+          "khasekoMat": 42882
+        },
+        {
+          "id": "1772945325453-7c1700",
+          "name": "Dharika Prasad Neupane",
+          "party": "CPN-UML",
+          "votes": 4493,
+          "khasekoMat": 42882
+        },
+        {
+          "id": "1772945325453-d4271a",
+          "name": "Fagu Ram Tharu",
+          "party": "Independent",
+          "votes": 3388,
+          "khasekoMat": 42882
+        }
+      ]
+    },
+    {
+      "id": "1772854343276-9ed40d",
+      "kshetraNo": "2",
+      "name": "Kailali",
+      "khasekoMat": 9806,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325453-53401f",
+          "name": "K.P. Khanal",
+          "party": "Rastriya Swatantra Party",
+          "votes": 16248,
+          "khasekoMat": 9806
+        },
+        {
+          "id": "1772945325453-40206f",
+          "name": "Surya Bahadur Thapa",
+          "party": "CPN-UML",
+          "votes": 6823,
+          "khasekoMat": 9806
+        },
+        {
+          "id": "1772945325453-aa5da7",
+          "name": "Vijay Bahadur Swar",
+          "party": "Nepali Congress",
+          "votes": 5296,
+          "khasekoMat": 9806
+        },
+        {
+          "id": "1772945325453-5981cb",
+          "name": "Nanda Bahadur Saud",
+          "party": "Nepali Communist Party",
+          "votes": 3934,
+          "khasekoMat": 9806
+        },
+        {
+          "id": "1772945325453-dc4596",
+          "name": "Pati Ram Chaudhary",
+          "party": "Nagarik Unmukti Party",
+          "votes": 8750,
+          "khasekoMat": 9806
+        }
+      ]
+    },
+    {
+      "id": "1772854821692-4a0981",
+      "kshetraNo": "3",
+      "name": "Kailali",
+      "khasekoMat": 31745,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-d31bf4",
+          "name": "Jagat Prasad Joshi",
+          "party": "Rastriya Swatantra Party",
+          "votes": 20359,
+          "khasekoMat": 31745
+        },
+        {
+          "id": "1772945325453-91f7f1",
+          "name": "Birman Chaudhary",
+          "party": "Nepali Communist Party",
+          "votes": 11983,
+          "khasekoMat": 31745
+        },
+        {
+          "id": "1772945325453-b55fb9",
+          "name": "Bhim Baduwal",
+          "party": "Nepali Congress",
+          "votes": 9706,
+          "khasekoMat": 31745
+        },
+        {
+          "id": "1772945325453-241bbc",
+          "name": "Bikram Chaudhary",
+          "party": "Nagarik Unmukti Party",
+          "votes": 6747,
+          "khasekoMat": 31745
+        },
+        {
+          "id": "1772945325453-8ee194",
+          "name": "Gauri Shankar Chaudhary",
+          "party": "CPN-UML",
+          "votes": 4752,
+          "khasekoMat": 31745
+        }
+      ]
+    },
+    {
+      "id": "1772855019292-3e32ca",
+      "kshetraNo": "4",
+      "name": "Kailali",
+      "khasekoMat": 16685,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-7d6023",
+          "name": "Khem Raj Koirala",
+          "party": "Rastriya Swatantra Party",
+          "votes": 28556,
+          "khasekoMat": 16685
+        },
+        {
+          "id": "1772945325453-01a459",
+          "name": "Gorakh Bahadur Bista",
+          "party": "Nepali Congress",
+          "votes": 11301,
+          "khasekoMat": 16685
+        },
+        {
+          "id": "1772945325453-a8106d",
+          "name": "Lekh Raj Bhatta",
+          "party": "CPN-UML",
+          "votes": 9444,
+          "khasekoMat": 16685
+        },
+        {
+          "id": "1772945325453-b3f179",
+          "name": "Hari Ram Chaudhary",
+          "party": "Nepali Communist Party",
+          "votes": 5609,
+          "khasekoMat": 16685
+        },
+        {
+          "id": "1772945325453-596348",
+          "name": "Kamal Rajwar",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 10358,
+          "khasekoMat": 16685
+        }
+      ]
+    },
+    {
+      "id": "1772855374450-1794ef",
+      "kshetraNo": "5",
+      "name": "Kailali",
+      "khasekoMat": 43702,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-763600",
+          "name": "Ananda Bahadur Chanda",
+          "party": "Rastriya Swatantra Party",
+          "votes": 31953,
+          "khasekoMat": 43702
+        },
+        {
+          "id": "1772945325453-a2b832",
+          "name": "Nar Narayan Shah",
+          "party": "Nepali Congress",
+          "votes": 11958,
+          "khasekoMat": 43702
+        },
+        {
+          "id": "1772945325453-41c131",
+          "name": "Prem Bahadur Ale",
+          "party": "Nepali Communist Party",
+          "votes": 7876,
+          "khasekoMat": 43702
+        },
+        {
+          "id": "1772945325453-4a7181",
+          "name": "Yagya Raj Dhungana Upadhyaya",
+          "party": "CPN-UML",
+          "votes": 5839,
+          "khasekoMat": 43702
+        },
+        {
+          "id": "1772945325453-10301a",
+          "name": "Roshan Shahi",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 1465,
+          "khasekoMat": 43702
+        }
+      ]
+    },
+    {
+      "id": "1772855555432-30a59e",
+      "kshetraNo": "1",
+      "name": "Kanchanpur",
+      "khasekoMat": 30504,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-ab3055",
+          "name": "Janak Singh Dhami",
+          "party": "Rastriya Swatantra Party",
+          "votes": 24332,
+          "khasekoMat": 30504
+        },
+        {
+          "id": "1772945325453-3f3dd7",
+          "name": "Bina Magar",
+          "party": "Nepali Communist Party",
+          "votes": 11110,
+          "khasekoMat": 30504
+        },
+        {
+          "id": "1772945325453-ae8b64",
+          "name": "Tara Lama Tamang",
+          "party": "CPN-UML",
+          "votes": 8088,
+          "khasekoMat": 30504
+        },
+        {
+          "id": "1772945325453-328999",
+          "name": "Gopi Prasad Upadhyaya",
+          "party": "Nepali Congress",
+          "votes": 8467,
+          "khasekoMat": 30504
+        },
+        {
+          "id": "1772945325453-3137ed",
+          "name": "Dilli Bahadur Shahi",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 1560,
+          "khasekoMat": 30504
+        }
+      ]
+    },
+    {
+      "id": "1772855713968-aa1a76",
+      "kshetraNo": "2",
+      "name": "Kanchanpur",
+      "khasekoMat": 42190,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-f43685",
+          "name": "Deepak Raj Bohara",
+          "party": "Rastriya Swatantra Party",
+          "votes": 33952,
+          "khasekoMat": 42190
+        },
+        {
+          "id": "1772945325453-b89ef6",
+          "name": "Narayan Prakash Saud",
+          "party": "Nepali Congress",
+          "votes": 10827,
+          "khasekoMat": 42190
+        },
+        {
+          "id": "1772945325453-280d85",
+          "name": "Madhav Prasad Panta",
+          "party": "Nepali Communist Party",
+          "votes": 6337,
+          "khasekoMat": 42190
+        },
+        {
+          "id": "1772945325453-a9a892",
+          "name": "Bachan Bahadur Singh",
+          "party": "CPN-UML",
+          "votes": 6418,
+          "khasekoMat": 42190
+        },
+        {
+          "id": "1772945325453-6aa39f",
+          "name": "Tirtha Raj Chhauthat",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 1993,
+          "khasekoMat": 42190
+        }
+      ]
+    },
+    {
+      "id": "1772855956635-4c9008",
+      "kshetraNo": "3",
+      "name": "Kanchanpur",
+      "khasekoMat": 20703,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-bf1e71",
+          "name": "Gyanendra Singh Mehta",
+          "party": "Rastriya Swatantra Party",
+          "votes": 27118,
+          "khasekoMat": 20703
+        },
+        {
+          "id": "1772945325453-550201",
+          "name": "Hari Prasad Bohara",
+          "party": "Nepali Congress",
+          "votes": 9443,
+          "khasekoMat": 20703
+        },
+        {
+          "id": "1772945325453-ceedf8",
+          "name": "Deepak Prakash Bhatta",
+          "party": "CPN-UML",
+          "votes": 7575,
+          "khasekoMat": 20703
+        },
+        {
+          "id": "1772945325453-f276d8",
+          "name": "Man Bahadur Sunar",
+          "party": "Nepali Communist Party",
+          "votes": 4284,
+          "khasekoMat": 20703
+        },
+        {
+          "id": "1772945325453-c75822",
+          "name": "Purna Bahadur Chanda",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 3902,
+          "khasekoMat": 20703
+        }
+      ]
+    },
+    {
+      "id": "1772856270387-3d8fea",
+      "kshetraNo": "1",
+      "name": "Dadeldhura",
+      "khasekoMat": 20948,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-d89c80",
+          "name": "Tara Prasad Joshi",
+          "party": "Rastriya Swatantra Party",
+          "votes": 19131,
+          "khasekoMat": 20948
+        },
+        {
+          "id": "1772945325453-8ed47f",
+          "name": "Nain Singh Mahar",
+          "party": "Nepali Congress",
+          "votes": 12121,
+          "khasekoMat": 20948
+        },
+        {
+          "id": "1772945325453-00e3d7",
+          "name": "Man Singh Mal",
+          "party": "Nepali Communist Party",
+          "votes": 6834,
+          "khasekoMat": 20948
+        },
+        {
+          "id": "1772945325453-b0406b",
+          "name": "Chakra Prasad Snehi",
+          "party": "CPN-UML",
+          "votes": 2926,
+          "khasekoMat": 20948
+        },
+        {
+          "id": "1772945325453-f91678",
+          "name": "Govind Kathayat",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 882,
+          "khasekoMat": 20948
+        }
+      ]
+    },
+    {
+      "id": "1772856492806-6d8659",
+      "kshetraNo": "1",
+      "name": "Baitadi",
+      "khasekoMat": 19061,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-a3bee5",
+          "name": "Hari Mohan Bhandari",
+          "party": "Rastriya Swatantra Party",
+          "votes": 22134,
+          "khasekoMat": 19061
+        },
+        {
+          "id": "1772945325453-b1fe2c",
+          "name": "Damodar Bhandari",
+          "party": "CPN-UML",
+          "votes": 17091,
+          "khasekoMat": 19061
+        },
+        {
+          "id": "1772945325453-5b16a6",
+          "name": "Chatur Bahadur Chanda",
+          "party": "Nepali Congress",
+          "votes": 18194,
+          "khasekoMat": 19061
+        },
+        {
+          "id": "1772945325453-5a8b51",
+          "name": "Pramanand Bhatta",
+          "party": "Nepali Communist Party",
+          "votes": 6965,
+          "khasekoMat": 19061
+        },
+        {
+          "id": "1772945325453-c62fcd",
+          "name": "Bhupen Bahadur Chanda",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 2681,
+          "khasekoMat": 19061
+        }
+      ]
+    },
+    {
+      "id": "1772856625254-920abd",
+      "kshetraNo": "1",
+      "name": "Darchula",
+      "khasekoMat": 19338,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-9d9668",
+          "name": "Dharmanand Joshi",
+          "party": "Nepali Congress",
+          "votes": 15836,
+          "khasekoMat": 19338
+        },
+        {
+          "id": "1772945325453-99c8fa",
+          "name": "Ganesh Singh Thagunn",
+          "party": "CPN-UML",
+          "votes": 18891,
+          "khasekoMat": 19338
+        },
+        {
+          "id": "1772945325453-0f0fef",
+          "name": "Rajesh Singh Samant (Saud)",
+          "party": "Rastriya Swatantra Party",
+          "votes": 8936,
+          "khasekoMat": 19338
+        },
+        {
+          "id": "1772945325453-952157",
+          "name": "Lakshman Datt Joshi",
+          "party": "Nepali Communist Party",
+          "votes": 3065,
+          "khasekoMat": 19338
+        },
+        {
+          "id": "1772945325453-81a857",
+          "name": "Rajesh Chand",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 666,
+          "khasekoMat": 19338
+        }
+      ]
+    },
+    {
+      "id": "taplejung-1",
+      "kshetraNo": "1",
+      "name": "Taplejung",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-8abe76",
+          "name": "Khitiz Thebe",
+          "party": "CPN-UML",
+          "votes": 13962,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-df3cda",
+          "name": "Gajendra Prasad Tumyang Limbu",
+          "party": "Nepali Congress",
+          "votes": 11711,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-0dd123",
+          "name": "Khel Prasad Buda Chhetri",
+          "party": "Nepali Communist Party",
+          "votes": 6775,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-b3b447",
+          "name": "Santosh Rai",
+          "party": "Shram Sanskriti Party",
+          "votes": 5209,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-98ec60",
+          "name": "Birendra Shrestha",
+          "party": "Rastriya Swatantra Party",
+          "votes": 4155,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "panchthar-1",
+      "kshetraNo": "1",
+      "name": "Panchthar",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-a3b67f",
+          "name": "Narendra Kumar Kerung",
+          "party": "Nepali Congress",
+          "votes": 17233,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-5e16aa",
+          "name": "Hasta Raj Sherma",
+          "party": "Shram Sanskriti Party",
+          "votes": 14734,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-858aa7",
+          "name": "Hark Bahadur Nembang",
+          "party": "Nepali Communist Party",
+          "votes": 11443,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-1f81ab",
+          "name": "Aindra Sundar Nembang",
+          "party": "CPN-UML",
+          "votes": 14534,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-3707f5",
+          "name": "Tek Bahadur Subba",
+          "party": "Rastriya Pariwartan Party",
+          "votes": 2825,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-9d5c93",
+          "name": "Mahendra Bikram Thamsuhang",
+          "party": "Rastriya Swatantra Party",
+          "votes": 4197,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "illam-1",
+      "kshetraNo": "1",
+      "name": "Illam",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325453-5fb916",
+          "name": "Binod Nembang Limbu",
+          "party": "Shram Sanskriti Party",
+          "votes": 2935,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-5c0b0f",
+          "name": "Kaji Man Kagate",
+          "party": "CPN-UML",
+          "votes": 3444,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-41dcb6",
+          "name": "Nishkal Rai",
+          "party": "Nepali Congress",
+          "votes": 2973,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-47b71e",
+          "name": "Bimal Gadal",
+          "party": "Rastriya Swatantra Party",
+          "votes": 1564,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-7641a0",
+          "name": "Ran Bahadur Rai",
+          "party": "Nepali Communist Party",
+          "votes": 1294,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "illam-2",
+      "kshetraNo": "2",
+      "name": "Illam",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-326934",
+          "name": "Suhang Nembang",
+          "party": "CPN-UML",
+          "votes": 22426,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-41e0fd",
+          "name": "Sudeep Rai",
+          "party": "Shram Sanskriti Party",
+          "votes": 14400,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-ea1daf",
+          "name": "Bhesraj Acharya",
+          "party": "Nepali Congress",
+          "votes": 14650,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-1f3191",
+          "name": "Gokul Bahadur Rai",
+          "party": "Rastriya Swatantra Party",
+          "votes": 7814,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-188eef",
+          "name": "Om Bahadur Gurung",
+          "party": "Nepali Communist Party",
+          "votes": 1172,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "jhapa-1",
+      "kshetraNo": "1",
+      "name": "Jhapa",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-8b5346",
+          "name": "Nisha Dangi",
+          "party": "Rastriya Swatantra Party",
+          "votes": 45680,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-31eb16",
+          "name": "Kevalram Rai",
+          "party": "Shram Sanskriti Party",
+          "votes": 10004,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-43baf3",
+          "name": "Keshav Raj Pandey",
+          "party": "Nepali Congress",
+          "votes": 10550,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-374026",
+          "name": "Ramchandra Upreti",
+          "party": "CPN-UML",
+          "votes": 7659,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-51ae6b",
+          "name": "Hemraj Karki",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 1612,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "jhapa-2",
+      "kshetraNo": "2",
+      "name": "Jhapa",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-0dbb7a",
+          "name": "Indira Rana Magar",
+          "party": "Rastriya Swatantra Party",
+          "votes": 60110,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-084aa5",
+          "name": "Dev Raj Ghimire",
+          "party": "CPN-UML",
+          "votes": 11368,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-67431b",
+          "name": "Keshav Kumar Bhandari",
+          "party": "Shram Sanskriti Party",
+          "votes": 7291,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-026875",
+          "name": "Sarita Prasai",
+          "party": "Nepali Congress",
+          "votes": 5616,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-07f74d",
+          "name": "Bhadra Prasad Nepal",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 3966,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "jhapa-3",
+      "kshetraNo": "3",
+      "name": "Jhapa",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-2a3379",
+          "name": "Prakash Pathak",
+          "party": "Rastriya Swatantra Party",
+          "votes": 38674,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-a168d8",
+          "name": "Rajendra Prasad Lingden",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 17294,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-068756",
+          "name": "Rajendra Kumar Ghimire",
+          "party": "Nepali Congress",
+          "votes": 8199,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-278fa8",
+          "name": "Hari Bahadur Rajbanshi",
+          "party": "CPN-UML",
+          "votes": 7492,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-5d0181",
+          "name": "Dipak Timsina",
+          "party": "Shram Sanskriti Party",
+          "votes": 7379,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "jhapa-4",
+      "kshetraNo": "4",
+      "name": "Jhapa",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-c4d42d",
+          "name": "Shambhu Prasad Dhakal",
+          "party": "Rastriya Swatantra Party",
+          "votes": 43631,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-a097a0",
+          "name": "Lal Prasad Sawa Limbu",
+          "party": "CPN-UML",
+          "votes": 11986,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-eea502",
+          "name": "Amrita Devi Rai",
+          "party": "Shram Sanskriti Party",
+          "votes": 7161,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-ecf2b0",
+          "name": "Deu Kumar Thewe",
+          "party": "Nepali Congress",
+          "votes": 9434,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-149189",
+          "name": "Bhakti Prasad Sitaula",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 2080,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "jhapa-5",
+      "kshetraNo": "5",
+      "name": "Jhapa",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-933d6b",
+          "name": "Balendra Shah",
+          "party": "Rastriya Swatantra Party",
+          "votes": 68348,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-167638",
+          "name": "KP Sharma Oli",
+          "party": "CPN-UML",
+          "votes": 18734,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-2d86ad",
+          "name": "Samir Tamang",
+          "party": "Shram Sanskriti Party",
+          "votes": 9233,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-4158ae",
+          "name": "Mandhara Chimariya",
+          "party": "Nepali Congress",
+          "votes": 1821,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-9c1008",
+          "name": "Ranjit Tamang",
+          "party": "Nepali Communist Party",
+          "votes": 1536,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "morang-1",
+      "kshetraNo": "1",
+      "name": "Morang",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-ce72f8",
+          "name": "Yagnmani Neupane",
+          "party": "Rastriya Swatantra Party",
+          "votes": 27367,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-120fcf",
+          "name": "Shanti Pakhrin Lama",
+          "party": "Shram Sanskriti Party",
+          "votes": 17522,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-b00929",
+          "name": "Khadga Bahadur Phago",
+          "party": "Nepali Congress",
+          "votes": 11986,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-dd21b7",
+          "name": "Ghana Shyam Khatiwada",
+          "party": "CPN-UML",
+          "votes": 9823,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-62c7fa",
+          "name": "Kul Prasad Samba",
+          "party": "Nepali Communist Party",
+          "votes": 2224,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "morang-2",
+      "kshetraNo": "2",
+      "name": "Morang",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-2eca7f",
+          "name": "Krishna Kumar Karki",
+          "party": "Rastriya Swatantra Party",
+          "votes": 40924,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-ee4c80",
+          "name": "Dilip Kumar Agrawal",
+          "party": "CPN-UML",
+          "votes": 15624,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-610681",
+          "name": "Minendra Prasad Rijal",
+          "party": "Nepali Congress",
+          "votes": 12764,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-2b01ff",
+          "name": "Abuho Rairah",
+          "party": "Shram Sanskriti Party",
+          "votes": 1822,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-c44681",
+          "name": "Chandra Bir Rai",
+          "party": "Nepali Communist Party",
+          "votes": 1366,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "morang-3",
+      "kshetraNo": "3",
+      "name": "Morang",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-19d365",
+          "name": "Ganesh Karki",
+          "party": "Rastriya Swatantra Party",
+          "votes": 36924,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-8f4296",
+          "name": "Shunil Kumar Sharma",
+          "party": "Nepali Congress",
+          "votes": 24354,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-4371d2",
+          "name": "Amir Magar",
+          "party": "Shram Sanskriti Party",
+          "votes": 16509,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-4d815b",
+          "name": "Iran Kumar Rai",
+          "party": "CPN-UML",
+          "votes": 7752,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-ab53f7",
+          "name": "Dr Deuman Sambahamph e",
+          "party": "Nepali Communist Party",
+          "votes": 1259,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "morang-4",
+      "kshetraNo": "4",
+      "name": "Morang",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-3cd9c6",
+          "name": "Santosh Rajbanshi",
+          "party": "Rastriya Swatantra Party",
+          "votes": 40833,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-c994ba",
+          "name": "Guru Raj Ghimire",
+          "party": "Nepali Congress",
+          "votes": 12818,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-d181f0",
+          "name": "Aman Lal Modi",
+          "party": "Nepali Communist Party",
+          "votes": 10762,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-49607e",
+          "name": "Jivan Ghimire",
+          "party": "CPN-UML",
+          "votes": 6933,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-b4e866",
+          "name": "Madhav Prasad Acharya",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 1163,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "morang-5",
+      "kshetraNo": "5",
+      "name": "Morang",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-dafbf5",
+          "name": "Aasha Jha",
+          "party": "Rastriya Swatantra Party",
+          "votes": 30434,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-bc0ef1",
+          "name": "Phul Kumar Lalwani",
+          "party": "Nepali Congress",
+          "votes": 9415,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-6036d7",
+          "name": "Shiva Kumar Mandal (Kewat)",
+          "party": "Nepali Communist Party",
+          "votes": 8614,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-b1a2c1",
+          "name": "Raj Kumar Yadav",
+          "party": "Janata Samajbadi Party-Nepal",
+          "votes": 8747,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-d30c43",
+          "name": "Manoj Kumar Agrawal",
+          "party": "CPN-UML",
+          "votes": 6945,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "morang-6",
+      "kshetraNo": "6",
+      "name": "Morang",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-c26ccc",
+          "name": "Rubina Acharya",
+          "party": "Rastriya Swatantra Party",
+          "votes": 55513,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-21fc9d",
+          "name": "Dr. Shekhar Koirala",
+          "party": "Nepali Congress",
+          "votes": 12850,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-b73ab1",
+          "name": "Binod Prasad Dhakal",
+          "party": "CPN-UML",
+          "votes": 8317,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-421862",
+          "name": "Matrika Paudel",
+          "party": "Shram Sanskriti Party",
+          "votes": 3400,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-b48ac3",
+          "name": "Opendra Kumar Raya",
+          "party": "Nepali Communist Party",
+          "votes": 2092,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "sunsari-1",
+      "kshetraNo": "1",
+      "name": "Sunsari",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325453-09712f",
+          "name": "Harka Raj Rai",
+          "party": "Shram Sanskriti Party",
+          "votes": 14035,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-930e7f",
+          "name": "Goma Tamang",
+          "party": "Rastriya Swatantra Party",
+          "votes": 8890,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-b5e6cf",
+          "name": "Suryaa Bahadur Bhattarai",
+          "party": "Nepali Communist Party",
+          "votes": 2242,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-77af2f",
+          "name": "Tika Ram Limbu",
+          "party": "CPN-UML",
+          "votes": 1949,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-d68a2c",
+          "name": "Sujendra Tamang",
+          "party": "Nepali Congress",
+          "votes": 1439,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "sunsari-2",
+      "kshetraNo": "2",
+      "name": "Sunsari",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325453-ccfe32",
+          "name": "Lal Bikram Thapa",
+          "party": "Rastriya Swatantra Party",
+          "votes": 20178,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-0e260e",
+          "name": "Rajib Koirala",
+          "party": "Nepali Congress",
+          "votes": 7251,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-bada89",
+          "name": "Sujan Lama",
+          "party": "CPN-UML",
+          "votes": 2697,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-9d21df",
+          "name": "Chtean Rai",
+          "party": "Shram Sanskriti Party",
+          "votes": 2870,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-aa87f0",
+          "name": "Ram Kumari Chaudhary",
+          "party": "Nepali Communist Party",
+          "votes": 554,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "sunsari-3",
+      "kshetraNo": "3",
+      "name": "Sunsari",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-491741",
+          "name": "Ashok Kumar Chaudhary",
+          "party": "Rastriya Swatantra Party",
+          "votes": 47421,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-ea78cc",
+          "name": "Bijay Kumar Gachhedar",
+          "party": "Nepali Congress",
+          "votes": 20501,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-6157f2",
+          "name": "Bhagwati Chaudhary",
+          "party": "CPN-UML",
+          "votes": 15083,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-8b6313",
+          "name": "Ram Prasha Sada",
+          "party": "Shram Sanskriti Party",
+          "votes": 1780,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-82ba3f",
+          "name": "Durgesh Kumar Chaudhary",
+          "party": "Nepali Communist Party",
+          "votes": 1551,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "sunsari-4",
+      "kshetraNo": "4",
+      "name": "Sunsari",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325453-bffe36",
+          "name": "Deepak Kumar Sah",
+          "party": "Rastriya Swatantra Party",
+          "votes": 8001,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-e7668e",
+          "name": "Gyanendra Bahadur Karki",
+          "party": "Nepali Congress",
+          "votes": 2868,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-24c046",
+          "name": "Jagdish Prasad Kusiy aith",
+          "party": "CPN-UML",
+          "votes": 2355,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-b028d5",
+          "name": "Mohammad Mahfuz Ansari",
+          "party": "Nepali Communist Party",
+          "votes": 913,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-4b6fda",
+          "name": "Prem Prasad Bhattarai",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 595,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "dhankuta-1",
+      "kshetraNo": "1",
+      "name": "Dhankuta",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-8735c5",
+          "name": "Rajendra Kumar Rai",
+          "party": "CPN-UML",
+          "votes": 18132,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-235b7e",
+          "name": "San Bahadur Rai",
+          "party": "Shram Sanskriti Party",
+          "votes": 11932,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-877e37",
+          "name": "Dinesh Rai",
+          "party": "Nepali Congress",
+          "votes": 14257,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-45c89e",
+          "name": "Dinesh Bhandari",
+          "party": "Rastriya Swatantra Party",
+          "votes": 9944,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-78d1a3",
+          "name": "Dharma Raj Paudel",
+          "party": "Nepali Communist Party",
+          "votes": 1665,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "sankhuwasabha-1",
+      "kshetraNo": "1",
+      "name": "Sankhuwasabha",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325453-81d403",
+          "name": "Arjun Kumar Karki",
+          "party": "CPN-UML",
+          "votes": 377,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-4aaab9",
+          "name": "Dipen Kumar Shrestha",
+          "party": "Nepali Congress",
+          "votes": 94,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-664489",
+          "name": "Mingma Sherpa",
+          "party": "Rastriya Swatantra Party",
+          "votes": 308,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-a40fba",
+          "name": "Uma Kumari Rai",
+          "party": "Shram Sanskriti Party",
+          "votes": 68,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "bhojpur-1",
+      "kshetraNo": "1",
+      "name": "Bhojpur",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325453-669401",
+          "name": "Dhurbaraj Rai",
+          "party": "Shram Sanskriti Party",
+          "votes": 5367,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-c04e6e",
+          "name": "Sherdhan Rai",
+          "party": "CPN-UML",
+          "votes": 4214,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-577b03",
+          "name": "Ajambar Rai Kangman",
+          "party": "Nepali Communist Party",
+          "votes": 2497,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-8aa471",
+          "name": "Balkrishna Thapa",
+          "party": "Nepali Congress",
+          "votes": 2307,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-a30851",
+          "name": "Ramesh Prashad Ojha",
+          "party": "Rastriya Swatantra Party",
+          "votes": 1577,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "terhathum-1",
+      "kshetraNo": "1",
+      "name": "Terhathum",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-90ff8e",
+          "name": "Santosh Subba",
+          "party": "Nepali Congress",
+          "votes": 11561,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-3473a5",
+          "name": "Bhanu Bhakta Dhakal",
+          "party": "CPN-UML",
+          "votes": 10682,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-94b7bd",
+          "name": "Surendra Karki",
+          "party": "Rastriya Swatantra Party",
+          "votes": 7737,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-3a0adc",
+          "name": "Subindra Kumar Limbu",
+          "party": "Shram Sanskriti Party",
+          "votes": 5200,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-ac291a",
+          "name": "Randhwaj Limbu",
+          "party": "Nepali Communist Party",
+          "votes": 919,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "okhaldhunga-1",
+      "kshetraNo": "1",
+      "name": "Okhaldhunga",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325453-48aec7",
+          "name": "Kumar Luitel",
+          "party": "Nepali Congress",
+          "votes": 6301,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-04226b",
+          "name": "Brish Raj Pokharel",
+          "party": "Rastriya Swatantra Party",
+          "votes": 5258,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-dfc841",
+          "name": "Asmita Thapa",
+          "party": "CPN-UML",
+          "votes": 4611,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-fda504",
+          "name": "Ambir Babu Gurung",
+          "party": "Nepali Communist Party",
+          "votes": 4010,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-0d6b60",
+          "name": "Kishori Karki",
+          "party": "Ujyalo Nepal Party",
+          "votes": 622,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "khotang-1",
+      "kshetraNo": "1",
+      "name": "Khotang",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-f4c6a3",
+          "name": "Aren Rai",
+          "party": "Shram Sanskriti Party",
+          "votes": 16612,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-68fbec",
+          "name": "Bir Kaji Rai",
+          "party": "Nepali Congress",
+          "votes": 11957,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-02d46f",
+          "name": "Dev Bikram Rai",
+          "party": "CPN-UML",
+          "votes": 12714,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-4bedde",
+          "name": "Hari Roka",
+          "party": "Nepali Communist Party",
+          "votes": 9443,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-49010c",
+          "name": "Rudra Giri",
+          "party": "Rastriya Swatantra Party",
+          "votes": 5704,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "solukhumbu-1",
+      "kshetraNo": "1",
+      "name": "Solukhumbu",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-c60d67",
+          "name": "Prakash Singh Karki",
+          "party": "Nepali Congress",
+          "votes": 13166,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-6f7803",
+          "name": "Kalpana Rai",
+          "party": "CPN-UML",
+          "votes": 8228,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-c736d7",
+          "name": "Ashim Rai",
+          "party": "Nepali Communist Party",
+          "votes": 9414,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-ff454d",
+          "name": "Rishi Dhan Thulung Rai",
+          "party": "Rastriya Swatantra Party",
+          "votes": 3642,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-5bb4d5",
+          "name": "Viyas Rai",
+          "party": "Shram Sanskriti Party",
+          "votes": 3363,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "udayapur-1",
+      "kshetraNo": "1",
+      "name": "Udayapur",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325453-5b39c8",
+          "name": "Paras Mani Gelal",
+          "party": "Rastriya Swatantra Party",
+          "votes": 8936,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-f76faf",
+          "name": "Rajesh Kumar Rai",
+          "party": "Shram Sanskriti Party",
+          "votes": 5412,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-da5539",
+          "name": "Durga Kumar Thapa",
+          "party": "CPN-UML",
+          "votes": 3819,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-e21bfd",
+          "name": "Bidur Basnet",
+          "party": "Nepali Congress",
+          "votes": 3236,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325453-45b4be",
+          "name": "Bal Dev Chaudhary",
+          "party": "Nepali Communist Party",
+          "votes": 2348,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "udayapur-2",
+      "kshetraNo": "2",
+      "name": "Udayapur",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325453-8a3919",
+          "name": "Surya Bahadur Tamang",
+          "party": "Rastriya Swatantra Party",
+          "votes": 14802,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-5fd07d",
+          "name": "Ambar Bahadur Raimajhi",
+          "party": "CPN-UML",
+          "votes": 7648,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-6bfefb",
+          "name": "Suresh Kumar Rai",
+          "party": "Nepali Communist Party",
+          "votes": 5197,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-062656",
+          "name": "Balraj Rai",
+          "party": "Shram Sanskriti Party",
+          "votes": 4139,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-2f91c4",
+          "name": "Ram Kumar Rai",
+          "party": "Nepali Congress",
+          "votes": 7290,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "saptari-1",
+      "kshetraNo": "1",
+      "name": "Saptari",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-f6037b",
+          "name": "Pushpa Kumari Chaudhary",
+          "party": "Rastriya Swatantra Party",
+          "votes": 16240,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-e6908b",
+          "name": "Ramdev Sah (Teli)",
+          "party": "Nepali Congress",
+          "votes": 3931,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-b5e94c",
+          "name": "Suman Raj Pyakurel",
+          "party": "CPN-UML",
+          "votes": 3527,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-6009e7",
+          "name": "Sumit Kumar",
+          "party": "Swabhiman Party",
+          "votes": 2110,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-9d5634",
+          "name": "Jaya Kanta Raut",
+          "party": "Janamat Party",
+          "votes": 1234,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "saptari-2",
+      "kshetraNo": "2",
+      "name": "Saptari",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-086b39",
+          "name": "Ramji Yadav",
+          "party": "Rastriya Swatantra Party",
+          "votes": 7997,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-077d4a",
+          "name": "Umesh Kumar Yadav",
+          "party": "Janata Samjbadi Party-Nepal",
+          "votes": 4275,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-600661",
+          "name": "Chandra Kant Raut",
+          "party": "Janamat Party",
+          "votes": 3245,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-397c4a",
+          "name": "Satish Kumar Singh",
+          "party": "Swabhiman Party",
+          "votes": 1777,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-18f1ae",
+          "name": "Ram Kumar Yadav",
+          "party": "Nepali Congress",
+          "votes": 819,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "saptari-3",
+      "kshetraNo": "3",
+      "name": "Saptari",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-f2bf89",
+          "name": "Amar Kant Chaudhary",
+          "party": "Rastriya Swatantra Party",
+          "votes": 10241,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-7d3b22",
+          "name": "Upendra Yadav",
+          "party": "Janata Samajbadi Party-Nepal",
+          "votes": 7674,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-434218",
+          "name": "Dinesh Kumar Yadav",
+          "party": "Nepali Congress",
+          "votes": 4105,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-78e367",
+          "name": "Tarakant Chaudhary",
+          "party": "CPN-UML",
+          "votes": 1850,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-46b62b",
+          "name": "Surendra Prasad Sharma",
+          "party": "Janamat Party",
+          "votes": 1074,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "saptari-4",
+      "kshetraNo": "4",
+      "name": "Saptari",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-0ea21e",
+          "name": "Sitaram Sah",
+          "party": "Rastriya Swatantra Party",
+          "votes": 32743,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-be542e",
+          "name": "Teju Lal Chaudhary",
+          "party": "Nepali Congress",
+          "votes": 11731,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-dad738",
+          "name": "Banvi Singh",
+          "party": "Janata Samajbadi Party-Nepal",
+          "votes": 9586,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-82a7dd",
+          "name": "Rubi Kumari Karn",
+          "party": "Nepali Communist Party",
+          "votes": 1634,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-a45ca8",
+          "name": "Ganga Prasad Chaudhary",
+          "party": "CPN-UML",
+          "votes": 1093,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "siraha-1",
+      "kshetraNo": "1",
+      "name": "Siraha",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-4b12b1",
+          "name": "Bablu Gupta",
+          "party": "Rastriya Swatantra Party",
+          "votes": 15780,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-6f1563",
+          "name": "Ram Shankar Yadav",
+          "party": "CPN-UML",
+          "votes": 2466,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-8494d7",
+          "name": "Ramchandra Yadav",
+          "party": "Nepali Communist Party",
+          "votes": 2188,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-5f3d9f",
+          "name": "Ram Sundar Chaudhary",
+          "party": "Nepali Congress",
+          "votes": 1234,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-1b4bf8",
+          "name": "Satya Narayan Yadav",
+          "party": "Janata Samajbadi Party-Nepal",
+          "votes": 438,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "siraha-2",
+      "kshetraNo": "2",
+      "name": "Siraha",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-daf132",
+          "name": "Shiva Shankar Yadav",
+          "party": "Rastriya Swatantra Party",
+          "votes": 25597,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-a1797b",
+          "name": "Ram Chandra Yadav",
+          "party": "Nepali Congress",
+          "votes": 8062,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-7e46ca",
+          "name": "Nabin Kumar Yadav",
+          "party": "CPN-UML",
+          "votes": 4060,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-df0168",
+          "name": "Sanjiv Kumar Yadav",
+          "party": "Janata Samajbadi Party-Nepal",
+          "votes": 2734,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-485d54",
+          "name": "Mukti Narayan Singh",
+          "party": "Nepali Communist Party",
+          "votes": 1741,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "siraha-3",
+      "kshetraNo": "3",
+      "name": "Siraha",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-b8e770",
+          "name": "Shambhu Kumar Yadav",
+          "party": "Rastriya Swatantra Party",
+          "votes": 15790,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-1b8955",
+          "name": "Bishwanath Sah",
+          "party": "Nepali Communist Party",
+          "votes": 6444,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-babe64",
+          "name": "Lilanath Shrestha",
+          "party": "CPN-UML",
+          "votes": 6340,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-b3bc37",
+          "name": "Subhash Chandra Yadav",
+          "party": "Nepali Congress",
+          "votes": 3546,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-892dc2",
+          "name": "Aseeshwar Yadav",
+          "party": "Janata Samajbadi Party-Nepal",
+          "votes": 3065,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "siraha-4",
+      "kshetraNo": "4",
+      "name": "Siraha",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-4daaa4",
+          "name": "Tapeshowr Yadav",
+          "party": "Rastriya Swatantra Party",
+          "votes": 22066,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-201908",
+          "name": "Ajay Shankar Nayak",
+          "party": "Nepali Communist Party",
+          "votes": 3925,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-3831ab",
+          "name": "Chandra Kala Kumari Yadav",
+          "party": "Nepali Congress",
+          "votes": 3048,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-45621b",
+          "name": "Birendra Prasad Mahato",
+          "party": "Janamat Party",
+          "votes": 3044,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-43430b",
+          "name": "Dharmanath Prasad Sah",
+          "party": "CPN-UML",
+          "votes": 2637,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "dhanusa-1",
+      "kshetraNo": "1",
+      "name": "Dhanusa",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-efd8a5",
+          "name": "Ramchandra Mandal",
+          "party": "CPN-UML",
+          "votes": 1801,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-f79270",
+          "name": "Ram Paltan Sah",
+          "party": "Nepali Congress",
+          "votes": 1759,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-a90c74",
+          "name": "Matrika Prasad Yadav",
+          "party": "Nepali Communist Party",
+          "votes": 1535,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-664855",
+          "name": "Parsurram Sah",
+          "party": "Independent",
+          "votes": 0,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-3d9df9",
+          "name": "Sudish Mandal",
+          "party": "Independent",
+          "votes": 0,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "dhanusa-2",
+      "kshetraNo": "2",
+      "name": "Dhanusa",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-ecea29",
+          "name": "Ram Binod Yadav",
+          "party": "Rastriya Swatantra Party",
+          "votes": 10529,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-21be16",
+          "name": "Dinesh Prasad Yadav Parsaila",
+          "party": "Nepali Congress",
+          "votes": 3101,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-a440f9",
+          "name": "Ram Chandra Jha",
+          "party": "Nepali Communist Party",
+          "votes": 2800,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-d8a9c9",
+          "name": "Umashankar Argariya",
+          "party": "CPN-UML",
+          "votes": 2384,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-344b13",
+          "name": "Pahupati Yadav",
+          "party": "Janata Samjbadi Party-Nepal",
+          "votes": 1194,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "dhanusa-3",
+      "kshetraNo": "3",
+      "name": "Dhanusa",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-209959",
+          "name": "Manish Jha",
+          "party": "Rastriya Swatantra Party",
+          "votes": 43142,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-2b8708",
+          "name": "Bimalendra Nidhi",
+          "party": "Nepali Congress",
+          "votes": 15992,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-ccfdff",
+          "name": "Juli Kumari Mahato (Mahaseth)",
+          "party": "CPN-UML",
+          "votes": 9510,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-84d47e",
+          "name": "Ramlalit Mandal",
+          "party": "Nepali Communist Party",
+          "votes": 516,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-432a51",
+          "name": "Parmeshwar Sahu Sudi",
+          "party": "Janata Samjbadi Party-Nepal",
+          "votes": 445,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "dhanusa-4",
+      "kshetraNo": "4",
+      "name": "Dhanusa",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-424e29",
+          "name": "Raj Kishor Mahato",
+          "party": "Rastriya Swatantra Party",
+          "votes": 22563,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-02d2c0",
+          "name": "Mahendra Yadav",
+          "party": "Nepali Congress",
+          "votes": 7461,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-c3ae48",
+          "name": "Raghubir Mahaseth",
+          "party": "CPN-UML",
+          "votes": 3916,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-f38176",
+          "name": "Krishna Chandra Prasad Sah",
+          "party": "Janata Samjbadi Party-Nepal",
+          "votes": 303,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-7436a9",
+          "name": "Sanjay Kumar Mahato",
+          "party": "Nepali Communist Party",
+          "votes": 22,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "mahottari-1",
+      "kshetraNo": "1",
+      "name": "Mahottari",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-5af762",
+          "name": "Pramod Kumar Mahato",
+          "party": "Rastriya Swatantra Party",
+          "votes": 34336,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-f240b2",
+          "name": "Giriraj Mani Pokharel",
+          "party": "Nepali Communist Party",
+          "votes": 12624,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-7874ea",
+          "name": "Laxmi Mahato Koir",
+          "party": "CPN-UML",
+          "votes": 6591,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-320eaa",
+          "name": "Mukesh Raj Kafle",
+          "party": "Nepali Congress",
+          "votes": 6213,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-8cf7e3",
+          "name": "Lila Diyali",
+          "party": "Shram Sanskriti Party",
+          "votes": 867,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "mahottari-2",
+      "kshetraNo": "2",
+      "name": "Mahottari",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-87ae8b",
+          "name": "Deepak Kumar Sah",
+          "party": "Rastriya Swatantra Party",
+          "votes": 20923,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-6e29b6",
+          "name": "Sharat Singh Bhandari",
+          "party": "Janata Samjbadi Party-Nepal",
+          "votes": 6345,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-33d789",
+          "name": "Kiran Yadav",
+          "party": "Nepali Congress",
+          "votes": 6064,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-c4e1f3",
+          "name": "Kasim Nadaf",
+          "party": "CPN-UML",
+          "votes": 1766,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-b0c652",
+          "name": "Lakxman Kuar Yadav",
+          "party": "Nepali Communist Party",
+          "votes": 447,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "mahottari-3",
+      "kshetraNo": "3",
+      "name": "Mahottari",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-40dc66",
+          "name": "Ujjawal Kumar Jha",
+          "party": "Rastriya Swatantra Party",
+          "votes": 8304,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-bbb4de",
+          "name": "Ram Aadhar Kapar",
+          "party": "Independent",
+          "votes": 1763,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-db2a4f",
+          "name": "Bajrang Nepali",
+          "party": "Nepali Congress",
+          "votes": 1498,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-a49a06",
+          "name": "Muhamad Rijwan",
+          "party": "Nepal Sanghiya Samajbadi Party (Ekal Chunab Chinha)",
+          "votes": 1356,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-048224",
+          "name": "Hari Narayan Yadav",
+          "party": "Independent",
+          "votes": 161,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "mabottari-4",
+      "kshetraNo": "4",
+      "name": "Mahottari",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-7354a3",
+          "name": "Gauri Kumari",
+          "party": "Rastriya Swatantra Party",
+          "votes": 8653,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-0f7d7a",
+          "name": "Surendra Kumar Yadav",
+          "party": "Janata Samajbadi Party-Nepal",
+          "votes": 2595,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-48d459",
+          "name": "Mahendra Kumar Raya",
+          "party": "Nepali Congress",
+          "votes": 1898,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-983847",
+          "name": "Neelam Adhikari",
+          "party": "CPN-UML",
+          "votes": 1393,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-be8fea",
+          "name": "Bharat Prasad Shah",
+          "party": "Nepali Communist Party",
+          "votes": 981,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "sarlahi-1",
+      "kshetraNo": "1",
+      "name": "Sarlahi",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-7e94e2",
+          "name": "Nitima Bhandari (Karki)",
+          "party": "Rastriya Swatantra Party",
+          "votes": 34905,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-47fd52",
+          "name": "Shambhu Lal Shrestha",
+          "party": "Nepali Congress",
+          "votes": 6648,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-b0e71a",
+          "name": "Manoj Kumar Devkota",
+          "party": "CPN-UML",
+          "votes": 5054,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-a46f74",
+          "name": "Pramod Sah",
+          "party": "Nepali Communist Party",
+          "votes": 4012,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-2e002e",
+          "name": "Ram Prakash Chaudhary",
+          "party": "Janata Samajbadi Party-Nepal",
+          "votes": 2824,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "sarlahi-2",
+      "kshetraNo": "2",
+      "name": "Sarlahi",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-c62ba0",
+          "name": "Rabin Mahato",
+          "party": "Rastriya Swatantra Party",
+          "votes": 32827,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-60fd7b",
+          "name": "Mahindra Raya Yadav",
+          "party": "Nepali Communist Party",
+          "votes": 6938,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-c5fb12",
+          "name": "Dr. Saroj Kumar",
+          "party": "Nepali Congress",
+          "votes": 5573,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-e04fba",
+          "name": "Rajendra Mahato",
+          "party": "Rastriya Mukti Party Nepal (Ekal Chunab Chinha)",
+          "votes": 4687,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-f15076",
+          "name": "Raji Ahamad",
+          "party": "Nepal Sanghyia Samajbadi Party (Ekal Chunab Chinha)",
+          "votes": 1121,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "sarlahi-3",
+      "kshetraNo": "3",
+      "name": "Sarlahi",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-74b6e7",
+          "name": "Nagendra Sah Kalwar",
+          "party": "Rastriya Swatantra Party",
+          "votes": 25158,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-2656f6",
+          "name": "Naryan Kaji Shrestha",
+          "party": "Nepali Communist Party",
+          "votes": 9139,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-de0fa6",
+          "name": "Binod Kumar Khanal",
+          "party": "Nepali Congress",
+          "votes": 3602,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-4f0476",
+          "name": "Hari Prasad Upreti",
+          "party": "CPN-UML",
+          "votes": 3198,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-097606",
+          "name": "Tribhuwan Kumar Singh",
+          "party": "Ujaylo Nepal Party",
+          "votes": 942,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "sarlahi-4",
+      "kshetraNo": "4",
+      "name": "Sarlahi",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-39eeb0",
+          "name": "Amaresh Kumar Singh",
+          "party": "Rastriya Swatantra Party",
+          "votes": 16227,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-e73305",
+          "name": "Gagan Kumar Thapa",
+          "party": "Nepali Congress",
+          "votes": 9674,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-68063f",
+          "name": "Amnish Kumar Yadav",
+          "party": "CPN-UML",
+          "votes": 3262,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-3c133f",
+          "name": "Rakesh Kumar Mishra",
+          "party": "Janamat Party",
+          "votes": 1022,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-769822",
+          "name": "Rajnish Raya",
+          "party": "Nepali Communist Party",
+          "votes": 703,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "rauthat-1",
+      "kshetraNo": "1",
+      "name": "Rautahat",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-45eb7b",
+          "name": "Rajesh Kumar Chaudhary",
+          "party": "Rastriya Swatantra Party",
+          "votes": 28946,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-04d07c",
+          "name": "Ajay Kumar Gupta",
+          "party": "CPN-UML",
+          "votes": 10693,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-505f8c",
+          "name": "Anil Kumar Jha",
+          "party": "Nepali Congress",
+          "votes": 8574,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-7de69e",
+          "name": "Madhav Kumar Nepal",
+          "party": "Nepali Communist Party",
+          "votes": 7669,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-a246f5",
+          "name": "Yogendra Raya Yadav",
+          "party": "Janata Samajbadi Party-Nepal",
+          "votes": 6846,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "rautahat-2",
+      "kshetraNo": "2",
+      "name": "Rautahat",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-ad41b5",
+          "name": "Md. Firdosh Alam",
+          "party": "Nepali Congress",
+          "votes": 10358,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-e2dfed",
+          "name": "Kiran Kumar Sah",
+          "party": "Nepali Communist Party",
+          "votes": 7229,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-6f239a",
+          "name": "Shekh Sagir",
+          "party": "Rastriya Swatantra Party",
+          "votes": 5710,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-03bf00",
+          "name": "Ranashish Raya Yadav",
+          "party": "Janata Samajbadi Party-Nepal",
+          "votes": 2690,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-e8947b",
+          "name": "Shreebhagwan Raut Kurmi",
+          "party": "Aam Janata Party (Ekal Chunab Chinha)",
+          "votes": 1696,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "rautahat-3",
+      "kshetraNo": "3",
+      "name": "Rautahat",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-6790be",
+          "name": "Rabindra Patel",
+          "party": "Rastriya Swatantra Party",
+          "votes": 6051,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-0fcf2a",
+          "name": "Govinda Chaudhary",
+          "party": "Janata Samajbadi Party-Nepal",
+          "votes": 4172,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-f1ddd8",
+          "name": "Ramkrishna Prasad Yadav",
+          "party": "Nepali Congress",
+          "votes": 2262,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-e27f31",
+          "name": "Prabhu Sah",
+          "party": "Aam Janata Party (Ekal Chunab Chinha)",
+          "votes": 2165,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-d86497",
+          "name": "Kundan Prasad Kushwaha",
+          "party": "CPN-UML",
+          "votes": 1682,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "rautahat-4",
+      "kshetraNo": "4",
+      "name": "Rautahat",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-675138",
+          "name": "Ganesh Paudel",
+          "party": "Rastriya Swatantra Party",
+          "votes": 26376,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-d3a8b1",
+          "name": "Dev Prasad Timalsena",
+          "party": "Nepali Congress",
+          "votes": 11832,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-51d276",
+          "name": "Ram Kumar Bhattarai",
+          "party": "Nepali Communist Party",
+          "votes": 8042,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-c740a3",
+          "name": "Ramji Sah Sonar",
+          "party": "CPN-UML",
+          "votes": 2435,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-785f9b",
+          "name": "Rajkumar Das Tatma",
+          "party": "Janata Samajbadi Party-Nepal",
+          "votes": 811,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "bara-1",
+      "kshetraNo": "1",
+      "name": "Bara",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-4e5c5d",
+          "name": "Ganesh Dhimal",
+          "party": "Rastriya Swatantra Party",
+          "votes": 32035,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-711a1f",
+          "name": "Achyutprasad Mainali",
+          "party": "CPN-UML",
+          "votes": 10913,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-acca20",
+          "name": "Shambhubahadur Budhathoki",
+          "party": "Nepali Congress",
+          "votes": 10275,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-3468f9",
+          "name": "Santosh Dangal",
+          "party": "Nepali Communist Party",
+          "votes": 2253,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-ec57f0",
+          "name": "Rambabuprasad Yadav",
+          "party": "Janata Samajbadi Party-Nepal",
+          "votes": 1213,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "bara-2",
+      "kshetraNo": "2",
+      "name": "Bara",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-c5c266",
+          "name": "Chandankumar Singh",
+          "party": "Rastriya Swatantra Party",
+          "votes": 15606,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-cfeeea",
+          "name": "Ramkishorprasad Yadav",
+          "party": "Janata Samajbadi Party-Nepal",
+          "votes": 8159,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-e4a1f8",
+          "name": "Balbir Prasad Chaudhari",
+          "party": "CPN-UML",
+          "votes": 5633,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-e9b68a",
+          "name": "Bhaiyaraprasad Yadav",
+          "party": "Nepali Congress",
+          "votes": 4672,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-4050e9",
+          "name": "Rameshprasad Yadav",
+          "party": "Nepali Communist Party",
+          "votes": 393,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "bara-3",
+      "kshetraNo": "3",
+      "name": "Bara",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-ec356d",
+          "name": "Arbind Sah",
+          "party": "Rastriya Swatantra Party",
+          "votes": 40697,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-393fc9",
+          "name": "Pharamullaha Mansur",
+          "party": "Nepali Congress",
+          "votes": 10052,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-888bd8",
+          "name": "Rambabukumar Yadav",
+          "party": "Janata Samajbadi Party-Nepal",
+          "votes": 6884,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-bff1ff",
+          "name": "Jwalakumari Sah",
+          "party": "CPN-UML",
+          "votes": 5271,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-b916e2",
+          "name": "Pramodprasad Gupta",
+          "party": "Janamat Party",
+          "votes": 3819,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "bara-4",
+      "kshetraNo": "4",
+      "name": "Bara",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-95763c",
+          "name": "Rahabar Ansari",
+          "party": "Rastriya Swatantra Party",
+          "votes": 41200,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-5346c9",
+          "name": "Krishnakumar Shrestha",
+          "party": "CPN-UML",
+          "votes": 11639,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-59f42f",
+          "name": "Sanjusah Kanu",
+          "party": "Janata Samajbadi Party-Nepal",
+          "votes": 7593,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-7242c5",
+          "name": "Shyambabu Gupta",
+          "party": "Nepali Congress",
+          "votes": 7113,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-8c6919",
+          "name": "Ajay Kushwaha",
+          "party": "Nepali Communist Party",
+          "votes": 2067,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "parsa-1",
+      "kshetraNo": "1",
+      "name": "Parsa",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-04619f",
+          "name": "Buddhi Prasad Panta",
+          "party": "Rastriya Swatantra Party",
+          "votes": 27274,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-d28ad5",
+          "name": "Pradip Yadav",
+          "party": "CPN-UML",
+          "votes": 13030,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-fab6d8",
+          "name": "Anil Kumar Rungata",
+          "party": "Nepali Congress",
+          "votes": 11885,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-abdb8f",
+          "name": "Nanda Kishor Prasad Shribastav",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 1272,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-7380bb",
+          "name": "Ramnaresh Prasad Yadav",
+          "party": "Janata Samajbadi Party-Nepal",
+          "votes": 1201,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "parsa-2",
+      "kshetraNo": "2",
+      "name": "Parsa",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-e24e21",
+          "name": "Shushil Kumar Kanu",
+          "party": "Rastriya Swatantra Party",
+          "votes": 30740,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-cd73ab",
+          "name": "Ajay Kumar Chaurasiya",
+          "party": "Nepali Congress",
+          "votes": 11890,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-23bb3c",
+          "name": "Rima Kumari Yadav",
+          "party": "CPN-UML",
+          "votes": 11605,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-c86d41",
+          "name": "Ashok Kumar Agrawal",
+          "party": "Janata Samajbadi Party-Nepal",
+          "votes": 2642,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-209910",
+          "name": "Bina Jaiswal",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 1999,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "parsa-3",
+      "kshetraNo": "3",
+      "name": "Parsa",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-21b6c4",
+          "name": "Raakanta Prasad Chaurasiya",
+          "party": "Rastriya Swatantra Party",
+          "votes": 16558,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-4b3425",
+          "name": "Surendra Prasad Chaudhary",
+          "party": "Nepali Congress",
+          "votes": 9105,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-739cb6",
+          "name": "Rupesh Kumar Pandey",
+          "party": "CPN-UML",
+          "votes": 7650,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-576a7f",
+          "name": "Chotelal Prasad Yadav",
+          "party": "Nepali Communist Party",
+          "votes": 1689,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-ef2e70",
+          "name": "Malati Kuari Kushwaha",
+          "party": "Janamat Party",
+          "votes": 231,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "parsa-4",
+      "kshetraNo": "4",
+      "name": "Parsa",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-1a9d6e",
+          "name": "Tek Bhadur Shakya",
+          "party": "Rastriya Swatantra Party",
+          "votes": 17190,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-78a602",
+          "name": "Ramesh Rijal",
+          "party": "Nepali Congress",
+          "votes": 7721,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-4d0907",
+          "name": "Jalim Miya Mansuri",
+          "party": "CPN-UML",
+          "votes": 7385,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-8a89e9",
+          "name": "Jayprakash Tharu",
+          "party": "Nepali Communist Party",
+          "votes": 2464,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-a8f047",
+          "name": "Kripasindhu Prasad",
+          "party": "Janata Samajbadi Party-Nepal",
+          "votes": 2317,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "sindhuli-1",
+      "kshetraNo": "1",
+      "name": "Sindhuli",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-38899f",
+          "name": "Pradip Kumar Katuwal Chhetri (K.C)",
+          "party": "CPN-UML",
+          "votes": 13125,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-d72218",
+          "name": "Dhanendra Karki",
+          "party": "Rastriya Swatantra Party",
+          "votes": 12283,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-390231",
+          "name": "Ujjwal Prasad Baral",
+          "party": "Nepali Congress",
+          "votes": 12034,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-680488",
+          "name": "Dekendra Prasad Subedi",
+          "party": "Nepali Communist Party",
+          "votes": 3466,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-7e456b",
+          "name": "Nim Bahadur Moktan",
+          "party": "Shram Sanskriti Party",
+          "votes": 159,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "sindhuli-2",
+      "kshetraNo": "2",
+      "name": "Sindhuli",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-0c51de",
+          "name": "Aashish Gajurel",
+          "party": "Rastriya Swatantra Party",
+          "votes": 17338,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-f70a40",
+          "name": "Lekh Nath Dahal",
+          "party": "Nepali Communist Party",
+          "votes": 14644,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-b0b5ec",
+          "name": "Manoj Jung Thapa",
+          "party": "CPN-UML",
+          "votes": 11079,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-3c5670",
+          "name": "Shushila Theeng",
+          "party": "Nepali Congress",
+          "votes": 6648,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-3832db",
+          "name": "Maheshwor Dahal",
+          "party": "Independent",
+          "votes": 581,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "ramechhap-1",
+      "kshetraNo": "1",
+      "name": "Ramechhap",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-c94d76",
+          "name": "Krishna Hari Budhathoki",
+          "party": "Rastriya Swatantra Party",
+          "votes": 3091,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-99fe09",
+          "name": "Shyam Kumar Shrestha",
+          "party": "Nepali Communist Party",
+          "votes": 3007,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-4840f1",
+          "name": "Ram Chandra Khadka",
+          "party": "Nepali Congress",
+          "votes": 2947,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-836bbe",
+          "name": "Dip Bahadur Yonjan",
+          "party": "Ujyalo Nepal Party",
+          "votes": 2236,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-cb5692",
+          "name": "Madhav Prasad Dhungel",
+          "party": "CPN-UML",
+          "votes": 1776,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "dolkha-1",
+      "kshetraNo": "1",
+      "name": "Dolkha",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-b9aaae",
+          "name": "Jagadish Kharel",
+          "party": "Rastriya Swatantra Party",
+          "votes": 12161,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-3c6968",
+          "name": "Parbat Gurung",
+          "party": "CPN-UML",
+          "votes": 8285,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-3b834b",
+          "name": "Bishal Khadka",
+          "party": "Nepali Communist Party",
+          "votes": 7559,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-9f9b67",
+          "name": "Ajay Baby Shivakoti",
+          "party": "Nepali Congress",
+          "votes": 3914,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-196a25",
+          "name": "Madhav Koirala Khatri",
+          "party": "Independent",
+          "votes": 0,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "sindhupalchowk-1",
+      "kshetraNo": "1",
+      "name": "Sindhupalchowk",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-25d25e",
+          "name": "Bharat Prasad Parajuli",
+          "party": "Rastriya Swatantra Party",
+          "votes": 9275,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-494151",
+          "name": "Madhav Sapkota",
+          "party": "Nepali Communist Party",
+          "votes": 7005,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-a7a913",
+          "name": "Janga Bahadur Lama",
+          "party": "Nepali Congress",
+          "votes": 5873,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-5a2004",
+          "name": "Saresh Nepal",
+          "party": "CPN-UML",
+          "votes": 5634,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-8a7b7a",
+          "name": "Pratap Lama",
+          "party": "Ujyalo Nepal Party",
+          "votes": 1742,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "sindhupalchowk-2",
+      "kshetraNo": "2",
+      "name": "Sindhupalchowk",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-7cb5e1",
+          "name": "Yubraj Dulal",
+          "party": "Nepali Communist Party",
+          "votes": 5349,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-eae88a",
+          "name": "Bansalal Tamang",
+          "party": "Nepali Congress",
+          "votes": 4266,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-4095a8",
+          "name": "Jhalak Kumar Shrestha",
+          "party": "Rastriya Swatantra Party",
+          "votes": 3214,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-13e0ed",
+          "name": "Sher Bahadur Tamang",
+          "party": "CPN-UML",
+          "votes": 2432,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-885144",
+          "name": "Gopi Krishna Chaulagain",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 280,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "kavrepalanchowk-1",
+      "kshetraNo": "1",
+      "name": "Kavrepalanchowk",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-0a7fce",
+          "name": "Gin Nath Gautam",
+          "party": "Nepali Communist Party",
+          "votes": 10400,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-39d5de",
+          "name": "Gunraj Tamang",
+          "party": "Nepali Congress",
+          "votes": 10386,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-5a1b27",
+          "name": "Madhu Kumar Chaulagain",
+          "party": "Rastriya Swatantra Party",
+          "votes": 7990,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-a5f023",
+          "name": "Ami Tamang",
+          "party": "CPN-UML",
+          "votes": 7032,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-b9eefa",
+          "name": "Yogendra Lama",
+          "party": "Ujyalo Nepal Party",
+          "votes": 2569,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "kavrepalanchowk-2",
+      "kshetraNo": "2",
+      "name": "Kavrepalanchowk",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-85fa53",
+          "name": "Badan Kumar Bhandari",
+          "party": "Rastriya Swatantra Party",
+          "votes": 47509,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-abb862",
+          "name": "Madhu Prasad Acharya",
+          "party": "Nepali Congress",
+          "votes": 15596,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-8bf966",
+          "name": "Ashok Kumar Byanju Shrestha",
+          "party": "CPN-UML",
+          "votes": 12525,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-e56a6e",
+          "name": "Basundhara Humagain",
+          "party": "Nepali Communist Party",
+          "votes": 7192,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-eb5118",
+          "name": "Jyotsana Saiju",
+          "party": "Ujyalo Nepal Party",
+          "votes": 3467,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "lalitpur-1",
+      "kshetraNo": "1",
+      "name": "Lalitpur",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-b3e9d5",
+          "name": "Budda Ratna Maharjan",
+          "party": "Rastriya Swatantra Party",
+          "votes": 23373,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-619129",
+          "name": "Uday Shumsher J.B. Rana",
+          "party": "Nepali Congress",
+          "votes": 13520,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-d1aa7e",
+          "name": "Chet Nath Sanjel",
+          "party": "CPN-UML",
+          "votes": 6546,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-15aa89",
+          "name": "Padam Kumar Lama",
+          "party": "Ujyalo Nepal Party",
+          "votes": 2686,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-8810bb",
+          "name": "Sunil Maharjan",
+          "party": "Nepali Communist Party",
+          "votes": 1964,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "lalitpur-2",
+      "kshetraNo": "2",
+      "name": "Lalitpur",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-29bee6",
+          "name": "Jagadish Kharel",
+          "party": "Rastriya Swatantra Party",
+          "votes": 13735,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-57228b",
+          "name": "Prem Krishna Maharjan",
+          "party": "Nepali Congress",
+          "votes": 1854,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-9ddd1a",
+          "name": "Prem Bahadur Maharjan",
+          "party": "CPN-UML",
+          "votes": 1411,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-b4e132",
+          "name": "Raja Ram Tandukar",
+          "party": "Ujyalo Nepal Party",
+          "votes": 725,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-cfecbf",
+          "name": "Rajendra Amatya",
+          "party": "Nepali Communist Party",
+          "votes": 717,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "lalitpur-3",
+      "kshetraNo": "3",
+      "name": "Lalitpur",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-8766b3",
+          "name": "Tosima Karki",
+          "party": "Rastriya Swatantra Party",
+          "votes": 31590,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-8f34c8",
+          "name": "Jitendra Kumar Shrestha",
+          "party": "Nepali Congress",
+          "votes": 6369,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-115708",
+          "name": "Raj Kaji Maharjan",
+          "party": "Nepali Communist Party",
+          "votes": 3459,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-1d4ef2",
+          "name": "Sandan Thapa Magar",
+          "party": "CPN-UML",
+          "votes": 2174,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-039989",
+          "name": "Sabin Kumar Khadka",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 1530,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "bhaktapur-1",
+      "kshetraNo": "1",
+      "name": "Bhaktapur",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-aa84be",
+          "name": "Rukesh Ranjit",
+          "party": "Rastriya Swatantra Party",
+          "votes": 33436,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-9e2e09",
+          "name": "Prem Suwal",
+          "party": "Nepal Majdoor Kisan Party",
+          "votes": 28147,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-d79da2",
+          "name": "Kiran Neupane",
+          "party": "Nepali Congress",
+          "votes": 4282,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-48989c",
+          "name": "Som Prasad Mishra",
+          "party": "CPN-UML",
+          "votes": 3721,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-5b1dbd",
+          "name": "Bharat Bahadur Khadka",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 2472,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "bhaktapur-2",
+      "kshetraNo": "2",
+      "name": "Bhaktapur",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-01b684",
+          "name": "Rajiv Khatri",
+          "party": "Rastriya Swatantra Party",
+          "votes": 34702,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-34cffc",
+          "name": "Mahesh Basnet",
+          "party": "CPN-UML",
+          "votes": 8351,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-797c35",
+          "name": "Kavir Rana",
+          "party": "Nepali Congress",
+          "votes": 7321,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-381b6c",
+          "name": "Ramesh Baidhya",
+          "party": "Nepal Majdoor Kisan Party",
+          "votes": 2941,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-bc7f26",
+          "name": "Ram Prasad Sapkota",
+          "party": "Nepali Communist Party",
+          "votes": 1114,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-8786bd",
+          "name": "Bikram Thapa",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 901,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "kathmandu-1",
+      "kshetraNo": "1",
+      "name": "Kathmandu",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-149575",
+          "name": "Ranju Neupane",
+          "party": "Rastriya Swatantra Party",
+          "votes": 15455,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-58bd01",
+          "name": "Prabal Thapa Chhetri",
+          "party": "Nepali Congress",
+          "votes": 6364,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-7e6269",
+          "name": "Rabindra Mishra",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 3972,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-1c590f",
+          "name": "Mohan Raj Regmi",
+          "party": "CPN-UML",
+          "votes": 1618,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-bf0e6b",
+          "name": "Menuka Bhandari",
+          "party": "Nepali Communist Party",
+          "votes": 315,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "kathmandu-2",
+      "kshetraNo": "2",
+      "name": "Kathmandu",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-45fc14",
+          "name": "Sunil KC",
+          "party": "Rastriya Swatantra Party",
+          "votes": 34238,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-760fd9",
+          "name": "Kabir Sharma",
+          "party": "Nepali Congress",
+          "votes": 8874,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-2282ef",
+          "name": "Kunti Devi Pokharel (Upadhyay)",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 5210,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-10e57d",
+          "name": "Maniram Phuyal",
+          "party": "CPN-UML",
+          "votes": 4759,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-0216b2",
+          "name": "Nitesh Paudel",
+          "party": "Nepali Communist Party",
+          "votes": 1912,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "kathmandu-3",
+      "kshetraNo": "3",
+      "name": "Kathmandu",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-daa4d6",
+          "name": "Raju Nath Pandey",
+          "party": "Rastriya Swatantra Party",
+          "votes": 18756,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-0bb849",
+          "name": "Kulman Ghising",
+          "party": "Ujyalo Nepal Party",
+          "votes": 11171,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-feff99",
+          "name": "Ramesh Aryal",
+          "party": "Nepali Congress",
+          "votes": 6000,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-3e2ac1",
+          "name": "Rameshwar Phuyal",
+          "party": "CPN-UML",
+          "votes": 3816,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-5fedfa",
+          "name": "Sundar Ram Bohara",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 841,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "kathmandu-4",
+      "kshetraNo": "4",
+      "name": "Kathmandu",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-0d6850",
+          "name": "Pukar Bam",
+          "party": "Rastriya Swatantra Party",
+          "votes": 29142,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-342cc7",
+          "name": "Sachin Timilsena",
+          "party": "Nepali Congress",
+          "votes": 8824,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-761e7f",
+          "name": "Rajan Bhattarai",
+          "party": "CPN-UML",
+          "votes": 5733,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-7326cc",
+          "name": "Surendra Raj Bhandari",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 2025,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-f512b1",
+          "name": "Jhanak Bahadur Adhikari",
+          "party": "Ujyalo Nepal Party",
+          "votes": 1034,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "kathmandu-5",
+      "kshetraNo": "5",
+      "name": "Kathmandu",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-cdabc0",
+          "name": "Sasmit Pokharel",
+          "party": "Rastriya Swatantra Party",
+          "votes": 30737,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-20c96c",
+          "name": "Pradeep Paudel",
+          "party": "Nepali Congress",
+          "votes": 9159,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-ef3281",
+          "name": "Ishwar Pokharel",
+          "party": "CPN-UML",
+          "votes": 4701,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-e65133",
+          "name": "Kamal Thapa",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 1922,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-4ec54b",
+          "name": "Shreeram Gurung",
+          "party": "Ujyalo Nepal Party",
+          "votes": 1100,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "kathmandu-6",
+      "kshetraNo": "6",
+      "name": "Kathmandu",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-2bb45c",
+          "name": "Shishir Khanal",
+          "party": "Rastriya Swatantra Party",
+          "votes": 27719,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-5e6e5d",
+          "name": "Krishna Baniya Chhetri",
+          "party": "Nepali Congress",
+          "votes": 6751,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-4be0ce",
+          "name": "Aman Kumar Maskey",
+          "party": "CPN-UML",
+          "votes": 4268,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-6b4058",
+          "name": "Uddav Raj Bhetuwal",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 1207,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-f32750",
+          "name": "Hem Lal Sharma",
+          "party": "Nepali Communist Party",
+          "votes": 1164,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "kathmandu-7",
+      "kshetraNo": "7",
+      "name": "Kathmandu",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-ba4873",
+          "name": "Ganesh Parajuli",
+          "party": "Rastriya Swatantra Party",
+          "votes": 27805,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-d0c658",
+          "name": "Pramod Hari Guragain",
+          "party": "Nepali Congress",
+          "votes": 3982,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-d38e21",
+          "name": "Basanta Prasad Manandhar",
+          "party": "Nepali Communist Party",
+          "votes": 3667,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-4b100e",
+          "name": "Prakash Shrestha",
+          "party": "CPN-UML",
+          "votes": 3544,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-387ca5",
+          "name": "Bimala Lama",
+          "party": "Ujaylo Nepal Party",
+          "votes": 1383,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "kathmandu-8",
+      "kshetraNo": "8",
+      "name": "Kathmandu",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-77d1fc",
+          "name": "Biraj Bhakta Shrestha",
+          "party": "Rastriya Swatantra Party",
+          "votes": 24592,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-9b5f5f",
+          "name": "Suman Shakya",
+          "party": "Nepali Communist Party",
+          "votes": 3217,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-45ef3d",
+          "name": "Sapana Rajbhandari",
+          "party": "Nepali Congress",
+          "votes": 2835,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-29913f",
+          "name": "Nabin Shahi",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 1909,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-1a4c66",
+          "name": "Rajesh Shakya",
+          "party": "CPN-UML",
+          "votes": 1328,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "kathmandu-9",
+      "kshetraNo": "9",
+      "name": "Kathmandu",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-9d5a19",
+          "name": "Dol Prasad Aryal",
+          "party": "Rastriya Swatantra Party",
+          "votes": 35093,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-e154ba",
+          "name": "Nanu Maiya Bastola",
+          "party": "Nepali Congress",
+          "votes": 5460,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-cea28e",
+          "name": "Ajay Kranti Shakya",
+          "party": "CPN-UML",
+          "votes": 4580,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-30a899",
+          "name": "Dil Kumar Karki",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 1457,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-407b3a",
+          "name": "Rameshwor Shrestha",
+          "party": "Ujaylo Nepal Party",
+          "votes": 1426,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "kathmandu-10",
+      "kshetraNo": "10",
+      "name": "Kathmandu",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-304706",
+          "name": "Pradip Bista",
+          "party": "Rastriya Swatantra Party",
+          "votes": 37469,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-6c595f",
+          "name": "Himal Karki",
+          "party": "Nepali Congress",
+          "votes": 8100,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-66bc5d",
+          "name": "Binod Shrestha",
+          "party": "CPN-UML",
+          "votes": 4864,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-6a2882",
+          "name": "Rupa Maharjan (Shrestha)",
+          "party": "Nepali Communist Party",
+          "votes": 2648,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-a4dbce",
+          "name": "Bal Ram Thapa",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 2103,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "nuwakot-1",
+      "kshetraNo": "1",
+      "name": "Nuwakot",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-796f04",
+          "name": "Bikram Timilsina",
+          "party": "Rastriya Swatantra Party",
+          "votes": 6763,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-b7ecac",
+          "name": "Prakash Sharan Mahat",
+          "party": "Nepali Congress",
+          "votes": 6013,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-4e22a2",
+          "name": "Hit Bahadur Tamang",
+          "party": "Nepali Communist Party",
+          "votes": 4586,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-eed217",
+          "name": "Badri Mainali",
+          "party": "CPN-UML",
+          "votes": 3072,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-2fe64a",
+          "name": "Amit Tamang",
+          "party": "Ujaylo Nepal Party",
+          "votes": 1175,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "nuwakot-2",
+      "kshetraNo": "2",
+      "name": "Nuwakot",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-331cb3",
+          "name": "Achuttam Lamichhane",
+          "party": "Rastriya Swatantra Party",
+          "votes": 32054,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-9cec40",
+          "name": "Jagadiswor Narsingh KC",
+          "party": "Nepali Congress",
+          "votes": 15503,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-d38a58",
+          "name": "Keshav Raj Pandey",
+          "party": "CPN-UML",
+          "votes": 8285,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-980c6c",
+          "name": "Hiranath Khatiwada",
+          "party": "Nepali Communist Party",
+          "votes": 6720,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-bb88c6",
+          "name": "Gyanendra Ghale",
+          "party": "Ujaylo Nepal Party",
+          "votes": 2750,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "rasuwa-1",
+      "kshetraNo": "1",
+      "name": "Rasuwa",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-2dcec5",
+          "name": "Mohan Acharya",
+          "party": "Nepali Congress",
+          "votes": 10656,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-250a48",
+          "name": "Basant Bhatta",
+          "party": "Rastriya Swatantra Party",
+          "votes": 5571,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-8c6d9c",
+          "name": "Prem Bahadur Tamang",
+          "party": "CPN-UML",
+          "votes": 4688,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-a2444f",
+          "name": "Man Bahadur Tamang",
+          "party": "Ujaylo Nepal Party",
+          "votes": 1453,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-e20685",
+          "name": "Madhav Prasad Lamichhane",
+          "party": "Nepali Communist Party",
+          "votes": 953,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "dhading-1",
+      "kshetraNo": "1",
+      "name": "Dhading",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-680733",
+          "name": "Aashika Tamang",
+          "party": "Rastriya Swatantra Party",
+          "votes": 20096,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-751c2c",
+          "name": "Bhumi Prasad Tripathi",
+          "party": "CPN-UML",
+          "votes": 7985,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-f8cf0e",
+          "name": "Rajendra Prasad Pandey",
+          "party": "Nepali Communist Party",
+          "votes": 6639,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-130986",
+          "name": "Krishna Rijal",
+          "party": "Nepali Congress",
+          "votes": 4727,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-dad66b",
+          "name": "Suman Tamang",
+          "party": "Mongol National Organization",
+          "votes": 38,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "dhading-2",
+      "kshetraNo": "2",
+      "name": "Dhading",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-84cb96",
+          "name": "Bodh Narayan Shrestha",
+          "party": "Rastriya Swatantra Party",
+          "votes": 13977,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-7313a6",
+          "name": "Ramesh Prasad Dhamala",
+          "party": "Nepali Congress",
+          "votes": 11422,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-3380b9",
+          "name": "Dhan Bahadur Ghale",
+          "party": "CPN-UML",
+          "votes": 7244,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-6c1c56",
+          "name": "Ram Bahadur Bhandari",
+          "party": "Nepali Communist Party",
+          "votes": 6079,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-437fa4",
+          "name": "Suresh Rijal",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 1130,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "makwanpur-1",
+      "kshetraNo": "1",
+      "name": "Makwanpur",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-38a5d2",
+          "name": "Prakash Gautam",
+          "party": "Rastriya Swatantra Party",
+          "votes": 22414,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-f3446f",
+          "name": "Rameshwar Rana Magar",
+          "party": "CPN-UML",
+          "votes": 4727,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-e6db47",
+          "name": "Mahalaxmi Upadhyay (Dina)",
+          "party": "Nepali Congress",
+          "votes": 4320,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-a56054",
+          "name": "Surendra Lama",
+          "party": "Ujaylo Nepal Party",
+          "votes": 3386,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-d9638d",
+          "name": "Dipak Bahadur Singh",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 2613,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "makwanpur-2",
+      "kshetraNo": "2",
+      "name": "Makwanpur",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-2f670b",
+          "name": "Prashant Upreti",
+          "party": "Rastriya Swatantra Party",
+          "votes": 15314,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-b0b6b0",
+          "name": "Mahesh Kumar Bartaula",
+          "party": "CPN-UML",
+          "votes": 8211,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-6dcceb",
+          "name": "Iabh Sher Bista",
+          "party": "Nepali Communist Party",
+          "votes": 7119,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-f8cd55",
+          "name": "Buddha Lama",
+          "party": "Nepali Congress",
+          "votes": 6538,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-4f3306",
+          "name": "Prabin Kumar Syangtan",
+          "party": "Ujaylo Nepal Party",
+          "votes": 2607,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "chitwan-1",
+      "kshetraNo": "1",
+      "name": "Chitwan",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-882e28",
+          "name": "Hari Dhakal",
+          "party": "Rastriya Swatantra Party",
+          "votes": 41539,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-ddfe92",
+          "name": "Rajendra Prasad Burlakoti",
+          "party": "Nepali Congress",
+          "votes": 9797,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-dbc5bf",
+          "name": "Dawa Dorje Lama",
+          "party": "CPN-UML",
+          "votes": 8398,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-8f7c09",
+          "name": "Krishna Raj Panta",
+          "party": "Nepali Communist Party",
+          "votes": 3331,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-1e3bc1",
+          "name": "Balram Sharma Khanal",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 1798,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "chitwan-2",
+      "kshetraNo": "2",
+      "name": "Chitwan",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-8c05e9",
+          "name": "Rabi Lamichhane",
+          "party": "Rastriya Swatantra Party",
+          "votes": 54402,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-0cf339",
+          "name": "Meena Kumari Kharel",
+          "party": "Nepali Congress",
+          "votes": 14564,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-990308",
+          "name": "Ashim Ghimire",
+          "party": "CPN-UML",
+          "votes": 6992,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-3a691e",
+          "name": "Pratap Gurung",
+          "party": "Nepali Communist Party",
+          "votes": 4969,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-09b5c4",
+          "name": "Milan Thapa Magar",
+          "party": "Shram Sanskriti Party",
+          "votes": 751,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "chitwan-3",
+      "kshetraNo": "3",
+      "name": "Chitwan",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-024119",
+          "name": "Sobita Gautam",
+          "party": "Rastriya Swatantra Party",
+          "votes": 57501,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-c09674",
+          "name": "Renu Dahal",
+          "party": "Nepali Communist Party",
+          "votes": 20190,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-0d5038",
+          "name": "Tek Prasad Gurung",
+          "party": "Nepali Congress",
+          "votes": 8123,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-3c87b5",
+          "name": "Shankar Raj Thapaliya",
+          "party": "CPN-UML",
+          "votes": 4928,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-da014a",
+          "name": "Dipak Thapa (Magar)",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 1196,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "gorkha-1",
+      "kshetraNo": "1",
+      "name": "Gorkha",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-298450",
+          "name": "Ram Chandra Lamichhane",
+          "party": "CPN-UML",
+          "votes": 0,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-18d5a4",
+          "name": "Prem Kumar Khatri",
+          "party": "Nepali Congress",
+          "votes": 0,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-db01f6",
+          "name": "Hari Raj Adhikari",
+          "party": "Nepali Communist Party",
+          "votes": 0,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-9905f3",
+          "name": "Sudhan Gurung",
+          "party": "Rastriya Swatantra Party",
+          "votes": 0,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-93931a",
+          "name": "Kedar Mani Khanal",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 0,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "gorkha-2",
+      "kshetraNo": "2",
+      "name": "Gorkha",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-bb89be",
+          "name": "Kabindra Burlakoti",
+          "party": "Rastriya Swatantra Party",
+          "votes": 7335,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-0f5f42",
+          "name": "Prakash Chandra Dawadi",
+          "party": "Nepali Congress",
+          "votes": 3663,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-fec3e7",
+          "name": "Lekhnath Neupane",
+          "party": "Nepali Communist Party",
+          "votes": 2827,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-764a72",
+          "name": "Milan Gurung",
+          "party": "CPN-UML",
+          "votes": 806,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-a763ad",
+          "name": "Kul Bahadur Basnet",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 117,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "lamjung-1",
+      "kshetraNo": "1",
+      "name": "Lamjung",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-cbed86",
+          "name": "Dharma Raj K.C.",
+          "party": "Rastriya Swatantra Party",
+          "votes": 31219,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-9a5056",
+          "name": "Prithvi Subba Gurung",
+          "party": "CPN-UML",
+          "votes": 15648,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-248735",
+          "name": "Gam Prasad Gurung",
+          "party": "Nepali Congress",
+          "votes": 15604,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-bf5363",
+          "name": "Hari Jung Tamang",
+          "party": "Nepali Communist Party",
+          "votes": 3114,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-580d71",
+          "name": "Kebindra Jung Gurung",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 941,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "tanahun-1",
+      "kshetraNo": "1",
+      "name": "Tanahun",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-9b79a1",
+          "name": "Swarnim Wagle",
+          "party": "Rastriya Swatantra Party",
+          "votes": 38040,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-bba4c9",
+          "name": "Govind Bhattarai",
+          "party": "Nepali Congress",
+          "votes": 16231,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-da1d19",
+          "name": "Bhagwati Neupane",
+          "party": "CPN-UML",
+          "votes": 5653,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-f7d3a3",
+          "name": "Bidya Nath Dhakal",
+          "party": "Nepali Communist Party",
+          "votes": 2352,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-5f7b27",
+          "name": "Ramdatt Joshi",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 614,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "tanahun-2",
+      "kshetraNo": "2",
+      "name": "Tanahun",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-2df60a",
+          "name": "Shreeram Neupane",
+          "party": "Rastriya Swatantra Party",
+          "votes": 19324,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-c5ee90",
+          "name": "Shankar Bhandari",
+          "party": "Nepali Congress",
+          "votes": 9497,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-dcc45a",
+          "name": "Kedar Sigdel",
+          "party": "CPN-UML",
+          "votes": 6748,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-df9115",
+          "name": "Som Bahadur Thapa",
+          "party": "Nepali Communist Party",
+          "votes": 1134,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-aa5097",
+          "name": "Susma Ale",
+          "party": "Mongol National Organization",
+          "votes": 2,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "syangja-1",
+      "kshetraNo": "1",
+      "name": "Syangja",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-f6052c",
+          "name": "Dhananjaya Regmi",
+          "party": "Rastriya Swatantra Party",
+          "votes": 29071,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-c58eaf",
+          "name": "Bharat Raj Dhakal",
+          "party": "Nepali Congress",
+          "votes": 18857,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-b258c3",
+          "name": "Min Prasad Gurung",
+          "party": "CPN-UML",
+          "votes": 16804,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-c15aef",
+          "name": "Sailendra Ghimire",
+          "party": "Nepali Communist Party",
+          "votes": 1552,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-79fe4c",
+          "name": "Hukum Bahadur Rana",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 698,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "syangja-2",
+      "kshetraNo": "2",
+      "name": "Syangja",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-0d74a9",
+          "name": "Khim Bahadur Thapa",
+          "party": "CPN-UML",
+          "votes": 9075,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-0516a8",
+          "name": "Jhabi Lal Dumre",
+          "party": "Rastriya Swatantra Party",
+          "votes": 8025,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-d150cc",
+          "name": "Bhagwat Prakash Malla",
+          "party": "Nepali Congress",
+          "votes": 7322,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-c8f1b4",
+          "name": "Padam Bahadur B.K.",
+          "party": "Nepali Communist Party",
+          "votes": 408,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-99c80b",
+          "name": "Rabin Pathak",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 160,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "kaski-1",
+      "kshetraNo": "1",
+      "name": "Kaski",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-84ab20",
+          "name": "Khadak Raj Paudel",
+          "party": "Rastriya Swatantra Party",
+          "votes": 39883,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-9d45ce",
+          "name": "Tilak Bahadur Ranabhat",
+          "party": "Nepali Congress",
+          "votes": 11214,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-3d825a",
+          "name": "Bain Bahadur Chhetri (Adhikari)",
+          "party": "CPN-UML",
+          "votes": 10429,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-a78f8f",
+          "name": "Rajkaji Gurung",
+          "party": "Nepali Communist Party",
+          "votes": 2479,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-d9041e",
+          "name": "Bil Bahadur Tamang Lama",
+          "party": "Shram Sanskriti Party",
+          "votes": 1141,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "kaski-2",
+      "kshetraNo": "2",
+      "name": "Kaski",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-aa1e4a",
+          "name": "Uttam Prasad Paudel",
+          "party": "Rastriya Swatantra Party",
+          "votes": 31911,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-5aeead",
+          "name": "Rashmi Acharya",
+          "party": "CPN-UML",
+          "votes": 7493,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-8ba788",
+          "name": "Madhav Prasad Bastola",
+          "party": "Nepali Congress",
+          "votes": 6500,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-b75ce9",
+          "name": "Hem Jung Gurung",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 1643,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-48e123",
+          "name": "Hem Bahadur Thapa Parajuli",
+          "party": "Nepali Communist Party",
+          "votes": 1276,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "kaski-3",
+      "kshetraNo": "3",
+      "name": "Kaski",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-c9c7f5",
+          "name": "Bina Gurung",
+          "party": "Rastriya Swatantra Party",
+          "votes": 37750,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-3fa3a9",
+          "name": "Manoj Gurung",
+          "party": "Nepali Congress",
+          "votes": 12780,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-c982a3",
+          "name": "Damodar Paudel Bairagi",
+          "party": "CPN-UML",
+          "votes": 7906,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-838e3c",
+          "name": "Gopal Giri",
+          "party": "Nepali Communist Party",
+          "votes": 1456,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-28a415",
+          "name": "Arjun Prasad Khanal",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 1406,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "manang-1",
+      "kshetraNo": "1",
+      "name": "Manang",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-5bc02e",
+          "name": "Tek Bahadur Gurung",
+          "party": "Nepali Congress",
+          "votes": 2415,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-b314a5",
+          "name": "Yashoda Gurung (Subedi)",
+          "party": "Nepali Communist Party",
+          "votes": 454,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-72a741",
+          "name": "Ram Bahadur Ghale",
+          "party": "Mongol National Organization",
+          "votes": 9,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "mustang-1",
+      "kshetraNo": "1",
+      "name": "Mustang",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-2c2329",
+          "name": "Yogesh Gauchan Thakali",
+          "party": "Nepali Congress",
+          "votes": 3307,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-7165e0",
+          "name": "Indra Dhara Dadu Bista",
+          "party": "CPN-UML",
+          "votes": 1806,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-694e96",
+          "name": "Adhitya Chandra Thakali",
+          "party": "Rastriya Swatantra Party",
+          "votes": 759,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-d90305",
+          "name": "Kamala Lalchan",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 161,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-80d09d",
+          "name": "Ngutuk Gurung",
+          "party": "Nepali Communist Party",
+          "votes": 151,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "parbat-1",
+      "kshetraNo": "1",
+      "name": "Parbat",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-eb5969",
+          "name": "Sagar Bhusal",
+          "party": "Rastriya Swatantra Party",
+          "votes": 26561,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-c01dab",
+          "name": "Arjun Prasad Joshi",
+          "party": "Nepali Congress",
+          "votes": 15954,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-acd68b",
+          "name": "Padam Giri",
+          "party": "CPN-UML",
+          "votes": 15075,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-51ded0",
+          "name": "Manhari Sharma",
+          "party": "Nepali Communist Party",
+          "votes": 4557,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-bdc19b",
+          "name": "Durga Bahadur Malla",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 450,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "myagdi-1",
+      "kshetraNo": "1",
+      "name": "Myagdi",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-396b49",
+          "name": "Mahabir Pun",
+          "party": "Independent",
+          "votes": 22850,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-84f1ab",
+          "name": "Harikrishna Shrestha",
+          "party": "CPN-UML",
+          "votes": 7919,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-4f11bc",
+          "name": "Karna Bahadur Bhandari",
+          "party": "Nepali Congress",
+          "votes": 6683,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-3ae483",
+          "name": "Arjun Bahadur Thapa",
+          "party": "Nepali Communist Party",
+          "votes": 3529,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-6affa8",
+          "name": "Yuvraj Roka",
+          "party": "Rastriya Swatantra Party",
+          "votes": 1033,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-ac1194",
+          "name": "Dambhar Bahadur Suvedi",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 235,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "baglung-1",
+      "kshetraNo": "1",
+      "name": "Baglung",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-532cc5",
+          "name": "Sushil Khadka",
+          "party": "Rastriya Swatantra Party",
+          "votes": 20927,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-e2f9fa",
+          "name": "Bhim Bahadur Shrees Rana",
+          "party": "Nepali Congress",
+          "votes": 11944,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-f07a26",
+          "name": "Hira Bahadur Khatri",
+          "party": "CPN-UML",
+          "votes": 8640,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-0ecac9",
+          "name": "Krishna Prasad Sharma Adhikari",
+          "party": "Rastriya Janamorcha",
+          "votes": 4521,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-cc4986",
+          "name": "Kalyan Acharya",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 0,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "baglung-2",
+      "kshetraNo": "2",
+      "name": "Baglung",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-2c7d64",
+          "name": "Som Sharma",
+          "party": "Rastriya Swatantra Party",
+          "votes": 12647,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-c88d18",
+          "name": "Tek Raj Paudel",
+          "party": "Nepali Congress",
+          "votes": 11868,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-1903a2",
+          "name": "Gyanmanath Gaire",
+          "party": "Nepali Communist Party",
+          "votes": 10709,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-30c49b",
+          "name": "Manju Sharma",
+          "party": "CPN-UML",
+          "votes": 7864,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-0d915e",
+          "name": "Anchal Shahi",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 0,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "nawalparasi-east-1",
+      "kshetraNo": "1",
+      "name": "Nawalparasi East",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-e712b5",
+          "name": "Rajan Gautam",
+          "party": "Rastriya Swatantra Party",
+          "votes": 35954,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-9d78f2",
+          "name": "Bal Krishna Ghimire",
+          "party": "Nepali Congress",
+          "votes": 12206,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-d9573a",
+          "name": "Bhagirath Sapkota",
+          "party": "CPN-UML",
+          "votes": 6371,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-224fd1",
+          "name": "Bhim Chandra Gurung",
+          "party": "Shram Sanskriti Party",
+          "votes": 875,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-e21dc3",
+          "name": "Lok Prasad Bhurtel",
+          "party": "Nepali Communist Party",
+          "votes": 652,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "nawalparasi-east-2",
+      "kshetraNo": "2",
+      "name": "Nawalparasi East",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-dfae23",
+          "name": "Manish Khanal",
+          "party": "Rastriya Swatantra Party",
+          "votes": 37644,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-507d9d",
+          "name": "Til Bahadur Mahat Chhetri",
+          "party": "CPN-UML",
+          "votes": 13964,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-7a3346",
+          "name": "Om Bahadur Gharti",
+          "party": "Nepali Congress",
+          "votes": 13252,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-cf2d31",
+          "name": "Ganesh Man Mahato",
+          "party": "Nepali Communist Party",
+          "votes": 1402,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-8368b7",
+          "name": "Kamal Chapagain",
+          "party": "Shram Sanskriti Party",
+          "votes": 971,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "gulmi-1",
+      "kshetraNo": "1",
+      "name": "Gulmi",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-50f3e2",
+          "name": "Sagar Dhakal",
+          "party": "Rastriya Swatantra Party",
+          "votes": 28855,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-7f3b2b",
+          "name": "Pradip Kumar Gyawali",
+          "party": "CPN-UML",
+          "votes": 13480,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-827873",
+          "name": "Chandrakant Bhandari",
+          "party": "Nepali Congress",
+          "votes": 11290,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-aa984c",
+          "name": "Sudarsan Baral",
+          "party": "Nepali Communist Party",
+          "votes": 2980,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-f9300d",
+          "name": "Ajit Kumar Shrestha",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 95,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "gulmi-2",
+      "kshetraNo": "2",
+      "name": "Gulmi",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-8f5219",
+          "name": "Govinda Panthi",
+          "party": "Rastriya Swatantra Party",
+          "votes": 16967,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-13ac8b",
+          "name": "Gokarnaraj Bista",
+          "party": "CPN-UML",
+          "votes": 16406,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-952fe0",
+          "name": "Bhuwan Prasad Shrestha",
+          "party": "Nepali Congress",
+          "votes": 14434,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-b78c4b",
+          "name": "Shreeram Mahat",
+          "party": "Nepali Communist Party",
+          "votes": 3079,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-14de0f",
+          "name": "Lal Bahadur Thapa Chhetri",
+          "party": "Rastriya Janamorcha",
+          "votes": 354,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "palpa-1",
+      "kshetraNo": "1",
+      "name": "Palpa",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-7984b8",
+          "name": "Narayan Parasad Acharya",
+          "party": "CPN-UML",
+          "votes": 14104,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-e997a2",
+          "name": "Sandip Rana",
+          "party": "Nepali Congress",
+          "votes": 13464,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-a2ed5c",
+          "name": "Bimal Pant",
+          "party": "Rastriya Swatantra Party",
+          "votes": 10893,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-a3dce8",
+          "name": "Hum Bahadur Sunari Magar",
+          "party": "Nepali Communist Party",
+          "votes": 868,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-5fde0b",
+          "name": "Thaman Singh Resmi Magar",
+          "party": "National Republic Nepal",
+          "votes": 662,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "palpa-2",
+      "kshetraNo": "2",
+      "name": "Palpa",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-012d0e",
+          "name": "Madhav Bahadur Thapa",
+          "party": "Rastriya Swatantra Party",
+          "votes": 13944,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-d0e4dd",
+          "name": "Himal Datta Shrestha",
+          "party": "Nepali Congress",
+          "votes": 6729,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-f0426d",
+          "name": "Thakur Prasad Gaire",
+          "party": "CPN-UML",
+          "votes": 6364,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-3a403a",
+          "name": "Som Prasad Pandeya",
+          "party": "Nepali Communist Party",
+          "votes": 3765,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-348491",
+          "name": "Dev Prasad Shrestha",
+          "party": "National Republic Nepal",
+          "votes": 570,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "rupandehi-1",
+      "kshetraNo": "1",
+      "name": "Rupandehi",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-ace446",
+          "name": "Sunil Lamsal",
+          "party": "Rastriya Swatantra Party",
+          "votes": 43031,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-123c38",
+          "name": "Hira Bahadur Khatri",
+          "party": "Nepali Congress",
+          "votes": 9310,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-8c0553",
+          "name": "Prajwal Bohara",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 7047,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-ecbb0b",
+          "name": "Dadhiram Neupane",
+          "party": "CPN-UML",
+          "votes": 5725,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-91035e",
+          "name": "Umashankar Prasad Chaudhary",
+          "party": "Nagarik Unmukti Party, Nepal (Ekal Chunab Chinha)",
+          "votes": 0,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "rupandehi-2",
+      "kshetraNo": "2",
+      "name": "Rupandehi",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-987f86",
+          "name": "Sulabh Kharel",
+          "party": "Rastriya Swatantra Party",
+          "votes": 56550,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-b03e3a",
+          "name": "Bishnu Prasad Paudel",
+          "party": "CPN-UML",
+          "votes": 12861,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-666f6b",
+          "name": "Chunna Prasad Sharma",
+          "party": "Nepali Congress",
+          "votes": 9392,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-5f0d59",
+          "name": "Shubhash Pandey",
+          "party": "Nepali Communist Party",
+          "votes": 1409,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-bdd1e1",
+          "name": "Bhim Bahadur Gautam",
+          "party": "Shram Sanskriti Party",
+          "votes": 1336,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "rupandehi-3",
+      "kshetraNo": "3",
+      "name": "Rupandehi",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-ed01e3",
+          "name": "Dr. Lekh Jung Thapa",
+          "party": "Rastriya Swatantra Party",
+          "votes": 58814,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-4b07a4",
+          "name": "Sushil Gurung",
+          "party": "Nepali Congress",
+          "votes": 8435,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-eca0a1",
+          "name": "Basu Dev Ghimire",
+          "party": "CPN-UML",
+          "votes": 8275,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-0ae4b8",
+          "name": "Gaurab Bohara",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 7789,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-a8208d",
+          "name": "Faiz Ahmad Kha",
+          "party": "Nepali Communist Party",
+          "votes": 2594,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "rupandehi-4",
+      "kshetraNo": "4",
+      "name": "Rupandehi",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-ed6ecc",
+          "name": "Kanhaiya Baniya",
+          "party": "Rastriya Swatantra Party",
+          "votes": 28066,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-beb3ae",
+          "name": "Pramod Kumar Yadav",
+          "party": "CPN-UML",
+          "votes": 20262,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-3f31ad",
+          "name": "Ashutosh Mishra",
+          "party": "Nepali Congress",
+          "votes": 15613,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-b8dd46",
+          "name": "Sarbendra Nath Shukla",
+          "party": "Janata Samjbadi Party-Nepal",
+          "votes": 3410,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-0eec2a",
+          "name": "Bhopendra Prasad Yadav",
+          "party": "Janamat Party",
+          "votes": 2074,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "rupandehi-5",
+      "kshetraNo": "5",
+      "name": "Rupandehi",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-b8dfce",
+          "name": "Taufik Ahmad Khan",
+          "party": "Rastriya Swatantra Party",
+          "votes": 32613,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-8c4d51",
+          "name": "Bharat Kumar Shah",
+          "party": "Nepali Congress",
+          "votes": 10932,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-e91b07",
+          "name": "Khim Lal Bhattarai",
+          "party": "CPN-UML",
+          "votes": 10609,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-223a9d",
+          "name": "Muhammad Wakil Musalman",
+          "party": "Nepali Communist Party",
+          "votes": 5184,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-580344",
+          "name": "Om Prakash Yadav",
+          "party": "Janamat Party",
+          "votes": 1959,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "arghakhanchi-1",
+      "kshetraNo": "1",
+      "name": "Arghakhanchi",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-6b91a0",
+          "name": "Hari Prasad Bhusal",
+          "party": "Rastriya Swatantra Party",
+          "votes": 35023,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-08a473",
+          "name": "Pitambar Bhusal",
+          "party": "CPN-UML",
+          "votes": 22649,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-4cfc61",
+          "name": "Bishnu Prasad Khanal",
+          "party": "Nepali Congress",
+          "votes": 18983,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-97e180",
+          "name": "Ram Bahadur Chauhhan",
+          "party": "Nepali Communist Party",
+          "votes": 3847,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-cf5757",
+          "name": "Pashupati Nath Dhakal",
+          "party": "Rastriya Janamorcha",
+          "votes": 1763,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "kapilvastu-1",
+      "kshetraNo": "1",
+      "name": "Kapilvastu",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-b58e2a",
+          "name": "Ashish Sharma",
+          "party": "Independent",
+          "votes": 13499,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-60312f",
+          "name": "Atahar Kamal Musalman",
+          "party": "Nepali Congress",
+          "votes": 12634,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-08d0a6",
+          "name": "Mohan Lal Acharya",
+          "party": "Rastriya Swatantra Party",
+          "votes": 11231,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-e863f9",
+          "name": "Shatrughan Bilas Singh Kurmi",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 1384,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-0b2b9e",
+          "name": "Bishram Prasad Chaudhary",
+          "party": "CPN-UML",
+          "votes": 1317,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "kapilvastu-2",
+      "kshetraNo": "2",
+      "name": "Kapilvastu",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-3fb7b9",
+          "name": "Bikram Thapa",
+          "party": "Rastriya Swatantra Party",
+          "votes": 22522,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-81862c",
+          "name": "Surendra Raj Acharya",
+          "party": "Nepali Congress",
+          "votes": 13778,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-efeddc",
+          "name": "Brijesh Kumar Gupta",
+          "party": "Nepali Communist Party",
+          "votes": 11517,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-11b537",
+          "name": "Drigha Narayan Pandey",
+          "party": "CPN-UML",
+          "votes": 5963,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-e87696",
+          "name": "Bishnu Prasad Bhandari",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 313,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "kapilvastu-3",
+      "kshetraNo": "3",
+      "name": "Kapilvastu",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-5c753f",
+          "name": "Abhishek Pratap Shah",
+          "party": "Nepali Congress",
+          "votes": 21297,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-739428",
+          "name": "Prakash Rajouriya",
+          "party": "Rastriya Swatantra Party",
+          "votes": 16552,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-857139",
+          "name": "Birendra Kumar Kanodiya",
+          "party": "CPN-UML",
+          "votes": 13311,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-cc1e7a",
+          "name": "Ishwar Dayal Mishra",
+          "party": "Rastriya Mukti Party Nepal (Ekal Chunab Chinha)",
+          "votes": 4336,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-71ded1",
+          "name": "Ehsan Ahmad Khan",
+          "party": "Nepali Communist Party",
+          "votes": 3808,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "pyuthan-1",
+      "kshetraNo": "1",
+      "name": "Pyuthan",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-1ed536",
+          "name": "Sushant Vaidik",
+          "party": "Rastriya Swatantra Party",
+          "votes": 17723,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-e18b87",
+          "name": "Dr. Govind Raj Pokharel",
+          "party": "Nepali Congress",
+          "votes": 13583,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-f80960",
+          "name": "Surya Bahadur Thapa Chhetri",
+          "party": "CPN-UML",
+          "votes": 12945,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-961381",
+          "name": "Krishna Dhwoj Khadka",
+          "party": "Nepali Communist Party",
+          "votes": 5987,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-5f5653",
+          "name": "Tilak Bahadur G.C.",
+          "party": "Rastriya Janamorcha",
+          "votes": 5076,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "rolpa-1",
+      "kshetraNo": "1",
+      "name": "Rolpa",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-898dda",
+          "name": "Barshman Pun",
+          "party": "Nepali Communist Party",
+          "votes": 20715,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-f7f4a0",
+          "name": "Sudan Kumar Oli",
+          "party": "Nepali Congress",
+          "votes": 9564,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-e5d65c",
+          "name": "Balram Thapa",
+          "party": "Rastriya Swatantra Party",
+          "votes": 7888,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-1023db",
+          "name": "Gokul Prasad Gharti",
+          "party": "CPN-UML",
+          "votes": 6494,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-6a50eb",
+          "name": "Chudamani Oli",
+          "party": "Nepal Communist Party (Maoist)",
+          "votes": 3254,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "dang-1",
+      "kshetraNo": "1",
+      "name": "Dang",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-fd5103",
+          "name": "Devaraj Pathak",
+          "party": "Rastriya Swatantra Party",
+          "votes": 23073,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-c58079",
+          "name": "Yogendra Chaudhary",
+          "party": "Nepali Congress",
+          "votes": 9482,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-39ae5b",
+          "name": "Rewatiram Sharma Ghimire",
+          "party": "CPN-UML",
+          "votes": 3358,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-eb99aa",
+          "name": "Metmani Chaudhary",
+          "party": "Nepali Communist Party",
+          "votes": 2968,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-142e1c",
+          "name": "Vinay B.C.",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 734,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "dang-2",
+      "kshetraNo": "2",
+      "name": "Dang",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-9bded5",
+          "name": "Bipin Kumar Acharya",
+          "party": "Rastriya Swatantra Party",
+          "votes": 35687,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-fae069",
+          "name": "Shankar Pokhrael",
+          "party": "CPN-UML",
+          "votes": 12971,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-ffd917",
+          "name": "Kiran Kishor Ghimire",
+          "party": "Nepali Congress",
+          "votes": 9828,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-5bdcaf",
+          "name": "Nirmal Acharya",
+          "party": "Nepali Communist Party",
+          "votes": 6039,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-6e17ad",
+          "name": "Rishi Kesh Pokhrel",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 528,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "dang-3",
+      "kshetraNo": "3",
+      "name": "Dang",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-43e0e9",
+          "name": "Kamal Subedi",
+          "party": "Rastriya Swatantra Party",
+          "votes": 30126,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-34eb63",
+          "name": "Deepak Giri",
+          "party": "Nepali Congress",
+          "votes": 8997,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-55c039",
+          "name": "Ghanshyam Pandey",
+          "party": "CPN-UML",
+          "votes": 7260,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-7355a1",
+          "name": "Dhan Bahadur Maski",
+          "party": "Nepali Communist Party",
+          "votes": 4782,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-68f9a9",
+          "name": "Damodar Bhandari",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 731,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "bardiya-1",
+      "kshetraNo": "1",
+      "name": "Bardiya",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-cc95b4",
+          "name": "Thakur Singh Tharu",
+          "party": "Rastriya Swatantra Party",
+          "votes": 23047,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-468499",
+          "name": "Salik Ram Adhikari",
+          "party": "CPN-UML",
+          "votes": 7103,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-9852ef",
+          "name": "Sanjay Kumar Gautam",
+          "party": "Nepali Congress",
+          "votes": 4104,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-fb8779",
+          "name": "Bishnu Prasad Chaudhary",
+          "party": "Nepali Communist Party",
+          "votes": 3555,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-3fc450",
+          "name": "Abdul Khan",
+          "party": "Nagarik Unmukti Party, Nepal (Ekal Chunab Chinha)",
+          "votes": 850,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "bardiya-2",
+      "kshetraNo": "2",
+      "name": "Bardiya",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-91fb62",
+          "name": "Shreedhar Pokharel",
+          "party": "Rastriya Swatantra Party",
+          "votes": 10285,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-f48864",
+          "name": "Kishor Singh Rathore",
+          "party": "Nepali Congress",
+          "votes": 7634,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-3af661",
+          "name": "Suresh Pantha",
+          "party": "Nepali Communist Party",
+          "votes": 5661,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-c12770",
+          "name": "Bimala B.K.",
+          "party": "CPN-UML",
+          "votes": 3656,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-5496bd",
+          "name": "Dharm Bahadur Chaudhary",
+          "party": "Ujaylo Nepal Party",
+          "votes": 412,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "banke-1",
+      "kshetraNo": "1",
+      "name": "Banke",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-805bc0",
+          "name": "Suresh Kumar Chaudhary",
+          "party": "Rastriya Swatantra Party",
+          "votes": 32792,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-8a6625",
+          "name": "Narayan Prasad Goudel",
+          "party": "Nepali Congress",
+          "votes": 15301,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-dc54fe",
+          "name": "Surya Prasad Dhakal",
+          "party": "CPN-UML",
+          "votes": 11095,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-d78ac2",
+          "name": "Narendra Prasad Pandey",
+          "party": "Nepali Communist Party",
+          "votes": 6020,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-c3c7be",
+          "name": "Pradeep Kumar Shah",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 2379,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "banke-2",
+      "kshetraNo": "2",
+      "name": "Banke",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-bf2568",
+          "name": "Mohammad Ishtiyak Rai",
+          "party": "CPN-UML",
+          "votes": 24628,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-3b07de",
+          "name": "Bivek Kumar Shrestha",
+          "party": "Rastriya Swatantra Party",
+          "votes": 18682,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-3c6f9b",
+          "name": "Sudhansu Koirala",
+          "party": "Nepali Congress",
+          "votes": 17596,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-7210f3",
+          "name": "Rishi Raj Devkota",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 1723,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-da824c",
+          "name": "Dipendra Bista",
+          "party": "Nepali Communist Party",
+          "votes": 1456,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "banke-3",
+      "kshetraNo": "3",
+      "name": "Banke",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-e03237",
+          "name": "Khagendra Sunar",
+          "party": "Rastriya Swatantra Party",
+          "votes": 29551,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-f9006a",
+          "name": "Suman Malla",
+          "party": "CPN-UML",
+          "votes": 19615,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-ba5d22",
+          "name": "Amar Singh Pun",
+          "party": "Nepali Congress",
+          "votes": 13215,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-4482cc",
+          "name": "Deepak Kumar Gauri Magar",
+          "party": "Nepali Communist Party",
+          "votes": 4015,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-1ce434",
+          "name": "Tarak Singh Tharu",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 1912,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "nawalparasi-west-1",
+      "kshetraNo": "1",
+      "name": "Nawalparasi West",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-838272",
+          "name": "Bikram Khanal",
+          "party": "Rastriya Swatantra Party",
+          "votes": 20224,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-306972",
+          "name": "Hridayesh Tripathi",
+          "party": "Janata Samjbadi Party-Nepal",
+          "votes": 6490,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-f9c72c",
+          "name": "Binod Kumar Chaudhary",
+          "party": "Nepali Congress",
+          "votes": 5214,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-260885",
+          "name": "Ram Prasad Pandey",
+          "party": "CPN-UML",
+          "votes": 4633,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-020b2f",
+          "name": "Navanit Kumar Mishra",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 791,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "nawalparasi-west-2",
+      "kshetraNo": "2",
+      "name": "Nawalparasi West",
+      "khasekoMat": 0,
+      "countComplete": false,
+      "candidates": [
+        {
+          "id": "1772945325454-f91b0f",
+          "name": "Narendra Kumar Gupta",
+          "party": "Rastriya Swatantra Party",
+          "votes": 26544,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-3f0ad1",
+          "name": "Bhim Bahadur Thapa Chhetri",
+          "party": "Nepali Congress",
+          "votes": 10208,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-ea8bf8",
+          "name": "Devendra Yadav",
+          "party": "Janata Samjbadi Party-Nepal",
+          "votes": 4421,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-d7189c",
+          "name": "Dhubra Bahadur Pradhan",
+          "party": "Rastriya Prajatantra Party",
+          "votes": 2814,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-a8e781",
+          "name": "Lekhnath Kharel",
+          "party": "CPN-UML",
+          "votes": 2753,
+          "khasekoMat": 0
+        }
+      ]
+    },
+    {
+      "id": "rukum-east-1",
+      "kshetraNo": "1",
+      "name": "Rukum East",
+      "khasekoMat": 0,
+      "countComplete": true,
+      "candidates": [
+        {
+          "id": "1772945325454-8f2f91",
+          "name": "Pushpa Kamal Dahal",
+          "party": "Nepali Communist Party",
+          "votes": 10240,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-102c45",
+          "name": "Lilamani Gautam",
+          "party": "CPN-UML",
+          "votes": 3462,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-e4903e",
+          "name": "Kusum Devi Thapa",
+          "party": "Nepali Congress",
+          "votes": 3081,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-7cf21b",
+          "name": "Lakhan Kumar Thapa",
+          "party": "Rastriya Swatantra Party",
+          "votes": 819,
+          "khasekoMat": 0
+        },
+        {
+          "id": "1772945325454-0461fd",
+          "name": "Sandip Pun",
+          "party": "Pragatishil Loktantrik Party",
+          "votes": 201,
+          "khasekoMat": 0
+        }
+      ]
+    }
+  ],
+  "partyResults": [
+    {
+      "id": "1772945325454-ce74cb",
+      "party": "Rastriya Swatantra Party",
+      "win": 106,
+      "lead": 19,
+      "votes": 1276590
+    },
+    {
+      "id": "1772945325454-94681d",
+      "party": "Nepali Congress",
+      "win": 15,
+      "lead": 2,
+      "votes": 431298
+    },
+    {
+      "id": "1772945325454-5aef41",
+      "party": "Nepal Communist Party",
+      "win": 5,
+      "lead": 3,
+      "votes": 167901
+    },
+    {
+      "id": "1772945325454-3dcac5",
+      "party": "CPN-UML",
+      "win": 7,
+      "lead": 3,
+      "votes": 343191
+    },
+    {
+      "id": "1772945325454-dbd9cb",
+      "party": "Shram Sanskriti Party",
+      "win": 1,
+      "lead": 2,
+      "votes": 51516
+    },
+    {
+      "id": "1772945325454-798267",
+      "party": "Rastriya Prajatantra Party",
+      "win": 1,
+      "lead": 0,
+      "votes": 92064
+    },
+    {
+      "id": "1772945325454-e8d2d0",
+      "party": "Independent",
+      "win": 1,
+      "lead": 0,
+      "votes": 0
+    }
+  ]
+}
