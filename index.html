@@ -28,75 +28,31 @@
       line-height: 1.7;
     }
 
-    .top-nav {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      padding: 12px 10px 10px;
+    .site-header {
+      text-align: center;
+      padding: 48px 18px 24px;
     }
 
-    .top-nav-inner {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 14px 18px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-      border-radius: 16px;
-      border: 1px solid rgba(214, 198, 255, 0.52);
-      background: linear-gradient(145deg, #ffffff 0%, #f3ecff 100%);
-      box-shadow: 0 10px 24px rgba(71, 36, 163, 0.14);
-    }
-
-    .nav-brand {
-      display: inline-flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 3px;
+    .site-header .brand-name {
+      display: block;
       color: var(--primary);
-      font-size: 44px;
+      font-size: 48px;
       font-weight: 800;
       line-height: 1.1;
       text-decoration: none;
     }
 
-    .nav-subtitle {
+    .site-header .brand-subtitle {
+      display: block;
       color: var(--text-light);
-      font-size: 15px;
+      font-size: 16px;
       font-weight: 500;
-      line-height: 1.2;
-    }
-
-    .top-nav-menu {
-      display: inline-flex;
-      border: 1px solid rgba(124, 77, 255, 0.35);
-      border-radius: 999px;
-      overflow: hidden;
-      background: #fff;
-    }
-
-    .top-nav a {
-      text-decoration: none;
-      color: var(--primary);
-      padding: 7px 16px;
-      font-size: 14px;
-      font-weight: 600;
-      line-height: 1.2;
-      white-space: nowrap;
-    }
-
-    .top-nav a+a {
-      border-left: 1px solid rgba(124, 77, 255, 0.28);
+      margin-top: 6px;
     }
 
     @media (max-width: 700px) {
-      .top-nav-inner {
-        flex-wrap: wrap;
-      }
-
-      .nav-brand {
-        font-size: 34px;
+      .site-header .brand-name {
+        font-size: 36px;
       }
     }
 
@@ -154,7 +110,11 @@
     }
 
     .cta {
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
       margin-top: 30px;
     }
 
@@ -201,18 +161,10 @@
 </head>
 
 <body>
-  <nav class="top-nav" aria-label="Main">
-    <div class="top-nav-inner">
-      <a class="nav-brand" href="/">
-        <span>PaathBook</span>
-        <span class="nav-subtitle">Learn Smarter, Read Better</span>
-      </a>
-      <!-- <div class="top-nav-menu">
-        <a href="/election">Election Update</a>
-        <a href="/admin">Admin</a>
-      </div> -->
-    </div>
-  </nav>
+  <header class="site-header">
+    <span class="brand-name">PaathBook</span>
+    <span class="brand-subtitle">Learn Smarter, Read Better</span>
+  </header>
 
   <div class="container">
 
@@ -263,6 +215,9 @@
         rel="noopener noreferrer">
         <img src="assets/google-play-badge.png" alt="Get it on Google Play" style="height: 56px;" />
       </a>
+      <a href="https://apps.apple.com/app/id6760779307" target="_blank" rel="noopener noreferrer">
+        <img src="assets/app-store-badge.svg" alt="Download on the App Store" style="height: 56px;" />
+      </a>
     </div>
 
 
@@ -270,7 +225,7 @@
     <!-- Links -->
     <div class="links">
       <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="/election">Election Results</a>
+      <a href="/election">2082 Election Result</a>
       <a href="/admin">Admin</a>
       <a href="mailto:dipendrabogati1776@gmail.com">Contact</a>
     </div>
