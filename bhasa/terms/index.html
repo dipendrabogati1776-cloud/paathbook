@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Terms and Conditions for PAATHBOOK BHASA, a reading-first language learning application." />
+  <title>Terms and Conditions | PAATHBOOK BHASA</title>
+
+  <style>
+    :root {
+      --bg: #050505;
+      --surface: #0e0e10;
+      --text: #f8f7ff;
+      --muted-strong: #c6c3d7;
+      --muted: #8d89a3;
+      --purple: #8f5bff;
+      --blue: #38bdf8;
+      --red: #ff4d6d;
+      --primary-gradient: linear-gradient(135deg, var(--purple), var(--blue));
+      --brand-gradient: linear-gradient(135deg, var(--purple), var(--red));
+      --border-gradient: linear-gradient(135deg, rgba(143, 91, 255, 0.73), rgba(56, 189, 248, 0.6), rgba(143, 91, 255, 0.4));
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 8% 0%, rgba(143, 91, 255, 0.22), transparent 24rem),
+        radial-gradient(circle at 92% 4%, rgba(56, 189, 248, 0.14), transparent 24rem),
+        radial-gradient(circle at 80% 58%, rgba(255, 77, 109, 0.08), transparent 28rem),
+        linear-gradient(180deg, var(--bg), #08080b 45%, var(--bg));
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(18px);
+      background: rgba(5, 5, 5, 0.76);
+      border-bottom: 1px solid rgba(143, 91, 255, 0.18);
+    }
+
+    .nav-inner,
+    .container {
+      width: min(960px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .nav-inner {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand,
+    .back-link {
+      text-decoration: none;
+      font-weight: 850;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand img {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      box-shadow: 0 10px 24px rgba(143, 91, 255, 0.34);
+    }
+
+    .brand span {
+      display: block;
+      line-height: 1.15;
+    }
+
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 650;
+    }
+
+    .back-link {
+      color: var(--muted-strong);
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 72px 0 28px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 18px;
+      color: #efeaff;
+      background: rgba(143, 91, 255, 0.14);
+      border: 1px solid rgba(143, 91, 255, 0.38);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 850;
+      letter-spacing: 0.12em;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 99px;
+      background: var(--primary-gradient);
+      box-shadow: 0 0 18px rgba(56, 189, 248, 0.65);
+    }
+
+    h1,
+    h2,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin-bottom: 16px;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+
+    h1 span {
+      display: block;
+      color: transparent;
+      background: var(--primary-gradient);
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+
+    .intro {
+      max-width: 720px;
+      color: var(--muted-strong);
+      font-size: 18px;
+    }
+
+    .document {
+      display: grid;
+      gap: 18px;
+      padding: 24px 0 72px;
+    }
+
+    .card {
+      border-radius: 28px;
+      padding: 28px;
+      background:
+        linear-gradient(var(--surface), var(--surface)) padding-box,
+        var(--border-gradient) border-box;
+      border: 2px solid transparent;
+      box-shadow: 0 18px 54px rgba(0, 0, 0, 0.28);
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      font-size: 24px;
+      line-height: 1.2;
+    }
+
+    p {
+      color: var(--muted-strong);
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 20px;
+      color: var(--muted-strong);
+    }
+
+    li {
+      margin-bottom: 7px;
+    }
+
+    .note {
+      margin-top: 14px;
+      border-radius: 18px;
+      padding: 14px 16px;
+      color: var(--muted-strong);
+      background: rgba(143, 91, 255, 0.14);
+      border: 1px solid rgba(143, 91, 255, 0.28);
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .contact-list a {
+      display: block;
+      padding: 14px 16px;
+      border-radius: 16px;
+      color: var(--muted-strong);
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(143, 91, 255, 0.22);
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    .footer {
+      border-top: 1px solid rgba(143, 91, 255, 0.18);
+      padding: 28px 0 42px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+
+      .nav-inner,
+      .container {
+        width: min(100% - 28px, 960px);
+      }
+
+      .nav-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        padding: 14px 0;
+      }
+
+      .hero {
+        padding-top: 52px;
+      }
+
+      .card {
+        padding: 22px;
+        border-radius: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a class="brand" href="../">
+        <img src="../../assets/app_icon.png" alt="Paathbook icon" />
+        <span>
+          PAATHBOOK BHASA
+          <small>Terms and Conditions</small>
+        </span>
+      </a>
+      <a class="back-link" href="../">Back to Bhasa</a>
+    </div>
+  </nav>
+
+  <main>
+    <header class="hero container">
+      <p class="eyebrow">TERMS AND CONDITIONS</p>
+      <h1>PAATHBOOK BHASA <span>Terms</span></h1>
+      <p class="intro">
+        These Terms and Conditions explain the rules for downloading, accessing,
+        and using PAATHBOOK BHASA.
+      </p>
+    </header>
+
+    <div class="document container">
+      <section class="card" aria-labelledby="acceptance-of-terms">
+        <h2 id="acceptance-of-terms">1. Acceptance of Terms</h2>
+        <p>By downloading or using PAATHBOOK BHASA, you agree to these Terms and Conditions.</p>
+      </section>
+
+      <section class="card" aria-labelledby="purpose-of-the-app">
+        <h2 id="purpose-of-the-app">2. Purpose of the App</h2>
+        <p>
+          PAATHBOOK BHASA is an educational language learning application intended
+          to help users learn languages through reading, vocabulary, conversations,
+          stories, and interactive activities.
+        </p>
+      </section>
+
+      <section class="card" aria-labelledby="educational-use">
+        <h2 id="educational-use">3. Educational Use</h2>
+        <p>The app is provided for educational purposes.</p>
+        <p>
+          Although we strive for accuracy, we do not guarantee that every translation,
+          pronunciation, or explanation is free from errors.
+        </p>
+        <div class="note">
+          Users should not rely on the application for legal, medical, financial,
+          or other professional advice.
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="intellectual-property">
+        <h2 id="intellectual-property">4. Intellectual Property</h2>
+        <p>
+          All application content, design, graphics, logos, and original educational
+          materials are the property of PAATHBOOK unless otherwise stated.
+        </p>
+        <p>
+          Users may not copy, redistribute, or commercially use the content without permission.
+        </p>
+      </section>
+
+      <section class="card" aria-labelledby="acceptable-use">
+        <h2 id="acceptable-use">5. Acceptable Use</h2>
+        <p>Users agree not to:</p>
+        <ul>
+          <li>Modify or reverse engineer the application.</li>
+          <li>Attempt unauthorized access to our systems.</li>
+          <li>Use the application for unlawful purposes.</li>
+          <li>Distribute harmful software or interfere with the app's operation.</li>
+        </ul>
+      </section>
+
+      <section class="card" aria-labelledby="availability">
+        <h2 id="availability">6. Availability</h2>
+        <p>We may update, improve, or discontinue features at any time without prior notice.</p>
+      </section>
+
+      <section class="card" aria-labelledby="ai-generated-content">
+        <h2 id="ai-generated-content">7. AI-Generated Content</h2>
+        <p>Some definitions, explanations, or translations may be generated using AI services.</p>
+        <p>
+          While we aim for high accuracy, AI-generated content may occasionally contain errors.
+        </p>
+        <p>Users should use their own judgment when relying on AI-generated information.</p>
+      </section>
+
+      <section class="card" aria-labelledby="third-party-services">
+        <h2 id="third-party-services">8. Third-Party Services</h2>
+        <p>The application may use services such as:</p>
+        <ul>
+          <li>Firebase</li>
+          <li>Google Gemini API</li>
+          <li>Google Play Services</li>
+        </ul>
+        <p>Each service is governed by its own terms and privacy policy.</p>
+      </section>
+
+      <section class="card" aria-labelledby="future-features">
+        <h2 id="future-features">9. Future Features</h2>
+        <p>Future versions may include:</p>
+        <ul>
+          <li>User accounts</li>
+          <li>Cloud synchronization</li>
+          <li>Premium subscriptions</li>
+          <li>Website access</li>
+          <li>Cross-device synchronization</li>
+        </ul>
+        <p>Additional terms may apply to these features.</p>
+      </section>
+
+      <section class="card" aria-labelledby="limitation-of-liability">
+        <h2 id="limitation-of-liability">10. Limitation of Liability</h2>
+        <p>PAATHBOOK BHASA is provided "as is."</p>
+        <p>
+          To the extent permitted by law, we are not liable for any direct, indirect,
+          incidental, or consequential damages arising from the use of the application.
+        </p>
+      </section>
+
+      <section class="card" aria-labelledby="termination">
+        <h2 id="termination">11. Termination</h2>
+        <p>We may suspend or terminate access if a user violates these Terms.</p>
+      </section>
+
+      <section class="card" aria-labelledby="changes-to-the-terms">
+        <h2 id="changes-to-the-terms">12. Changes to the Terms</h2>
+        <p>We may update these Terms from time to time.</p>
+        <p>The latest version will always be available at:</p>
+        <p><a href="https://paathbook.com/bhasa/terms">https://paathbook.com/bhasa/terms</a></p>
+      </section>
+
+      <section class="card" aria-labelledby="contact">
+        <h2 id="contact">13. Contact</h2>
+        <p>For questions regarding these Terms:</p>
+        <div class="contact-list">
+          <a href="https://paathbook.com/bhasa">https://paathbook.com/bhasa</a>
+          <a href="mailto:dipendrabogati1776@gmail.com">dipendrabogati1776@gmail.com</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    © PAATHBOOK BHASA
+  </footer>
+</body>
+
+</html>
