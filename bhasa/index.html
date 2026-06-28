@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Paathbook Bhasa is a reading-first language learning app for Japanese, Korean, English, Nepali and Hindi." />
+  <title>Paathbook Bhasa - Learn Languages Through Reading</title>
+
+  <style>
+    :root {
+      --bg: #050505;
+      --bg-alt: #0a0a0a;
+      --surface: #0e0e10;
+      --surface-high: #141418;
+      --surface-soft: #191920;
+      --text: #f8f7ff;
+      --muted-strong: #c6c3d7;
+      --muted: #8d89a3;
+      --purple: #8f5bff;
+      --blue: #38bdf8;
+      --red: #ff4d6d;
+      --success: #40dfa2;
+      --primary: var(--purple);
+      --cyan: var(--blue);
+      --border: rgba(143, 91, 255, 0.42);
+      --shadow: 0 28px 80px rgba(0, 0, 0, 0.52);
+      --radius: 28px;
+      --primary-gradient: linear-gradient(135deg, var(--purple), var(--blue));
+      --brand-gradient: linear-gradient(135deg, var(--purple), var(--red));
+      --border-gradient: linear-gradient(135deg, rgba(143, 91, 255, 0.73), rgba(56, 189, 248, 0.6), rgba(143, 91, 255, 0.4));
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 10% 0%, rgba(143, 91, 255, 0.26), transparent 24rem),
+        radial-gradient(circle at 88% 3%, rgba(56, 189, 248, 0.16), transparent 26rem),
+        radial-gradient(circle at 82% 42%, rgba(255, 77, 109, 0.09), transparent 28rem),
+        linear-gradient(180deg, var(--bg) 0%, #08080b 42%, var(--bg) 100%);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .page {
+      overflow: hidden;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(18px);
+      background: rgba(5, 5, 5, 0.76);
+      border-bottom: 1px solid rgba(143, 91, 255, 0.18);
+    }
+
+    .nav-inner,
+    .section {
+      width: min(1160px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .nav-inner {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .brand img {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      box-shadow: 0 10px 24px rgba(143, 91, 255, 0.34);
+    }
+
+    .brand span {
+      display: block;
+      line-height: 1.15;
+    }
+
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: var(--muted-strong);
+      font-size: 14px;
+      font-weight: 650;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+    }
+
+    .hero {
+      position: relative;
+      padding: 92px 0 80px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto auto 50%;
+      width: 44rem;
+      height: 44rem;
+      transform: translate(-8%, -32%);
+      border-radius: 999px;
+      background: radial-gradient(circle, rgba(56, 189, 248, 0.13), transparent 62%);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+      align-items: center;
+      gap: 48px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 18px;
+      color: #efeaff;
+      background: rgba(143, 91, 255, 0.14);
+      border: 1px solid rgba(143, 91, 255, 0.38);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 99px;
+      background: var(--primary-gradient);
+      box-shadow: 0 0 18px rgba(56, 189, 248, 0.65);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin-bottom: 22px;
+      font-size: clamp(44px, 7vw, 82px);
+      line-height: 0.95;
+      letter-spacing: 0;
+    }
+
+    h1 span {
+      display: block;
+      color: transparent;
+      background: var(--primary-gradient);
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+
+    .hero-copy {
+      max-width: 660px;
+      margin-bottom: 34px;
+      color: var(--muted-strong);
+      font-size: clamp(18px, 2vw, 22px);
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .play-button,
+    .secondary-button {
+      min-height: 54px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 16px;
+      text-decoration: none;
+      font-weight: 800;
+      transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .play-button {
+      padding: 0 18px 0 10px;
+      color: var(--text);
+      background: linear-gradient(135deg, rgba(143, 91, 255, 0.42), rgba(56, 189, 248, 0.24));
+      border: 1px solid rgba(143, 91, 255, 0.58);
+      box-shadow: 0 16px 36px rgba(143, 91, 255, 0.22);
+    }
+
+    .play-button img {
+      width: 130px;
+      height: auto;
+      display: block;
+    }
+
+    .play-button span {
+      padding-right: 4px;
+      color: var(--muted-strong);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .secondary-button {
+      padding: 0 24px;
+      color: var(--text);
+      border: 1px solid rgba(255, 77, 109, 0.5);
+      background: linear-gradient(135deg, rgba(143, 91, 255, 0.14), rgba(255, 77, 109, 0.1));
+    }
+
+    .play-button:hover,
+    .secondary-button:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255, 255, 255, 0.28);
+    }
+
+    .phone-panel {
+      position: relative;
+      min-height: 560px;
+      border-radius: 44px;
+      padding: 2px;
+      background: var(--brand-gradient);
+      box-shadow: var(--shadow);
+    }
+
+    .app-screen {
+      height: 100%;
+      min-height: 524px;
+      border-radius: 42px;
+      padding: 0 24px 24px;
+      background:
+        radial-gradient(circle at 0% 0%, rgba(143, 91, 255, 0.24), transparent 12rem),
+        radial-gradient(circle at 100% 0%, rgba(56, 189, 248, 0.14), transparent 14rem),
+        linear-gradient(180deg, #12131b 0%, var(--bg) 42%, #13070b 100%);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      overflow: hidden;
+    }
+
+    .app-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 104px;
+      margin: 0 -24px 22px;
+      padding: 22px 24px;
+      background:
+        radial-gradient(circle at left top, rgba(143, 91, 255, 0.23), transparent 8rem),
+        radial-gradient(circle at right top, rgba(56, 189, 248, 0.16), transparent 8rem),
+        #11141c;
+      border-bottom: 1px solid rgba(56, 189, 248, 0.28);
+    }
+
+    .app-top img {
+      width: 58px;
+      height: 58px;
+      border-radius: 22px;
+      padding: 14px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .app-title {
+      color: var(--muted-strong);
+      font-size: 25px;
+      font-weight: 950;
+      letter-spacing: 0;
+    }
+
+    .device-dot {
+      width: 58px;
+      height: 58px;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.11);
+    }
+
+    .language-switch {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 28px;
+      border-radius: 26px;
+      padding: 16px;
+      background:
+        linear-gradient(var(--surface), var(--surface)) padding-box,
+        var(--brand-gradient) border-box;
+      border: 2px solid transparent;
+    }
+
+    .language-box {
+      border-radius: 20px;
+      padding: 18px 16px;
+      background: var(--surface-high);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .language-box span {
+      display: block;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .language-box strong {
+      display: block;
+      margin-top: 7px;
+      font-size: 21px;
+      line-height: 1.1;
+    }
+
+    .app-section-title {
+      margin: 0 0 14px;
+      font-size: 24px;
+      font-weight: 950;
+    }
+
+    .app-menu {
+      display: grid;
+      gap: 14px;
+    }
+
+    .app-menu-item {
+      display: grid;
+      grid-template-columns: 64px minmax(0, 1fr) 18px;
+      gap: 18px;
+      align-items: center;
+      border-radius: 25px;
+      padding: 18px;
+      background:
+        linear-gradient(var(--surface-high), var(--surface-high)) padding-box,
+        var(--border-gradient) border-box;
+      border: 2px solid transparent;
+    }
+
+    .app-menu-icon,
+    .lookup-icon,
+    .feature-icon {
+      display: grid;
+      place-items: center;
+      width: 58px;
+      height: 58px;
+      border-radius: 20px;
+      background: var(--primary-gradient);
+      font-size: 24px;
+      font-weight: 950;
+    }
+
+    .app-menu-item strong {
+      display: block;
+      font-size: 22px;
+      line-height: 1.1;
+    }
+
+    .app-menu-item span {
+      color: var(--muted);
+      display: block;
+      margin-top: 4px;
+      font-weight: 650;
+    }
+
+    .app-menu-item em {
+      color: var(--muted-strong);
+      font-size: 34px;
+      font-style: normal;
+      line-height: 1;
+    }
+
+    .app-bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: 18px;
+      border-radius: 28px;
+      padding: 12px;
+      background:
+        linear-gradient(rgba(27, 20, 35, 0.94), rgba(27, 20, 35, 0.94)) padding-box,
+        var(--brand-gradient) border-box;
+      border: 2px solid transparent;
+    }
+
+    .app-bottom-nav span {
+      display: grid;
+      place-items: center;
+      min-height: 50px;
+      border-radius: 19px;
+      color: var(--muted);
+      font-weight: 900;
+    }
+
+    .app-bottom-nav .active {
+      color: var(--text);
+      background: rgba(143, 91, 255, 0.24);
+    }
+
+    .section {
+      padding: 72px 0;
+    }
+
+    .section-header {
+      max-width: 760px;
+      margin-bottom: 30px;
+    }
+
+    .section-kicker {
+      color: var(--cyan);
+      display: block;
+      margin-bottom: 10px;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin-bottom: 14px;
+      font-size: clamp(32px, 4vw, 50px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .section-header p,
+    .text-block p {
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .card {
+      border-radius: var(--radius);
+      background:
+        linear-gradient(var(--surface), var(--surface)) padding-box,
+        var(--border-gradient) border-box;
+      border: 2px solid transparent;
+      box-shadow: 0 18px 54px rgba(0, 0, 0, 0.28);
+    }
+
+    .text-block {
+      padding: 30px;
+    }
+
+    .flow-card {
+      padding: 26px;
+      display: grid;
+      gap: 14px;
+      background:
+        radial-gradient(circle at top right, rgba(56, 189, 248, 0.15), transparent 16rem),
+        linear-gradient(var(--surface), var(--surface)) padding-box,
+        var(--brand-gradient) border-box;
+    }
+
+    .flow-step {
+      display: grid;
+      grid-template-columns: 44px minmax(0, 1fr);
+      gap: 14px;
+      align-items: center;
+    }
+
+    .flow-step .marker,
+    .timeline-number {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 16px;
+      color: var(--text);
+      background: var(--primary-gradient);
+      font-weight: 950;
+    }
+
+    .flow-step strong {
+      font-size: 18px;
+    }
+
+    .flow-arrow {
+      padding-left: 20px;
+      color: var(--cyan);
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .language-grid,
+    .feature-grid,
+    .why-grid,
+    .coming-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .language-grid {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .language-card {
+      position: relative;
+      min-height: 168px;
+      padding: 22px;
+      overflow: hidden;
+    }
+
+    .language-card::after {
+      content: "";
+      position: absolute;
+      right: -34px;
+      bottom: -34px;
+      width: 94px;
+      height: 94px;
+      border-radius: 999px;
+      background: var(--accent);
+      opacity: 0.22;
+    }
+
+    .language-card .script {
+      display: block;
+      margin-bottom: 18px;
+      font-size: 34px;
+      font-weight: 900;
+    }
+
+    .language-card h3,
+    .feature-card h3,
+    .why-card h3 {
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+
+    .language-card p,
+    .feature-card p,
+    .why-card p,
+    .coming-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .choice-panel {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 26px;
+    }
+
+    .choice-card {
+      padding: 24px;
+      border-radius: 22px;
+      background:
+        linear-gradient(var(--surface-high), var(--surface-high)) padding-box,
+        var(--brand-gradient) border-box;
+      border: 2px solid transparent;
+    }
+
+    .choice-card strong {
+      display: block;
+      font-size: 22px;
+      margin-bottom: 6px;
+    }
+
+    .choice-card span {
+      color: var(--muted);
+    }
+
+    .feature-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .feature-card,
+    .why-card,
+    .coming-card {
+      padding: 24px;
+    }
+
+    .feature-card {
+      min-height: 218px;
+      background:
+        linear-gradient(145deg, rgba(20, 20, 24, 0.98), rgba(14, 14, 16, 0.98)) padding-box,
+        var(--border-gradient) border-box;
+    }
+
+    .feature-icon {
+      margin-bottom: 18px;
+    }
+
+    .mini-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .mini-list span,
+    .topic-list span {
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      border-radius: 999px;
+      padding: 7px 10px;
+      color: var(--muted-strong);
+      background: rgba(143, 91, 255, 0.17);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      counter-reset: timeline;
+    }
+
+    .timeline-step {
+      position: relative;
+      padding: 24px;
+      min-height: 190px;
+    }
+
+    .timeline-step::after {
+      content: "↓";
+      position: absolute;
+      right: 18px;
+      top: 26px;
+      color: var(--cyan);
+      font-size: 28px;
+      font-weight: 900;
+    }
+
+    .timeline-step:last-child::after {
+      content: "";
+    }
+
+    .timeline-number {
+      margin-bottom: 22px;
+    }
+
+    .timeline-step h3 {
+      font-size: 21px;
+      margin-bottom: 0;
+    }
+
+    .adventure {
+      display: grid;
+      grid-template-columns: minmax(0, 0.85fr) minmax(320px, 1.15fr);
+      gap: 24px;
+      align-items: stretch;
+      border-radius: 34px;
+      padding: 34px;
+      background:
+        radial-gradient(circle at 15% 10%, rgba(64, 223, 162, 0.13), transparent 20rem),
+        linear-gradient(var(--surface), var(--surface)) padding-box,
+        var(--brand-gradient) border-box;
+      border: 2px solid transparent;
+    }
+
+    .adventure h2 {
+      margin-bottom: 16px;
+    }
+
+    .topic-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-content: center;
+    }
+
+    .topic-list span {
+      padding: 11px 14px;
+      font-size: 15px;
+    }
+
+    .why-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .why-card strong {
+      display: inline-grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      margin-bottom: 18px;
+      border-radius: 12px;
+      color: var(--text);
+      background: var(--primary-gradient);
+    }
+
+    .coming-grid {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .coming-card {
+      min-height: 132px;
+      background:
+        linear-gradient(var(--surface-high), var(--surface-high)) padding-box,
+        var(--border-gradient) border-box;
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    details {
+      padding: 0;
+      overflow: hidden;
+    }
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 22px 24px;
+      color: var(--text);
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "+";
+      float: right;
+      color: var(--cyan);
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    details[open] summary::after {
+      content: "-";
+    }
+
+    details p {
+      margin: 0;
+      padding: 0 24px 22px;
+      color: var(--muted);
+    }
+
+    .contact-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 0.75fr);
+      gap: 24px;
+      padding: 30px;
+      align-items: center;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .contact-list a,
+    .contact-list span {
+      display: block;
+      padding: 14px 16px;
+      border-radius: 16px;
+      color: var(--muted-strong);
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(143, 91, 255, 0.22);
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    .footer {
+      border-top: 1px solid rgba(143, 91, 255, 0.18);
+      padding: 30px 0 42px;
+    }
+
+    .footer-inner {
+      width: min(1160px, calc(100% - 40px));
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-links a {
+      color: var(--muted-strong);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    @media (max-width: 980px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .adventure,
+      .contact-card {
+        grid-template-columns: 1fr;
+      }
+
+      .phone-panel {
+        min-height: auto;
+      }
+
+      .language-grid,
+      .feature-grid,
+      .why-grid,
+      .coming-grid,
+      .timeline {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .timeline-step::after {
+        content: "";
+      }
+    }
+
+    @media (max-width: 640px) {
+
+      .nav-inner,
+      .section,
+      .footer-inner {
+        width: min(100% - 28px, 1160px);
+      }
+
+      .hero {
+        padding: 64px 0 48px;
+      }
+
+      .section {
+        padding: 52px 0;
+      }
+
+      .actions,
+      .choice-panel,
+      .language-grid,
+      .feature-grid,
+      .why-grid,
+      .coming-grid,
+      .timeline {
+        grid-template-columns: 1fr;
+      }
+
+      .actions {
+        display: grid;
+      }
+
+      .play-button,
+      .secondary-button {
+        width: 100%;
+      }
+
+      .play-button {
+        justify-content: space-between;
+      }
+
+      .phone-panel,
+      .app-screen,
+      .adventure {
+        border-radius: 26px;
+      }
+
+      .phone-panel {
+        padding: 12px;
+      }
+
+      .app-screen,
+      .text-block,
+      .flow-card,
+      .adventure,
+      .contact-card {
+        padding: 22px;
+      }
+
+      .app-screen {
+        padding: 0 14px 14px;
+      }
+
+      .app-top {
+        margin: 0 -14px 18px;
+        padding: 18px 14px;
+        min-height: 86px;
+      }
+
+      .app-top img,
+      .device-dot {
+        width: 48px;
+        height: 48px;
+      }
+
+      .app-top img {
+        padding: 12px;
+        border-radius: 18px;
+      }
+
+      .app-title {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .language-switch {
+        gap: 10px;
+        padding: 10px;
+        border-radius: 22px;
+      }
+
+      .language-box {
+        padding: 14px 12px;
+      }
+
+      .app-menu-item {
+        grid-template-columns: 54px minmax(0, 1fr) 14px;
+        gap: 12px;
+        padding: 14px;
+        border-radius: 22px;
+      }
+
+      .app-menu-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 18px;
+        font-size: 20px;
+      }
+
+      .app-menu-item strong {
+        font-size: 19px;
+      }
+
+      .app-menu-item span {
+        font-size: 14px;
+      }
+
+      .footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <nav class="nav" aria-label="Primary navigation">
+      <div class="nav-inner">
+        <a class="brand" href="../">
+          <img src="../assets/app_icon.png" alt="Paathbook icon" />
+          <span>
+            Paathbook Bhasa
+            <small>Learn through reading</small>
+          </span>
+        </a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#languages">Languages</a>
+          <a href="#features">Features</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="hero-grid">
+          <div>
+            <p class="eyebrow">PAATHBOOK BHASA</p>
+            <h1 id="hero-title">Learn Languages <span>Through Reading</span></h1>
+            <p class="hero-copy">
+              Master Japanese, Korean, English, Nepali and Hindi by reading stories,
+              conversations, vocabulary and interactive lessons.
+            </p>
+            <div class="actions">
+              <a class="play-button" href="#" aria-label="Download on Google Play coming soon">
+                <img src="../assets/google-play-badge.png" alt="Download on Google Play" />
+                <span>Coming Soon</span>
+              </a>
+              <a class="secondary-button" href="#about">Learn More</a>
+            </div>
+          </div>
+
+          <div class="phone-panel" aria-label="Paathbook Bhasa app preview">
+            <div class="app-screen">
+              <div class="app-top">
+                <img src="../assets/app_icon.png" alt="" />
+                <strong class="app-title">Paathbook Bhasa</strong>
+                <span class="device-dot" aria-hidden="true"></span>
+              </div>
+
+              <div class="language-switch">
+                <div class="language-box">
+                  <span>Known</span>
+                  <strong>Hindi</strong>
+                </div>
+                <div class="language-box">
+                  <span>Learning</span>
+                  <strong>Japanese</strong>
+                </div>
+              </div>
+
+              <h2 class="app-section-title">Continue Learning</h2>
+              <div class="app-menu">
+                <div class="app-menu-item">
+                  <div class="app-menu-icon">ABC</div>
+                  <div>
+                    <strong>Alphabets</strong>
+                    <span>Start with the writing system</span>
+                  </div>
+                  <em>›</em>
+                </div>
+                <div class="app-menu-item">
+                  <div class="app-menu-icon">#</div>
+                  <div>
+                    <strong>Numbers</strong>
+                    <span>Learn counting and digits</span>
+                  </div>
+                  <em>›</em>
+                </div>
+                <div class="app-menu-item">
+                  <div class="app-menu-icon">📖</div>
+                  <div>
+                    <strong>Vocabulary</strong>
+                    <span>Learn the most common words</span>
+                  </div>
+                  <em>›</em>
+                </div>
+                <div class="app-menu-item">
+                  <div class="app-menu-icon">💬</div>
+                  <div>
+                    <strong>Dialogs</strong>
+                    <span>Learn practical conversations</span>
+                  </div>
+                  <em>›</em>
+                </div>
+              </div>
+
+              <div class="app-bottom-nav" aria-label="App navigation preview">
+                <span class="active">Home</span>
+                <span>Games</span>
+                <span>Dictionary</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="section-header">
+          <span class="section-kicker">About</span>
+          <h2 id="about-title">A reading-first language learning application.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="card text-block">
+            <p>
+              Paathbook Bhasa helps learners improve naturally through reading,
+              listening and interactive practice instead of memorizing random words.
+            </p>
+            <p>
+              Stories, dialogs and vocabulary are connected to an instant dictionary,
+              pronunciation support and revision games, so every reading session becomes
+              language practice.
+            </p>
+          </div>
+          <div class="card flow-card" aria-label="Learning philosophy">
+            <div class="flow-step">
+              <span class="marker">1</span>
+              <strong>Read</strong>
+            </div>
+            <div class="flow-arrow">↓</div>
+            <div class="flow-step">
+              <span class="marker">2</span>
+              <strong>Tap Words</strong>
+            </div>
+            <div class="flow-arrow">↓</div>
+            <div class="flow-step">
+              <span class="marker">3</span>
+              <strong>Understand</strong>
+            </div>
+            <div class="flow-arrow">↓</div>
+            <div class="flow-step">
+              <span class="marker">4</span>
+              <strong>Continue Reading</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="languages" aria-labelledby="languages-title">
+        <div class="section-header">
+          <span class="section-kicker">Supported Languages</span>
+          <h2 id="languages-title">Choose what you know. Choose what you want to learn.</h2>
+          <p>The entire learning experience adapts automatically to your language pair.</p>
+        </div>
+
+        <div class="language-grid">
+          <article class="card language-card" style="--accent: #38bdf8;">
+            <span class="script">Aa</span>
+            <h3>English</h3>
+            <p>Global reading and everyday conversation.</p>
+          </article>
+          <article class="card language-card" style="--accent: #40dfa2;">
+            <span class="script">अ</span>
+            <h3>Nepali</h3>
+            <p>Natural learning with familiar examples.</p>
+          </article>
+          <article class="card language-card" style="--accent: #ff4d6d;">
+            <span class="script">ह</span>
+            <h3>Hindi</h3>
+            <p>Vocabulary, dialogs and reading practice.</p>
+          </article>
+          <article class="card language-card" style="--accent: #8f5bff;">
+            <span class="script">あ</span>
+            <h3>Japanese</h3>
+            <p>Writing systems, words and stories.</p>
+          </article>
+          <article class="card language-card" style="--accent: #38bdf8;">
+            <span class="script">한</span>
+            <h3>Korean</h3>
+            <p>Hangul, pronunciation and useful sentences.</p>
+          </article>
+        </div>
+
+        <div class="choice-panel">
+          <div class="choice-card">
+            <strong>Known Language</strong>
+            <span>The language you already understand.</span>
+          </div>
+          <div class="choice-card">
+            <strong>Learning Language</strong>
+            <span>The language you want to master through reading.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features" aria-labelledby="features-title">
+        <div class="section-header">
+          <span class="section-kicker">Core Features</span>
+          <h2 id="features-title">Everything learners need inside one calm reading experience.</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="card feature-card">
+            <div class="feature-icon">🔤</div>
+            <h3>Alphabets</h3>
+            <p>Learn the writing system with pronunciation.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="feature-icon">🔢</div>
+            <h3>Numbers</h3>
+            <p>Learn numbers, counting, money and dates.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="feature-icon">📖</div>
+            <h3>Vocabulary</h3>
+            <p>Thousands of useful everyday words.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="feature-icon">💬</div>
+            <h3>Common Sentences</h3>
+            <p>Practical real-life expressions.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="feature-icon">🗣</div>
+            <h3>Dialogs</h3>
+            <p>Practice conversations between two people.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="feature-icon">📚</div>
+            <h3>Stories</h3>
+            <p>Read interesting stories with tappable words.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="feature-icon">📖</div>
+            <h3>Dictionary</h3>
+            <p>Instant meaning lookup while reading.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="feature-icon">🎮</div>
+            <h3>Interactive Games</h3>
+            <p>Practice vocabulary with quick, focused games.</p>
+            <div class="mini-list">
+              <span>Match Pairs</span>
+              <span>Flashcards</span>
+              <span>Listening Quiz</span>
+              <span>Sentence Builder</span>
+              <span>Vocabulary Adventure</span>
+            </div>
+          </article>
+          <article class="card feature-card">
+            <div class="feature-icon">⭐</div>
+            <h3>Saved Words</h3>
+            <p>Save vocabulary for later review.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="feature-icon">🔊</div>
+            <h3>Pronunciation</h3>
+            <p>Native pronunciation support.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="how-it-works" aria-labelledby="how-title">
+        <div class="section-header">
+          <span class="section-kicker">How It Works</span>
+          <h2 id="how-title">A simple path from first setup to real understanding.</h2>
+        </div>
+        <div class="timeline">
+          <article class="card timeline-step">
+            <div class="timeline-number">1</div>
+            <h3>Choose Known Language</h3>
+          </article>
+          <article class="card timeline-step">
+            <div class="timeline-number">2</div>
+            <h3>Choose Learning Language</h3>
+          </article>
+          <article class="card timeline-step">
+            <div class="timeline-number">3</div>
+            <h3>Read and Tap Words</h3>
+          </article>
+          <article class="card timeline-step">
+            <div class="timeline-number">4</div>
+            <h3>Play Games and Master Vocabulary</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="adventure" aria-labelledby="adventure-title">
+        <div class="adventure">
+          <div>
+            <span class="section-kicker">Vocabulary Adventure</span>
+            <h2 id="adventure-title">A structured journey for everyday words.</h2>
+            <p>
+              Vocabulary Adventure is a structured learning journey where users unlock
+              levels by learning themed vocabulary and completing practice games.
+            </p>
+          </div>
+          <div class="topic-list" aria-label="Vocabulary Adventure examples">
+            <span>Family</span>
+            <span>Numbers</span>
+            <span>Food</span>
+            <span>Animals</span>
+            <span>Travel</span>
+            <span>Shopping</span>
+            <span>School</span>
+            <span>Home</span>
+            <span>And many more</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="why" aria-labelledby="why-title">
+        <div class="section-header">
+          <span class="section-kicker">Why Paathbook Bhasa</span>
+          <h2 id="why-title">Built for learners who want language to feel useful quickly.</h2>
+        </div>
+        <div class="why-grid">
+          <article class="card why-card">
+            <strong>✓</strong>
+            <h3>Reading-first learning</h3>
+            <p>Start with context, not isolated memorization.</p>
+          </article>
+          <article class="card why-card">
+            <strong>✓</strong>
+            <h3>Interactive dictionary</h3>
+            <p>Lookup meaning instantly while reading.</p>
+          </article>
+          <article class="card why-card">
+            <strong>✓</strong>
+            <h3>Offline-first architecture</h3>
+            <p>Designed to keep learning available.</p>
+          </article>
+          <article class="card why-card">
+            <strong>✓</strong>
+            <h3>Built-in pronunciation</h3>
+            <p>Hear words clearly while practicing.</p>
+          </article>
+          <article class="card why-card">
+            <strong>✓</strong>
+            <h3>Structured learning path</h3>
+            <p>Follow levels, topics and guided review.</p>
+          </article>
+          <article class="card why-card">
+            <strong>✓</strong>
+            <h3>Gamified revision</h3>
+            <p>Practice through games that reinforce memory.</p>
+          </article>
+          <article class="card why-card">
+            <strong>✓</strong>
+            <h3>Multiple languages</h3>
+            <p>Learn across English, Nepali, Hindi, Japanese and Korean.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="coming-soon" aria-labelledby="coming-title">
+        <div class="section-header">
+          <span class="section-kicker">Coming Soon</span>
+          <h2 id="coming-title">More ways to practice, review and keep progress in sync.</h2>
+        </div>
+        <div class="coming-grid">
+          <article class="card coming-card">
+            <h3>Website Learning</h3>
+            <p>Study from the browser.</p>
+          </article>
+          <article class="card coming-card">
+            <h3>AI Grammar Assistant</h3>
+            <p>Ask grammar questions in context.</p>
+          </article>
+          <article class="card coming-card">
+            <h3>More Languages</h3>
+            <p>New learning paths over time.</p>
+          </article>
+          <article class="card coming-card">
+            <h3>Daily Challenges</h3>
+            <p>Short practice goals.</p>
+          </article>
+          <article class="card coming-card">
+            <h3>Cloud Sync</h3>
+            <p>Keep saved words and progress synced.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="faq" aria-labelledby="faq-title">
+        <div class="section-header">
+          <span class="section-kicker">FAQ</span>
+          <h2 id="faq-title">Questions learners usually ask first.</h2>
+        </div>
+        <div class="faq-list">
+          <details class="card">
+            <summary>What languages are supported?</summary>
+            <p>Paathbook Bhasa supports English, Nepali, Hindi, Japanese and Korean.</p>
+          </details>
+          <details class="card">
+            <summary>Does the app work offline?</summary>
+            <p>The app is designed with an offline-first architecture so learning content can remain available where
+              supported.</p>
+          </details>
+          <details class="card">
+            <summary>Can I learn multiple languages?</summary>
+            <p>Yes. You can choose a known language and a learning language, then switch learning paths as needed.</p>
+          </details>
+          <details class="card">
+            <summary>Is pronunciation available?</summary>
+            <p>Yes. Paathbook Bhasa includes pronunciation support for vocabulary and learning content.</p>
+          </details>
+          <details class="card">
+            <summary>How does Vocabulary Adventure work?</summary>
+            <p>Users unlock themed levels, learn vocabulary, and complete practice games to reinforce what they studied.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="card contact-card">
+          <div>
+            <span class="section-kicker">Contact</span>
+            <h2 id="contact-title">Support and official links.</h2>
+            <p>Reach the Paathbook team for Bhasa support, website questions and future social updates.</p>
+          </div>
+          <div class="contact-list">
+            <a href="mailto:dipendrabogati1776@gmail.com">dipendrabogati1776@gmail.com</a>
+            <a href="../">paathbook.com</a>
+            <a href="https://www.facebook.com/paathbook.support" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <span>Future social links coming soon</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-links">
+          <a href="privacy-policy/">Privacy Policy</a>
+          <a href="#contact">Terms</a>
+          <a href="#contact">Support</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div>© Paathbook</div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

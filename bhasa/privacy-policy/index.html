@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Privacy Policy for PAATHBOOK BHASA, a reading-first language learning application." />
+  <title>Privacy Policy | PAATHBOOK BHASA</title>
+
+  <style>
+    :root {
+      --bg: #050505;
+      --surface: #0e0e10;
+      --surface-high: #141418;
+      --text: #f8f7ff;
+      --muted-strong: #c6c3d7;
+      --muted: #8d89a3;
+      --purple: #8f5bff;
+      --blue: #38bdf8;
+      --red: #ff4d6d;
+      --success: #40dfa2;
+      --primary-gradient: linear-gradient(135deg, var(--purple), var(--blue));
+      --brand-gradient: linear-gradient(135deg, var(--purple), var(--red));
+      --border-gradient: linear-gradient(135deg, rgba(143, 91, 255, 0.73), rgba(56, 189, 248, 0.6), rgba(143, 91, 255, 0.4));
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 8% 0%, rgba(143, 91, 255, 0.22), transparent 24rem),
+        radial-gradient(circle at 92% 4%, rgba(56, 189, 248, 0.14), transparent 24rem),
+        radial-gradient(circle at 80% 58%, rgba(255, 77, 109, 0.08), transparent 28rem),
+        linear-gradient(180deg, var(--bg), #08080b 45%, var(--bg));
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(18px);
+      background: rgba(5, 5, 5, 0.76);
+      border-bottom: 1px solid rgba(143, 91, 255, 0.18);
+    }
+
+    .nav-inner,
+    .container {
+      width: min(960px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .nav-inner {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand,
+    .back-link {
+      text-decoration: none;
+      font-weight: 850;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand img {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      box-shadow: 0 10px 24px rgba(143, 91, 255, 0.34);
+    }
+
+    .brand span {
+      display: block;
+      line-height: 1.15;
+    }
+
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 650;
+    }
+
+    .back-link {
+      color: var(--muted-strong);
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 72px 0 28px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 18px;
+      color: #efeaff;
+      background: rgba(143, 91, 255, 0.14);
+      border: 1px solid rgba(143, 91, 255, 0.38);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 850;
+      letter-spacing: 0.12em;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 99px;
+      background: var(--primary-gradient);
+      box-shadow: 0 0 18px rgba(56, 189, 248, 0.65);
+    }
+
+    h1,
+    h2,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin-bottom: 16px;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+
+    h1 span {
+      display: block;
+      color: transparent;
+      background: var(--primary-gradient);
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+
+    .intro {
+      max-width: 720px;
+      color: var(--muted-strong);
+      font-size: 18px;
+    }
+
+    .effective-date {
+      display: inline-flex;
+      margin-top: 12px;
+      border-radius: 999px;
+      padding: 9px 13px;
+      color: var(--text);
+      background:
+        linear-gradient(var(--surface), var(--surface)) padding-box,
+        var(--brand-gradient) border-box;
+      border: 2px solid transparent;
+      font-size: 14px;
+      font-weight: 850;
+    }
+
+    .policy {
+      display: grid;
+      gap: 18px;
+      padding: 24px 0 72px;
+    }
+
+    .card {
+      border-radius: 28px;
+      padding: 28px;
+      background:
+        linear-gradient(var(--surface), var(--surface)) padding-box,
+        var(--border-gradient) border-box;
+      border: 2px solid transparent;
+      box-shadow: 0 18px 54px rgba(0, 0, 0, 0.28);
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      font-size: 24px;
+      line-height: 1.2;
+    }
+
+    p {
+      color: var(--muted-strong);
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 20px;
+      color: var(--muted-strong);
+    }
+
+    li {
+      margin-bottom: 7px;
+    }
+
+    .note {
+      margin-top: 14px;
+      border-radius: 18px;
+      padding: 14px 16px;
+      color: var(--muted-strong);
+      background: rgba(143, 91, 255, 0.14);
+      border: 1px solid rgba(143, 91, 255, 0.28);
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .contact-list a {
+      display: block;
+      padding: 14px 16px;
+      border-radius: 16px;
+      color: var(--muted-strong);
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(143, 91, 255, 0.22);
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    .footer {
+      border-top: 1px solid rgba(143, 91, 255, 0.18);
+      padding: 28px 0 42px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+
+      .nav-inner,
+      .container {
+        width: min(100% - 28px, 960px);
+      }
+
+      .nav-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        padding: 14px 0;
+      }
+
+      .hero {
+        padding-top: 52px;
+      }
+
+      .card {
+        padding: 22px;
+        border-radius: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a class="brand" href="../">
+        <img src="../../assets/app_icon.png" alt="Paathbook icon" />
+        <span>
+          PAATHBOOK BHASA
+          <small>Privacy Policy</small>
+        </span>
+      </a>
+      <a class="back-link" href="../">Back to Bhasa</a>
+    </div>
+  </nav>
+
+  <main>
+    <header class="hero container">
+      <p class="eyebrow">PRIVACY POLICY</p>
+      <h1>PAATHBOOK BHASA <span>Privacy Policy</span></h1>
+      <p class="intro">
+        PAATHBOOK BHASA respects your privacy. This Privacy Policy explains what
+        information we collect, how we use it, and your rights when using our application.
+      </p>
+      <p class="effective-date">Effective Date: June 28, 2026</p>
+    </header>
+
+    <div class="policy container">
+      <section class="card" aria-labelledby="introduction">
+        <h2 id="introduction">1. Introduction</h2>
+        <p>Welcome to PAATHBOOK BHASA.</p>
+        <p>By using the application, you agree to this Privacy Policy.</p>
+      </section>
+
+      <section class="card" aria-labelledby="information-we-collect">
+        <h2 id="information-we-collect">2. Information We Collect</h2>
+        <p>At this time, PAATHBOOK BHASA collects very little personal information.</p>
+        <p>The app may store the following locally on your device:</p>
+        <ul>
+          <li>Learning progress</li>
+          <li>Saved vocabulary</li>
+          <li>Game history</li>
+          <li>User language preferences</li>
+          <li>Offline learning data</li>
+        </ul>
+        <div class="note">
+          This information remains on your device unless future cloud synchronization is enabled.
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="personal-information">
+        <h2 id="personal-information">3. Personal Information</h2>
+        <p>Currently, PAATHBOOK BHASA does not require users to create an account.</p>
+        <p>We do not collect:</p>
+        <ul>
+          <li>Name</li>
+          <li>Email address</li>
+          <li>Phone number</li>
+          <li>Physical address</li>
+          <li>Government identification</li>
+        </ul>
+      </section>
+
+      <section class="card" aria-labelledby="permissions">
+        <h2 id="permissions">4. Permissions</h2>
+        <p>PAATHBOOK BHASA currently does not request sensitive device permissions such as:</p>
+        <ul>
+          <li>Camera</li>
+          <li>Microphone</li>
+          <li>Contacts</li>
+          <li>Location</li>
+          <li>SMS</li>
+          <li>Call logs</li>
+          <li>Calendar</li>
+        </ul>
+        <div class="note">
+          If future versions require additional permissions, this Privacy Policy will be updated
+          before those features are introduced.
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="internet-usage">
+        <h2 id="internet-usage">5. Internet Usage</h2>
+        <p>The application may access the internet to:</p>
+        <ul>
+          <li>Retrieve dictionary information when a word is unavailable locally.</li>
+          <li>Improve language learning features.</li>
+          <li>Download future content updates.</li>
+        </ul>
+        <p>Internet access is not used to collect unnecessary personal information.</p>
+      </section>
+
+      <section class="card" aria-labelledby="ai-services">
+        <h2 id="ai-services">6. AI Services</h2>
+        <p>
+          Some language explanations or dictionary entries may be generated using third-party
+          AI services when they are not available locally.
+        </p>
+        <p>Only the text necessary to generate the requested explanation or dictionary entry is sent.</p>
+        <p>We do not intentionally send personally identifiable information to AI providers.</p>
+      </section>
+
+      <section class="card" aria-labelledby="local-storage">
+        <h2 id="local-storage">7. Local Storage</h2>
+        <p>The app stores learning information locally, including:</p>
+        <ul>
+          <li>Saved words</li>
+          <li>Reading progress</li>
+          <li>Adventure progress</li>
+          <li>Game statistics</li>
+          <li>User settings</li>
+        </ul>
+        <p>This information is stored only to improve your learning experience.</p>
+      </section>
+
+      <section class="card" aria-labelledby="third-party-services">
+        <h2 id="third-party-services">8. Third-Party Services</h2>
+        <p>The application may use trusted third-party services such as:</p>
+        <ul>
+          <li>Firebase (future authentication, cloud sync)</li>
+          <li>Google Gemini API (dictionary fallback)</li>
+          <li>Google Play Services (application distribution)</li>
+        </ul>
+        <p>Each third-party service has its own privacy policy.</p>
+      </section>
+
+      <section class="card" aria-labelledby="childrens-privacy">
+        <h2 id="childrens-privacy">9. Children's Privacy</h2>
+        <p>PAATHBOOK BHASA is designed for learners of all ages.</p>
+        <p>We do not knowingly collect personal information from children.</p>
+        <p>
+          If you believe personal information has been provided by a child, please contact us
+          so we can address the issue.
+        </p>
+      </section>
+
+      <section class="card" aria-labelledby="data-security">
+        <h2 id="data-security">10. Data Security</h2>
+        <p>We take reasonable measures to protect user data stored within the application.</p>
+        <p>However, no method of electronic storage or internet transmission is completely secure.</p>
+      </section>
+
+      <section class="card" aria-labelledby="future-features">
+        <h2 id="future-features">11. Future Features</h2>
+        <p>Future versions of PAATHBOOK BHASA may introduce features such as:</p>
+        <ul>
+          <li>User accounts</li>
+          <li>Cloud synchronization</li>
+          <li>Premium subscriptions</li>
+          <li>Website login</li>
+          <li>Progress synchronization across devices</li>
+        </ul>
+        <p>
+          If these features change how information is collected or processed, this Privacy
+          Policy will be updated accordingly.
+        </p>
+      </section>
+
+      <section class="card" aria-labelledby="changes-to-this-policy">
+        <h2 id="changes-to-this-policy">12. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time.</p>
+        <p>The latest version will always be available at:</p>
+        <p><a href="https://paathbook.com/bhasa/privacy-policy">https://paathbook.com/bhasa/privacy-policy</a></p>
+      </section>
+
+      <section class="card" aria-labelledby="contact-us">
+        <h2 id="contact-us">13. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, please contact us:</p>
+        <div class="contact-list">
+          <a href="https://paathbook.com/bhasa">https://paathbook.com/bhasa</a>
+          <a href="mailto:dipendrabogati1776@gmail.com">dipendrabogati1776@gmail.com</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    © PAATHBOOK BHASA
+  </footer>
+</body>
+
+</html>
