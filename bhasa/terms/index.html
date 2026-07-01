@@ -47,63 +47,9 @@
       color: inherit;
     }
 
-    .nav {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      backdrop-filter: blur(18px);
-      background: rgba(5, 5, 5, 0.76);
-      border-bottom: 1px solid rgba(143, 91, 255, 0.18);
-    }
-
-    .nav-inner,
     .container {
       width: min(960px, calc(100% - 40px));
       margin: 0 auto;
-    }
-
-    .nav-inner {
-      min-height: 74px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 18px;
-    }
-
-    .brand,
-    .back-link {
-      text-decoration: none;
-      font-weight: 850;
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .brand img {
-      width: 42px;
-      height: 42px;
-      border-radius: 12px;
-      box-shadow: 0 10px 24px rgba(143, 91, 255, 0.34);
-    }
-
-    .brand span {
-      display: block;
-      line-height: 1.15;
-    }
-
-    .brand small {
-      display: block;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 650;
-    }
-
-    .back-link {
-      color: var(--muted-strong);
-      font-size: 14px;
     }
 
     .hero {
@@ -235,16 +181,8 @@
 
     @media (max-width: 640px) {
 
-      .nav-inner,
       .container {
         width: min(100% - 28px, 960px);
-      }
-
-      .nav-inner {
-        align-items: flex-start;
-        flex-direction: column;
-        justify-content: center;
-        padding: 14px 0;
       }
 
       .hero {
@@ -260,19 +198,6 @@
 </head>
 
 <body>
-  <nav class="nav" aria-label="Primary navigation">
-    <div class="nav-inner">
-      <a class="brand" href="../">
-        <img src="../../assets/app_icon.png" alt="Paathbook icon" />
-        <span>
-          PAATHBOOK BHASA
-          <small>Terms and Conditions</small>
-        </span>
-      </a>
-      <a class="back-link" href="../">Back to Bhasa</a>
-    </div>
-  </nav>
-
   <main>
     <header class="hero container">
       <p class="eyebrow">TERMS AND CONDITIONS</p>
