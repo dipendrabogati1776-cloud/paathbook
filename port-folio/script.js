@@ -54,6 +54,25 @@ const projects = [
     appStoreUrl: 'https://apps.apple.com/app/id6741786030', googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.roshan.shrestha.roshan',
   },
   {
+    name: 'Dkrop', platform: 'Flutter', role: 'Flutter Developer', icon: 'i-globe',
+    description: 'Official mobile app for Dkrop Media Group across English, Nepali, and Hindi editions, combining breaking news, investigations, analysis, and membership features with Nepali calendar utilities, productivity tools, and 25+ games.',
+    technologies: ['Flutter', 'Dart', 'Multilingual Support', 'Nepali Calendar', 'Document & PDF Tools', 'REST APIs', 'Membership', 'News Platform'],
+    responsibilities: [
+      'Built an all-in-one app for Dkrop’s three news editions, with breaking news, investigations, analysis, and membership features.',
+      'Combined Nepali calendar and date conversion, tasks and reminders, document scanning and PDF tools, calculators, market rates, public resources, and 25+ games in one app.',
+      'Supported multilingual reading, saved articles, reading preferences, and connected account access across supported editions.',
+    ],
+    features: [
+      'Official mobile app for Dkrop Media Group across English, Nepali, and Hindi editions',
+      'Breaking news, investigations, in-depth analysis, and membership features',
+      'Nepali calendar, date conversion, tasks, and reminders',
+      'Document scanning, PDF tools, calculators, and live market rates',
+      '25+ built-in interactive games and public resources',
+      'Multilingual reading, saved articles, reading preferences, and connected account access',
+    ],
+    appStoreUrl: 'https://apps.apple.com/app/id6816310293', googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.dkrop.app', websiteUrl: 'https://dkrop.com',
+  },
+  {
     name: 'WikiBG', platform: 'Flutter', role: 'Flutter Developer', icon: 'i-file',
     description: 'A verification-first biography and documentation app that brings editorially reviewed WikiBG content into a clean mobile reading experience.',
     downloads: '3K+',
