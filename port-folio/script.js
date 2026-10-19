@@ -71,6 +71,7 @@ const projects = [
       'Multilingual reading, saved articles, reading preferences, and connected account access',
     ],
     contributionLabel: 'Solely developed',
+    screenshots: ['assets/dkrop/home.jpeg', 'assets/dkrop/election.png', 'assets/dkrop/game_1.jpeg', 'assets/dkrop/game_2.jpeg'],
     appStoreUrl: 'https://apps.apple.com/app/id6816310293', googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.dkrop.app', websiteUrl: 'https://dkrop.com',
   },
   {
