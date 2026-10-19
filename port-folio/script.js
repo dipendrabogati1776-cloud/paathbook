@@ -70,6 +70,7 @@ const projects = [
       '25+ built-in interactive games and public resources',
       'Multilingual reading, saved articles, reading preferences, and connected account access',
     ],
+    contributionLabel: 'Solely developed',
     appStoreUrl: 'https://apps.apple.com/app/id6816310293', googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.dkrop.app', websiteUrl: 'https://dkrop.com',
   },
   {
